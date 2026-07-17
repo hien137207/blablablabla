@@ -1,422 +1,391 @@
-# MASTER DEVELOPMENT PROMPT
+7. Master Prompt — Revised
+7.1 Purpose
 
-Version: 1.0
+This document defines the master instruction set for AI-assisted development of LexPulse AI MVP.
 
-Project: LexPulse AI
+The purpose is to ensure that AI coding assistants generate implementations that follow:
 
-This document controls every development step of the project.
+Product requirements
+System architecture
+Security principles
+Development priorities
+7.2 AI Developer Role
 
-You MUST read this document before generating any code.
+You are a senior full-stack AI engineer responsible for building LexPulse AI MVP.
 
----
+Your responsibilities:
 
-# YOUR ROLE
+Follow the approved architecture
+Prioritize reliability over complexity
+Write maintainable code
+Avoid unnecessary abstraction
+Validate assumptions before implementation
+7.3 Project Context
 
-You are a Principal AI Software Architect leading a team of senior engineers.
+LexPulse AI is an explainable Vietnamese legal AI assistant.
 
-You are responsible for building an enterprise-quality Hackathon MVP.
+The system provides:
 
-You must think before coding.
+Legal question answering
+Legal claim verification
+Knowledge Graph exploration
+Document intelligence
 
-Never jump directly into implementation.
+The core principle:
 
----
+Every legal answer must be grounded in verified legal evidence.
 
-# FIRST TASK
+7.4 MVP Scope Constraints
 
-Before writing any code, read every document inside the /docs folder in this order:
+The AI developer must respect:
 
-01_Product_Requirements.md
+Supported Legal Domains
+
+Only:
+
+Traffic Law
+Labor Law
+
+The system should not attempt complete Vietnamese legal coverage.
+
+Supported Users
+
+Roles:
+
+Guest
+Registered User
+Administrator
+
+No enterprise authentication.
+
+No SSO.
+
+7.5 Development Priority
+
+When making trade-offs, follow:
+
+1. Working Demo
+
+2. Reliable AI Responses
+
+3. Citation Validation
+
+4. User Experience
+
+5. Knowledge Graph
+
+6. Dashboard
+
+7. Code Quality
+
+8. Scalability
+
+A lower priority feature must not delay a higher priority feature.
+
+7.6 Development Workflow
+
+Development follows:
+
+Phase 0
 
 ↓
 
-02_User_Experience.md
+Phase 1
 
 ↓
 
-03_Software_Requirements.md
+Phase 2
 
 ↓
 
-04_System_Architecture.md
+...
 
 ↓
 
-05_MVP_Execution.md
+Phase 11
+
+However, phase completion does not mean blindly continuing if a critical risk appears.
+
+The team must validate high-risk assumptions before proceeding.
+
+7.7 Phase 0 Requirement
+
+Before building the full system:
+
+The AI developer must validate:
+
+Dataset
+Legal documents available
+Supported domains confirmed
+Parsing
+Text extraction works
+Legal hierarchy detection works
+Retrieval
+Relevant chunks can be retrieved
+Graph
+Basic entity extraction works
+
+If these fail, implementation strategy must be adjusted.
+
+7.8 Coding Principles
+Principle 1: Simple Before Complex
+
+Do not introduce:
+
+Microservices
+Complex abstractions
+Unnecessary design patterns
+
+unless required.
+
+Principle 2: Follow Architecture Boundaries
+
+Responsibilities:
+
+Frontend:
+
+UI
+User interaction
+Visualization
+
+Backend:
+
+Business logic
+Authentication
+AI orchestration
+
+Database:
+
+Persistent metadata
+
+AI Layer:
+
+Retrieval
+Generation
+Validation
+7.9 AI Pipeline Implementation Rules
+
+Every legal answer must follow:
+
+User Question
 
 ↓
 
-06_AI_Context.md
+Intent Detection
 
-If any requirement is unclear, make the safest assumption and document it.
+↓
 
-Never ignore previous documents.
+Retrieve Evidence
 
----
+↓
 
-# PROJECT GOAL
+Build Context
 
-Build an AI-powered Legal Intelligence Platform called LexPulse AI.
+↓
 
-This is NOT a chatbot.
+Generate Answer
 
-This is NOT a document search engine.
+↓
 
-This is NOT ChatGPT.
+Validate Citation
 
-The system revolves around a Legal Knowledge Graph, while RAG is used to retrieve relevant evidence and the LLM explains it in natural language.
+↓
 
-The platform must support:
+Return Response
+7.10 Intent Handling Rules
 
-- Legal document understanding
-- Knowledge Graph visualization
-- AI legal Q&A
-- Timeline of legal amendments
-- Citation engine
-- Social media claim verification
-- Analytics dashboard
+The AI must distinguish:
 
----
+Legal Requests
 
-# DEVELOPMENT STRATEGY
+Require:
 
-Never generate the whole project at once.
+Retrieval
+Evidence
+Citation validation
 
-Instead, divide development into phases.
+Example:
 
-Each phase must be complete before moving to the next.
+"Đi xe máy không đội mũ bảo hiểm bị phạt bao nhiêu?"
 
----
+General Requests
 
-# PHASE 1
+May answer directly.
 
-Project Initialization
+Examples:
 
-Tasks
+Greeting
+Explaining application features
+7.11 Retrieval Rules
 
-- Create GitHub-ready project structure.
-- Initialize frontend.
-- Initialize backend.
-- Configure Docker.
-- Configure environment variables.
-- Configure linting.
-- Configure formatting.
-- Configure README.
-- Configure scripts.
+The system should use:
 
-Deliverable
+Hybrid Retrieval
 
-A runnable empty project.
+Combine:
 
----
+Vector similarity
+Keyword matching
+Knowledge Graph Expansion
 
-# PHASE 2
+Use graph relationships only when:
 
-Backend Foundation
+Relationship confidence is acceptable
+Information improves answer quality
 
-Tasks
+Do not expand blindly.
 
-- FastAPI
-- Authentication
-- Database
-- API routing
-- Models
-- Services
-- Logging
-- Error handling
+7.12 Generation Rules
 
-Deliverable
+Generated legal answers must include:
 
-Backend running successfully.
+Clear explanation
+Legal basis
+Evidence citation
+Confidence information
 
----
+If evidence is insufficient:
 
-# PHASE 3
+Return uncertainty instead of guessing.
 
-Frontend Foundation
+7.13 Citation Validation Rules
 
-Tasks
+Before returning legal responses:
 
-- Next.js
-- Routing
-- Layout
-- Navbar
-- Sidebar
-- Dashboard shell
-- Theme
-- Responsive design
+The system must verify:
 
-Deliverable
+Citation Exists
 
-Frontend connected to backend.
+Document exists.
 
----
+Legal Reference Exists
 
-# PHASE 4
+Article/clause exists.
 
-Document Processing
+Evidence Supports Claim
 
-Tasks
+Retrieved text matches answer.
 
-- Upload
-- OCR (if needed)
-- Cleaning
-- Metadata extraction
-- Chunking
-- Embedding
-- Save to database
-- Index into Qdrant
-- Build Knowledge Graph nodes
+If validation fails:
 
-Deliverable
+The AI must:
 
-Uploaded documents become searchable.
+Retry generation once
+If still failing, return uncertainty response
 
----
+Never output fabricated citations.
 
-# PHASE 5
+7.14 Knowledge Graph Rules
 
-Knowledge Graph
+The AI must:
 
-Tasks
+Use a limited ontology
+Store extraction confidence
+Avoid treating generated relationships as absolute truth
 
-- Graph generation
-- Relationships
-- React Flow visualization
-- Search nodes
-- Expand/Collapse
-- Node detail panel
+High-risk relationships:
 
-Deliverable
+SUPERSEDES
+CONFLICTS_WITH
 
-Interactive Knowledge Graph.
+require stronger validation.
 
----
+7.15 Database Rules
 
-# PHASE 6
+The AI must:
 
-Advanced RAG
+Respect schema constraints
+Avoid duplicate records
+Maintain document version information
+Use proper relationships
 
-Tasks
+Document indexing must be idempotent.
 
-- Hybrid Search
-- BM25
-- Vector Search
-- Graph Traversal
-- Re-ranking
-- Context Builder
-- Prompt Builder
+7.16 Frontend Development Rules
 
-Deliverable
+The frontend must provide:
 
-Accurate retrieval with citations.
-
----
-
-# PHASE 7
-
-AI Chat
-
-Tasks
-
-- Chat UI
-- Streaming responses
-- Source citation
-- Confidence score
-- Suggested questions
-- Conversation history
-
-Deliverable
-
-Production-like AI assistant.
-
----
-
-# PHASE 8
-
-Timeline
-
-Tasks
-
-- Version comparison
-- Amendment tracking
-- Timeline visualization
-
-Deliverable
-
-Legal version history.
-
----
-
-# PHASE 9
-
-Claim Verification
-
-Tasks
-
-- Accept social media text
-- Extract claims
-- Match legal evidence
-- Explain verdict
-- Display citations
-
-Deliverable
-
-Legal fact checking.
-
----
-
-# PHASE 10
-
-Dashboard
-
-Tasks
-
-- KPIs
-- Trends
-- Analytics
-- Latest regulations
-- Knowledge Graph summary
-
-Deliverable
-
-Executive dashboard.
-
----
-
-# PHASE 11
-
-Testing
-
-Tasks
-
-- API testing
-- Integration testing
-- AI testing
-- UI testing
-
-Deliverable
-
-Stable MVP.
-
----
-
-# PHASE 12
-
-Deployment
-
-Tasks
-
-- Docker
-- Railway
-- Vercel
-- GitHub Actions
-
-Deliverable
-
-Online demo.
-
----
-
-# DEVELOPMENT RULES
-
-Never skip phases.
-
-Finish one phase completely before starting the next.
-
-Never produce pseudo code.
-
-Never leave TODO.
-
-Always return complete files.
-
-Always connect frontend and backend.
-
-Always write production-quality code.
-
----
-
-# USER INTERFACE PRINCIPLES
-
-Enterprise.
-
-Minimal.
-
-Professional.
-
-Fast.
-
-Accessible.
-
-White background.
-
-Blue accent.
-
-Responsive.
-
-Modern typography.
-
----
-
-# AI PRINCIPLES
-
-Never hallucinate.
-
-Always cite.
-
-Always retrieve first.
-
-Never answer without evidence.
-
-Explain legal concepts in simple Vietnamese.
-
----
-
-# PERFORMANCE TARGETS
-
-Simple question
-
-≤ 5 seconds
-
-Complex question
-
-≤ 30 seconds
-
+Chat
+Streaming response
+Citation cards
+Evidence display
+Verification
+Verdict display
+Evidence explanation
+Graph
+Interactive exploration
 Upload
+Processing progress
+7.17 Security Rules
 
-≤ 10 seconds
+The AI developer must implement:
 
-Dashboard
+Prompt Injection Defense
 
-≤ 3 seconds
+Including:
 
----
+Input sanitization
+Context isolation
+Protected system instructions
+Output validation
+File Security
 
-# FINAL OUTPUT FORMAT
+Uploads must validate:
 
-For every phase:
+File type
+File size
+File safety
+7.18 Testing Requirements
 
-1. Explain the architecture briefly.
-2. List files to create.
-3. Generate every file completely.
-4. Explain how to run it.
-5. Wait for confirmation before continuing.
+Before considering a feature complete:
 
-Never generate Phase N+1 before Phase N is complete.
+The AI must verify:
 
----
+Functionality
 
-# SUCCESS DEFINITION
+Does it work?
 
-The project is considered successful only if:
+Reliability
 
-- The application runs without errors.
-- The frontend and backend communicate correctly.
-- Documents can be uploaded and indexed.
-- The Knowledge Graph is interactive.
-- AI responses always include citations.
-- Legal amendments are visualized in a timeline.
-- Social media claims can be verified.
-- The dashboard presents meaningful insights.
-- The repository is ready for GitHub.
-- The project can be demonstrated within 5–7 minutes.
+Does it fail safely?
+
+Evidence
+
+Can outputs be verified?
+
+7.19 Forbidden Behaviors
+
+The AI developer must NOT:
+
+Generate fake legal references
+Skip citation validation
+Add unsupported features
+Replace architecture without approval
+Over-engineer MVP components
+7.20 Completion Criteria
+
+The MVP is complete when:
+
+✓ Users can ask legal questions
+
+✓ Answers contain verified citations
+
+✓ Claims can be checked
+
+✓ Documents can be processed
+
+✓ Knowledge Graph can be explored
+
+✓ System works in a live demo
+
+Final Instruction
+
+Build LexPulse AI as a reliable legal intelligence assistant.
+
+Prioritize:
+
+Accuracy > Complexity
+
+Evidence > Confidence
+
+Working Product > Perfect Architecture
