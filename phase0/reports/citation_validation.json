@@ -1,0 +1,138 @@
+[
+  [
+    "Valid citation (existing doc + article)",
+    {
+      "test": "valid_citation",
+      "result": {
+        "citation": {
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+          "article": "10",
+          "clause": "1",
+          "chunk_id": null
+        },
+        "status": "approved",
+        "reason": "Citation validated: document exists, article exists, evidence aligns.",
+        "document_exists": true,
+        "article_exists": true,
+        "evidence_aligned": true
+      }
+    }
+  ],
+  [
+    "Invalid article (non-existent)",
+    {
+      "test": "invalid_article",
+      "result": {
+        "citation": {
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH",
+          "article": "999",
+          "clause": "1",
+          "chunk_id": null
+        },
+        "status": "rejected_invalid_reference",
+        "reason": "Article 999 does not exist in document 'luat_xuat_giao_thong_duong_bo_2024'.",
+        "document_exists": true,
+        "article_exists": false,
+        "evidence_aligned": false
+      }
+    }
+  ],
+  [
+    "Invalid document (fabricated)",
+    {
+      "test": "invalid_document",
+      "result": {
+        "citation": {
+          "document_id": "fake_law_2024",
+          "document_title": "Fake Law",
+          "article": "1",
+          "clause": "1",
+          "chunk_id": null
+        },
+        "status": "rejected_invalid_reference",
+        "reason": "Document 'fake_law_2024' does not exist in the corpus.",
+        "document_exists": false,
+        "article_exists": false,
+        "evidence_aligned": false
+      }
+    }
+  ],
+  [
+    "No evidence alignment",
+    {
+      "test": "no_evidence_alignment",
+      "result": {
+        "citation": {
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "document_title": "LUẬT XỬ PHẠT",
+          "article": "10",
+          "clause": "1",
+          "chunk_id": null
+        },
+        "status": "rejected_misaligned",
+        "reason": "Cited evidence does not align with retrieved evidence.",
+        "document_exists": true,
+        "article_exists": true,
+        "evidence_aligned": false
+      }
+    }
+  ],
+  [
+    "Fabricated answer detection",
+    {
+      "test": "fabricated_answer",
+      "result": {
+        "valid": false,
+        "should_display": false,
+        "fallback_response": "Không đủ căn cứ pháp lý để đưa ra kết luận.",
+        "reason": "One or more citations failed validation.",
+        "citations": [
+          {
+            "citation": {
+              "document_id": "unknown",
+              "document_title": "Unknown",
+              "article": "999",
+              "clause": null,
+              "chunk_id": null
+            },
+            "status": "rejected_invalid_reference",
+            "reason": "Document 'unknown' does not exist in the corpus.",
+            "document_exists": false,
+            "article_exists": false,
+            "evidence_aligned": false
+          }
+        ]
+      }
+    }
+  ],
+  [
+    "Well-grounded answer",
+    {
+      "test": "well_grounded_answer",
+      "result": {
+        "valid": true,
+        "should_display": true,
+        "fallback_response": null,
+        "reason": "All citations validated.",
+        "citations": [
+          {
+            "citation": {
+              "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+              "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+              "article": "10",
+              "clause": null,
+              "chunk_id": null
+            },
+            "status": "approved",
+            "reason": "Citation validated: document exists, article exists, evidence aligns.",
+            "document_exists": true,
+            "article_exists": true,
+            "evidence_aligned": true
+          }
+        ]
+      }
+    }
+  ]
+]

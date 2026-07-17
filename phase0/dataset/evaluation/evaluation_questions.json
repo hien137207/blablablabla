@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "Q001",
+    "domain": "traffic",
+    "question": "Không đội mũ bảo hiểm khi đi xe máy bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "10",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q002",
+    "domain": "traffic",
+    "question": "Đội mũ bảo hiểm nhưng không cài quai bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "10",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q003",
+    "domain": "traffic",
+    "question": "Vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q004",
+    "domain": "traffic",
+    "question": "Vượt đèn đỏ gây tai nạn giao thông khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 500.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "Q005",
+    "domain": "traffic",
+    "question": "Người điều khiển xe máy không có giấy phép lái xe bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "6",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 100.000 đồng đến 200.000 đồng"
+  },
+  {
+    "id": "Q006",
+    "domain": "traffic",
+    "question": "Dùng giấy phép lái xe giả khi đi xe máy bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "6",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "Q007",
+    "domain": "traffic",
+    "question": "Đi xe máy chạy quá tốc độ quy định trên 35 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "8",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 1.500.000 đồng đến 2.500.000 đồng"
+  },
+  {
+    "id": "Q008",
+    "domain": "traffic",
+    "question": "Đi xe máy chạy quá tốc độ từ 20 đến 35 km/h bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "8",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 500.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "Q009",
+    "domain": "traffic",
+    "question": "Đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "14",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 2.500.000 đồng đến 3.000.000 đồng"
+  },
+  {
+    "id": "Q010",
+    "domain": "traffic",
+    "question": "Đi xe máy có nồng độ cồn nhưng chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "14",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "Q011",
+    "domain": "traffic",
+    "question": "Đi xe máy có nồng độ cồn vượt quá 50 đến 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "14",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 1.000.000 đồng đến 2.000.000 đồng"
+  },
+  {
+    "id": "Q012",
+    "domain": "traffic",
+    "question": "Đi xe máy có nồng độ cồn vượt quá 80 miligam bị tước giấy phép lái xe bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "14",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 16 tháng đến 18 tháng"
+  },
+  {
+    "id": "Q013",
+    "domain": "traffic",
+    "question": "Đi xe máy có nồng độ cồn gây tai nạn giao thông bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "14",
+      "clause": "5"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng"
+  },
+  {
+    "id": "Q014",
+    "domain": "traffic",
+    "question": "Đi xe máy chở 02 người trở lên bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "18",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q015",
+    "domain": "traffic",
+    "question": "Đi xe máy chở hàng hóa vượt quá kích thước quy định bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "18",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "Q016",
+    "domain": "traffic",
+    "question": "Giao xe máy cho người không có giấy phép lái xe bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "6",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q017",
+    "domain": "traffic",
+    "question": "Không đội mũ bảo hiểm gây tai nạn giao thông bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "10",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng"
+  },
+  {
+    "id": "Q018",
+    "domain": "traffic",
+    "question": "Vượt đèn đỏ gây tai nạn khi đi xe máy bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng"
+  },
+  {
+    "id": "Q019",
+    "domain": "traffic",
+    "question": "Đi xe máy chạy quá tốc độ từ 05 đến 10 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "8",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q020",
+    "domain": "traffic",
+    "question": "Sử dụng mũ bảo hiểm không đúng quy chuẩn kỹ thuật bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "10",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q021",
+    "domain": "traffic",
+    "question": "Người điều khiển ô tô không có giấy phép lái xe bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "23",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 1.000.000 đồng đến 2.000.000 đồng"
+  },
+  {
+    "id": "Q022",
+    "domain": "traffic",
+    "question": "Đi ô tô chạy quá tốc độ trên 35 km/h bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "25",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Mức phạt từ 10.000.000 đồng đến 12.000.000 đồng"
+  },
+  {
+    "id": "Q023",
+    "domain": "traffic",
+    "question": "Đi ô tô vượt đèn đỏ bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "28",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 3.000.000 đồng đến 5.000.000 đồng"
+  },
+  {
+    "id": "Q024",
+    "domain": "traffic",
+    "question": "Đi ô tô có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "30",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 18.000.000 đồng đến 25.000.000 đồng"
+  },
+  {
+    "id": "Q025",
+    "domain": "traffic",
+    "question": "Đi ô tô có nồng độ cồn chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "30",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 2.000.000 đồng đến 3.000.000 đồng"
+  },
+  {
+    "id": "Q026",
+    "domain": "traffic",
+    "question": "Giao ô tô cho người không có giấy phép lái xe bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "23",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 5.000.000 đồng đến 7.000.000 đồng"
+  },
+  {
+    "id": "Q027",
+    "domain": "traffic",
+    "question": "Đi ô tô có nồng độ cồn gây tai nạn bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "30",
+      "clause": "5"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng"
+  },
+  {
+    "id": "Q028",
+    "domain": "traffic",
+    "question": "Đi ô tô chạy quá tốc độ từ 10 đến 20 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "25",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 4.000.000 đồng đến 6.000.000 đồng"
+  },
+  {
+    "id": "Q029",
+    "domain": "traffic",
+    "question": "Đi ô tô chạy quá tốc độ từ 20 đến 35 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "25",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 7.000.000 đồng đến 8.000.000 đồng"
+  },
+  {
+    "id": "Q030",
+    "domain": "traffic",
+    "question": "Đi ô tô có nồng độ cồn vượt quá 50 đến 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "30",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 7.000.000 đồng đến 9.000.000 đồng"
+  },
+  {
+    "id": "Q031",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "3",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q032",
+    "domain": "traffic",
+    "question": "Nghị định 123/2021 quy định vượt đèn đỏ gây tai nạn khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "3",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 1.000.000 đồng đến 2.000.000 đồng"
+  },
+  {
+    "id": "Q033",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "4",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 8.000.000 đồng đến 10.000.000 đồng"
+  },
+  {
+    "id": "Q034",
+    "domain": "traffic",
+    "question": "Nghị định 123/2021 quy định nồng độ cồn vượt quá 50 đến 80 miligam khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "4",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 4.000.000 đồng đến 6.000.000 đồng"
+  },
+  {
+    "id": "Q035",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, không đội mũ bảo hiểm bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "2",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q036",
+    "domain": "traffic",
+    "question": "Nghị định 123/2021 quy định sử dụng mũ bảo hiểm không đúng quy chuẩn bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "2",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q037",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, dùng giấy phép lái xe giả khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "1",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 800.000 đồng đến 1.200.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q038",
+    "domain": "traffic",
+    "question": "Nghị định 123/2021 quy định chở 02 người trở lên trên xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "5",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 500.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q039",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, nồng độ cồn chưa vượt quá 50 miligam khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "4",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 2.000.000 đồng đến 3.000.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q040",
+    "domain": "traffic",
+    "question": "Nghị định 123/2021 quy định nồng độ cồn gây tai nạn khi đi xe máy bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "4",
+      "clause": "5"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng"
+  },
+  {
+    "id": "Q041",
+    "domain": "labor",
+    "question": "Hợp đồng lao động được giao kết theo những loại nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "13",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Ba loại: không xác định thời hạn, xác định thời hạn không quá 36 tháng, theo mùa vụ không quá 12 tháng"
+  },
+  {
+    "id": "Q042",
+    "domain": "labor",
+    "question": "Thời gian thử việc đối với công việc trình độ đại học trở lên là bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "20",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Thời gian thử việc không quá 180 ngày"
+  },
+  {
+    "id": "Q043",
+    "domain": "labor",
+    "question": "Tiền lương trong thời gian thử việc ít nhất bằng bao nhiêu phần trăm mức lương?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "20",
+      "clause": "5"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 85% mức tiền lương của công việc đó"
+  },
+  {
+    "id": "Q044",
+    "domain": "labor",
+    "question": "Thời giờ làm việc bình thường là bao nhiêu giờ một ngày?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "105",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Không quá 08 giờ/ngày và 48 giờ/tuần"
+  },
+  {
+    "id": "Q045",
+    "domain": "labor",
+    "question": "Số giờ làm thêm tối đa trong một năm là bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "107",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Không quá 200 giờ/năm"
+  },
+  {
+    "id": "Q046",
+    "domain": "labor",
+    "question": "Làm thêm giờ vào ngày lễ tết được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "107",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 300%"
+  },
+  {
+    "id": "Q047",
+    "domain": "labor",
+    "question": "Làm thêm giờ vào ngày thường được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "107",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 150%"
+  },
+  {
+    "id": "Q048",
+    "domain": "labor",
+    "question": "Người lao động làm việc đủ 12 tháng được nghỉ hằng năm bao nhiêu ngày?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "111",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "12 ngày làm việc đối với làm việc bình thường"
+  },
+  {
+    "id": "Q049",
+    "domain": "labor",
+    "question": "Mức lương tối thiểu vùng được áp dụng đối với đối tượng nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "91",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Người lao động làm việc ở doanh nghiệp, cơ quan, tổ chức có giao kết hợp đồng lao động"
+  },
+  {
+    "id": "Q050",
+    "domain": "labor",
+    "question": "Người sử dụng lao động phải trả lương khi người lao động nghỉ việc trong thời hạn bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "94",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Trong thời hạn 07 ngày kể từ ngày chấm dứt hợp đồng lao động"
+  },
+  {
+    "id": "Q051",
+    "domain": "labor",
+    "question": "Người lao động làm nghề nặng nhọc độc hại được nghỉ thêm bao nhiêu ngày?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "111",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Nghỉ thêm từ 05 đến 07 ngày làm việc"
+  },
+  {
+    "id": "Q052",
+    "domain": "labor",
+    "question": "Hợp đồng lao động xác định thời hạn khi hết hạn có thể giao kết lại bao nhiêu lần?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "14",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Có thể được giao kết lại một lần với thời hạn không quá 36 tháng"
+  },
+  {
+    "id": "Q053",
+    "domain": "labor",
+    "question": "Thời gian thử việc đối với công việc trình độ cao đẳng trở lên là bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "20",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Thời gian thử việc không quá 60 ngày"
+  },
+  {
+    "id": "Q054",
+    "domain": "labor",
+    "question": "Thời gian thử việc đối với công việc trình độ trung cấp trở lên là bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "20",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Thời gian thử việc không quá 30 ngày"
+  },
+  {
+    "id": "Q055",
+    "domain": "labor",
+    "question": "Làm thêm giờ vào ngày nghỉ được trả lương ít nhất bằng bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "107",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 200%"
+  },
+  {
+    "id": "Q056",
+    "domain": "labor",
+    "question": "Người sử dụng lao động có trách nhiệm gì về an toàn lao động?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "138",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Bảo đảm điều kiện làm việc an toàn, vệ sinh cho người lao động"
+  },
+  {
+    "id": "Q057",
+    "domain": "labor",
+    "question": "Người sử dụng lao động phải tổ chức khám sức khỏe định kỳ không?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "138",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Phải tổ chức khám sức khỏe định kỳ cho người lao động"
+  },
+  {
+    "id": "Q058",
+    "domain": "labor",
+    "question": "Người lao động có trách nhiệm gì về an toàn lao động?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "139",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Tuân thủ các quy định về an toàn lao động, vệ sinh lao động"
+  },
+  {
+    "id": "Q059",
+    "domain": "labor",
+    "question": "Tiền lương là gì theo Luật Lao động 2019?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "90",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Số tiền mà người sử dụng lao động trả cho người lao động theo thỏa thuận để thực hiện công việc"
+  },
+  {
+    "id": "Q060",
+    "domain": "labor",
+    "question": "Mức lương không được thấp hơn mức nào do Chính phủ quy định?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "90",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Không được thấp hơn mức lương tối thiểu vùng do Chính phủ quy định"
+  },
+  {
+    "id": "Q061",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, thời giờ làm việc bình thường là bao nhiêu?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "105",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Không quá 08 giờ/ngày và 48 giờ/tuần"
+  },
+  {
+    "id": "Q062",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày lễ được trả bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "107",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 300%"
+  },
+  {
+    "id": "Q063",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, người lao động được nghỉ hằng năm bao nhiêu ngày?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "111",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "12 ngày làm việc đối với làm việc bình thường"
+  },
+  {
+    "id": "Q064",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, tiền lương thử việc ít nhất bằng bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "20",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 85% mức tiền lương của công việc đó"
+  },
+  {
+    "id": "Q065",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong năm là bao nhiêu?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "107",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Không quá 200 giờ/năm"
+  },
+  {
+    "id": "Q066",
+    "domain": "traffic",
+    "question": "Không mang theo giấy phép lái xe khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "6",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 100.000 đồng đến 200.000 đồng"
+  },
+  {
+    "id": "Q067",
+    "domain": "traffic",
+    "question": "Đi xe máy chạy quá tốc độ từ 10 đến 20 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "8",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q068",
+    "domain": "traffic",
+    "question": "Đi vào đường cấm khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q069",
+    "domain": "traffic",
+    "question": "Đi xe máy vào đường ngược chiều bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q070",
+    "domain": "traffic",
+    "question": "Chở người ngồi trên xe máy không đội mũ bảo hiểm bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "18",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q071",
+    "domain": "traffic",
+    "question": "Đi ô tô chạy quá tốc độ từ 05 đến 10 km/h bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "25",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 1.000.000 đồng đến 2.000.000 đồng"
+  },
+  {
+    "id": "Q072",
+    "domain": "traffic",
+    "question": "Đi ô tô vượt đèn đỏ gây tai nạn bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "28",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng"
+  },
+  {
+    "id": "Q073",
+    "domain": "traffic",
+    "question": "Đi ô tô có nồng độ cồn vượt quá 80 miligam bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "30",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 16 tháng đến 18 tháng"
+  },
+  {
+    "id": "Q074",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, không đội mũ bảo hiểm khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "10",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q075",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q076",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "14",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 2.500.000 đồng đến 3.000.000 đồng"
+  },
+  {
+    "id": "Q077",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, chở 02 người trên xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "18",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 200.000 đồng đến 300.000 đồng"
+  },
+  {
+    "id": "Q078",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, dùng giấy phép lái xe giả bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "6",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "Q079",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, giao xe máy cho người không đủ điều kiện bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "6",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q080",
+    "domain": "traffic",
+    "question": "Theo Nghị định 100/2019, nồng độ cồn chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_100_2019_xu_phat_giao_thong.txt",
+      "article": "14",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng"
+  },
+  {
+    "id": "Q081",
+    "domain": "labor",
+    "question": "Hợp đồng lao động theo mùa vụ có thời hạn tối đa bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "13",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Có thời hạn không quá 12 tháng"
+  },
+  {
+    "id": "Q082",
+    "domain": "labor",
+    "question": "Khi hợp đồng lao động hết hạn mà không giao kết hợp đồng mới thì điều gì xảy ra?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "14",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Hợp đồng lao động xác định thời hạn tự động chuyển thành hợp đồng không xác định thời hạn"
+  },
+  {
+    "id": "Q083",
+    "domain": "labor",
+    "question": "Người sử dụng lao động phải trả lương vào thời điểm nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "94",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Trả lương vào ngày làm việc do hai bên thỏa thuận"
+  },
+  {
+    "id": "Q084",
+    "domain": "labor",
+    "question": "Người lao động làm việc đủ 08 giờ được nghỉ giữa giờ bao lâu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "108",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Nghỉ ít nhất 30 phút giữa giờ làm việc"
+  },
+  {
+    "id": "Q085",
+    "domain": "labor",
+    "question": "Số giờ làm thêm tối đa trong một tháng là bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "107",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Không quá 40 giờ/tháng"
+  },
+  {
+    "id": "Q086",
+    "domain": "labor",
+    "question": "Người lao động làm việc chưa đủ 12 tháng thì số ngày nghỉ hằng năm tính thế nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "111",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Tính theo tỷ lệ tương ứng với số ngày làm việc"
+  },
+  {
+    "id": "Q087",
+    "domain": "labor",
+    "question": "Người sử dụng lao động phải trang bị gì cho người lao động về an toàn?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "138",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Trang bị đầy đủ thiết bị bảo hộ lao động cho người lao động"
+  },
+  {
+    "id": "Q088",
+    "domain": "labor",
+    "question": "Người lao động phải báo cáo kịp thời điều gì cho người sử dụng lao động?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "139",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Báo cáo kịp thời các sự cố, tai nạn lao động"
+  },
+  {
+    "id": "Q089",
+    "domain": "labor",
+    "question": "Mức lương tối thiểu vùng được điều chỉnh theo những yếu tố nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "91",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Điều chỉnh theo mức sống, chỉ số giá tiêu dùng, năng suất lao động"
+  },
+  {
+    "id": "Q090",
+    "domain": "labor",
+    "question": "Người sử dụng lao động không được trả lương thấp hơn mức nào?",
+    "expected_evidence": {
+      "document": "luat_lao_dong_2019.txt",
+      "article": "91",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Không được trả lương thấp hơn mức lương tối thiểu vùng"
+  },
+  {
+    "id": "Q091",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, hợp đồng lao động có những loại nào?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "16",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Ba loại: không xác định thời hạn, xác định thời hạn không quá 36 tháng, theo mùa vụ không quá 12 tháng"
+  },
+  {
+    "id": "Q092",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, thời gian thử việc cho trình độ cao đẳng trở lên là bao lâu?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "20",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Thời gian thử việc không quá 60 ngày"
+  },
+  {
+    "id": "Q093",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, người sử dụng lao động phải trả lương khi nghỉ việc trong bao lâu?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "94",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Trong thời hạn 07 ngày kể từ ngày chấm dứt hợp đồng lao động"
+  },
+  {
+    "id": "Q094",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày thường được trả bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "107",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 150%"
+  },
+  {
+    "id": "Q095",
+    "domain": "labor",
+    "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày nghỉ được trả bao nhiêu phần trăm?",
+    "expected_evidence": {
+      "document": "bo_luat_lao_dong_2012.txt",
+      "article": "107",
+      "clause": "3"
+    },
+    "expected_answer_criteria": "Ít nhất bằng 200%"
+  },
+  {
+    "id": "Q096",
+    "domain": "traffic",
+    "question": "Đi xe máy không tuân thủ hiệu lệnh của đèn tín hiệu bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q097",
+    "domain": "traffic",
+    "question": "Đi xe máy không tuân thủ biển báo hiệu bị phạt bao nhiêu tiền?",
+    "expected_evidence": {
+      "document": "luat_xuat_giao_thong_duong_bo_2024.txt",
+      "article": "12",
+      "clause": "1"
+    },
+    "expected_answer_criteria": "Mức phạt từ 300.000 đồng đến 400.000 đồng"
+  },
+  {
+    "id": "Q098",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, giao xe máy cho người không đủ điều kiện bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "1",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 400.000 đồng đến 600.000 đồng (tăng so với Nghị định 100/2019)"
+  },
+  {
+    "id": "Q099",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, chở hàng hóa vượt quá kích thước trên xe máy bị phạt bao nhiêu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "5",
+      "clause": "2"
+    },
+    "expected_answer_criteria": "Mức phạt từ 500.000 đồng đến 1.000.000 đồng"
+  },
+  {
+    "id": "Q100",
+    "domain": "traffic",
+    "question": "Theo Nghị định 123/2021, nồng độ cồn vượt quá 50 đến 80 miligam bị tước giấy phép bao lâu?",
+    "expected_evidence": {
+      "document": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100.txt",
+      "article": "4",
+      "clause": "4"
+    },
+    "expected_answer_criteria": "Tước quyền sử dụng Giấy phép lái xe từ 16 tháng đến 18 tháng"
+  }
+]

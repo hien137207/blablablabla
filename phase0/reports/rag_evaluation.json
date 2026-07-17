@@ -1,0 +1,4409 @@
+{
+  "accuracy": 0.94,
+  "correct": 94,
+  "total": 100,
+  "target_accuracy": 0.85,
+  "meets_target": true,
+  "per_question": [
+    {
+      "question_id": "Q001",
+      "question": "Không đội mũ bảo hiểm khi đi xe máy bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "10",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.5648
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5453
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5429
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.4202
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.3703
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q002",
+      "question": "Đội mũ bảo hiểm nhưng không cài quai bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "10",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5659
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.5507
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5288
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.2638
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.2328
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q003",
+      "question": "Vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "1",
+          "score": 0.4634
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.4237
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "2",
+          "score": 0.4144
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "2",
+          "score": 0.4116
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.4099
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q004",
+      "question": "Vượt đèn đỏ gây tai nạn giao thông khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.5312
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "2",
+          "score": 0.5176
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "2",
+          "score": 0.499
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": null,
+          "score": 0.3693
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "3",
+          "score": 0.3693
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q005",
+      "question": "Người điều khiển xe máy không có giấy phép lái xe bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "1",
+          "score": 0.4871
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.4861
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.4861
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.4716
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.4716
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q006",
+      "question": "Dùng giấy phép lái xe giả khi đi xe máy bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": null,
+          "score": 0.5284
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "3",
+          "score": 0.5284
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.4873
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.4873
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.4671
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q007",
+      "question": "Đi xe máy chạy quá tốc độ quy định trên 35 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "8",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "2",
+          "score": 0.5351
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": null,
+          "score": 0.5215
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "3",
+          "score": 0.5215
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.4976
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.4655
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q008",
+      "question": "Đi xe máy chạy quá tốc độ từ 20 đến 35 km/h bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "8",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "2",
+          "score": 0.554
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.4915
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.4883
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": null,
+          "score": 0.472
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "3",
+          "score": 0.472
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q009",
+      "question": "Đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4965
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4948
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4898
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.4898
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4891
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q010",
+      "question": "Đi xe máy có nồng độ cồn nhưng chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "1",
+          "score": 0.5454
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "1",
+          "score": 0.5446
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.4877
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "1",
+          "score": 0.4639
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4329
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q011",
+      "question": "Đi xe máy có nồng độ cồn vượt quá 50 đến 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.5209
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.5162
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.5162
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4639
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4585
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q012",
+      "question": "Đi xe máy có nồng độ cồn vượt quá 80 miligam bị tước giấy phép lái xe bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4066
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4058
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3931
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.3931
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.3922
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q013",
+      "question": "Đi xe máy có nồng độ cồn gây tai nạn giao thông bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": null,
+          "score": 0.5284
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k5",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "5",
+          "score": 0.5284
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": null,
+          "score": 0.5098
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k5",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "5",
+          "score": 0.5098
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": null,
+          "score": 0.497
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q014",
+      "question": "Đi xe máy chở 02 người trở lên bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "18",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": "1",
+          "score": 0.4816
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.4419
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "1",
+          "score": 0.4254
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "2",
+          "score": 0.2818
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": null,
+          "score": 0.2645
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q015",
+      "question": "Đi xe máy chở hàng hóa vượt quá kích thước quy định bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "18",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": null,
+          "score": 0.5618
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": "2",
+          "score": 0.5618
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "2",
+          "score": 0.5609
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": null,
+          "score": 0.5537
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "2",
+          "score": 0.5537
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q016",
+      "question": "Giao xe máy cho người không có giấy phép lái xe bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.4549
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.4549
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "1",
+          "score": 0.4253
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.4007
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.4007
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q017",
+      "question": "Không đội mũ bảo hiểm gây tai nạn giao thông bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "10",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": null,
+          "score": 0.3489
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "3",
+          "score": 0.3489
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": null,
+          "score": 0.3443
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "2",
+          "score": 0.3443
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.3403
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q018",
+      "question": "Vượt đèn đỏ gây tai nạn khi đi xe máy bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": null,
+          "score": 0.5062
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "3",
+          "score": 0.5062
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": null,
+          "score": 0.5026
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "3",
+          "score": 0.5026
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.4006
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q019",
+      "question": "Đi xe máy chạy quá tốc độ từ 05 đến 10 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "8",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.5571
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "1",
+          "score": 0.4767
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "2",
+          "score": 0.4095
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.3986
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": null,
+          "score": 0.3915
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q020",
+      "question": "Sử dụng mũ bảo hiểm không đúng quy chuẩn kỹ thuật bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "10",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5545
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.5533
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.5417
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.2755
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.2556
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q021",
+      "question": "Người điều khiển ô tô không có giấy phép lái xe bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "23",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art23_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "23",
+          "clause": "1",
+          "score": 0.4181
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.4022
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.4022
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.3912
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.3912
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q022",
+      "question": "Đi ô tô chạy quá tốc độ trên 35 km/h bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "25",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.517
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": null,
+          "score": 0.4979
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k4",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "4",
+          "score": 0.4979
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.4452
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "1",
+          "score": 0.4443
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q023",
+      "question": "Đi ô tô vượt đèn đỏ bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "28",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "1",
+          "score": 0.3786
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.3457
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art28_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "28",
+          "clause": "1",
+          "score": 0.339
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "2",
+          "score": 0.3379
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.3342
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q024",
+      "question": "Đi ô tô có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "30",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "2",
+          "score": 0.4878
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "3",
+          "score": 0.4575
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4355
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.4355
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4316
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q025",
+      "question": "Đi ô tô có nồng độ cồn chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "30",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "1",
+          "score": 0.4984
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "1",
+          "score": 0.4634
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "2",
+          "score": 0.4498
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "1",
+          "score": 0.448
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.4163
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q026",
+      "question": "Giao ô tô cho người không có giấy phép lái xe bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "23",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.3668
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.3668
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art23_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "23",
+          "clause": "1",
+          "score": 0.3642
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": null,
+          "score": 0.3439
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k5",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "5",
+          "score": 0.3439
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q027",
+      "question": "Đi ô tô có nồng độ cồn gây tai nạn bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "30",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": null,
+          "score": 0.4875
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k5",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "5",
+          "score": 0.4875
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": null,
+          "score": 0.4519
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k5",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "5",
+          "score": 0.4519
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": null,
+          "score": 0.4101
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q028",
+      "question": "Đi ô tô chạy quá tốc độ từ 10 đến 20 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "25",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.5429
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.4912
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.4734
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "1",
+          "score": 0.4654
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": null,
+          "score": 0.4475
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q029",
+      "question": "Đi ô tô chạy quá tốc độ từ 20 đến 35 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "25",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.5429
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.4734
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "2",
+          "score": 0.4679
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": null,
+          "score": 0.4475
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k4",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "4",
+          "score": 0.4475
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q030",
+      "question": "Đi ô tô có nồng độ cồn vượt quá 50 đến 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "30",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "2",
+          "score": 0.5146
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4659
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.4659
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4529
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "1",
+          "score": 0.429
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q031",
+      "question": "Theo Nghị định 123/2021, vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "3",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.3797
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "1",
+          "score": 0.3159
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.2873
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "2",
+          "score": 0.2805
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "2",
+          "score": 0.28
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q032",
+      "question": "Nghị định 123/2021 quy định vượt đèn đỏ gây tai nạn khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "3",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.3551
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "2",
+          "score": 0.346
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "2",
+          "score": 0.3363
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.3218
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": null,
+          "score": 0.2982
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q033",
+      "question": "Theo Nghị định 123/2021, đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "4",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3872
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.3857
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3817
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.3817
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.3812
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q034",
+      "question": "Nghị định 123/2021 quy định nồng độ cồn vượt quá 50 đến 80 miligam khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "4",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3943
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3906
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.3906
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.376
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.3508
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q035",
+      "question": "Theo Nghị định 123/2021, không đội mũ bảo hiểm bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "2",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.3873
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.377
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.3605
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.3128
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.2807
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q036",
+      "question": "Nghị định 123/2021 quy định sử dụng mũ bảo hiểm không đúng quy chuẩn bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "2",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.4649
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.4201
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.4098
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.2589
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.2359
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q037",
+      "question": "Theo Nghị định 123/2021, dùng giấy phép lái xe giả khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "1",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.4302
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "3",
+          "score": 0.4302
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": null,
+          "score": 0.3905
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "3",
+          "score": 0.3905
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.3636
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q038",
+      "question": "Nghị định 123/2021 quy định chở 02 người trở lên trên xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "5",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "1",
+          "score": 0.3784
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.3579
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": "1",
+          "score": 0.313
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "2",
+          "score": 0.2485
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": null,
+          "score": 0.2371
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q039",
+      "question": "Theo Nghị định 123/2021, nồng độ cồn chưa vượt quá 50 miligam khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "4",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.4367
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "1",
+          "score": 0.4131
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "1",
+          "score": 0.4103
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3655
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.36
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q040",
+      "question": "Nghị định 123/2021 quy định nồng độ cồn gây tai nạn khi đi xe máy bị tước giấy phép bao lâu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "4",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": null,
+          "score": 0.3739
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k5",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "5",
+          "score": 0.3739
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": null,
+          "score": 0.3521
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k5",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "5",
+          "score": 0.3521
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": null,
+          "score": 0.3444
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q041",
+      "question": "Hợp đồng lao động được giao kết theo những loại nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "13",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": null,
+          "score": 0.4792
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "2",
+          "score": 0.4792
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": "2",
+          "score": 0.4792
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "1",
+          "score": 0.4695
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": "1",
+          "score": 0.4695
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q042",
+      "question": "Thời gian thử việc đối với công việc trình độ đại học trở lên là bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "3",
+          "score": 0.5675
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "4",
+          "score": 0.5675
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "1",
+          "score": 0.4243
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "2",
+          "score": 0.4243
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "2",
+          "score": 0.4235
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q043",
+      "question": "Tiền lương trong thời gian thử việc ít nhất bằng bao nhiêu phần trăm mức lương?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k4",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "4",
+          "score": 0.521
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k5",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "5",
+          "score": 0.521
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "1",
+          "score": 0.287
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.2534
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.2534
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q044",
+      "question": "Thời giờ làm việc bình thường là bao nhiêu giờ một ngày?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "105",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": null,
+          "score": 0.5587
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": "1",
+          "score": 0.5587
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art105_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "105",
+          "clause": "1",
+          "score": 0.5587
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "1",
+          "score": 0.4629
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.4518
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q045",
+      "question": "Số giờ làm thêm tối đa trong một năm là bao nhiêu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.393
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "2",
+          "score": 0.3879
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3471
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "4",
+          "score": 0.2209
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art105",
+          "document_id": "luat_lao_dong_2019",
+          "article": "105",
+          "clause": null,
+          "score": 0.1764
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q046",
+      "question": "Làm thêm giờ vào ngày lễ tết được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.5125
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.5125
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.4923
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.4923
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.2328
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q047",
+      "question": "Làm thêm giờ vào ngày thường được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.4871
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.4871
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.4717
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.4717
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.2835
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q048",
+      "question": "Người lao động làm việc đủ 12 tháng được nghỉ hằng năm bao nhiêu ngày?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "111",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "1",
+          "score": 0.5314
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "1",
+          "score": 0.5257
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.5183
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "2",
+          "score": 0.5183
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "2",
+          "score": 0.5183
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q049",
+      "question": "Mức lương tối thiểu vùng được áp dụng đối với đối tượng nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "91",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art91_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": "1",
+          "score": 0.4866
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": null,
+          "score": 0.4085
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": "3",
+          "score": 0.4085
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": null,
+          "score": 0.378
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "2",
+          "score": 0.378
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q050",
+      "question": "Người sử dụng lao động phải trả lương khi người lao động nghỉ việc trong thời hạn bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "94",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art94_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "94",
+          "clause": "2",
+          "score": 0.5068
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art94_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "94",
+          "clause": "3",
+          "score": 0.5068
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "1",
+          "score": 0.4114
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art94_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "94",
+          "clause": "1",
+          "score": 0.3988
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art94_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "94",
+          "clause": "1",
+          "score": 0.3988
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q051",
+      "question": "Người lao động làm nghề nặng nhọc độc hại được nghỉ thêm bao nhiêu ngày?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "111",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "3",
+          "score": 0.6011
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.2195
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "2",
+          "score": 0.2195
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "2",
+          "score": 0.2195
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.2171
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q052",
+      "question": "Hợp đồng lao động xác định thời hạn khi hết hạn có thể giao kết lại bao nhiêu lần?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art14_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": "1",
+          "score": 0.6075
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art14",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": null,
+          "score": 0.4834
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art14_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4834
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": null,
+          "score": 0.4667
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "2",
+          "score": 0.4667
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q053",
+      "question": "Thời gian thử việc đối với công việc trình độ cao đẳng trở lên là bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "2",
+          "score": 0.5618
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "3",
+          "score": 0.5618
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "1",
+          "score": 0.4283
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "2",
+          "score": 0.4283
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "3",
+          "score": 0.4246
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q054",
+      "question": "Thời gian thử việc đối với công việc trình độ trung cấp trở lên là bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "1",
+          "score": 0.5665
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "2",
+          "score": 0.5665
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "2",
+          "score": 0.426
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "3",
+          "score": 0.426
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "3",
+          "score": 0.4232
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q055",
+      "question": "Làm thêm giờ vào ngày nghỉ được trả lương ít nhất bằng bao nhiêu phần trăm?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.4863
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.4863
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.4711
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.4711
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art108_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "108",
+          "clause": "1",
+          "score": 0.2835
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q056",
+      "question": "Người sử dụng lao động có trách nhiệm gì về an toàn lao động?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "138",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "1",
+          "score": 0.6114
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art139_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "139",
+          "clause": "1",
+          "score": 0.547
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "3",
+          "score": 0.4582
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": null,
+          "score": 0.4067
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "1",
+          "score": 0.3201
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q057",
+      "question": "Người sử dụng lao động phải tổ chức khám sức khỏe định kỳ không?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "138",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art138",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": null,
+          "score": 0.7889
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "4",
+          "score": 0.7889
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "3",
+          "clause": null,
+          "score": 0.3334
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art3_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "3",
+          "clause": "2",
+          "score": 0.3334
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "3",
+          "score": 0.3256
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q058",
+      "question": "Người lao động có trách nhiệm gì về an toàn lao động?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "139",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art139_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "139",
+          "clause": "1",
+          "score": 0.6131
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "1",
+          "score": 0.5897
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": null,
+          "score": 0.4518
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "3",
+          "score": 0.418
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "1",
+          "score": 0.2508
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q059",
+      "question": "Tiền lương là gì theo Luật Lao động 2019?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "90",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "1",
+          "score": 0.3064
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "1",
+          "score": 0.3032
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": null,
+          "score": 0.2665
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": null,
+          "score": 0.2665
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": null,
+          "score": 0.2553
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q060",
+      "question": "Mức lương không được thấp hơn mức nào do Chính phủ quy định?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "90",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": null,
+          "score": 0.6711
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "2",
+          "score": 0.6711
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": null,
+          "score": 0.6711
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "3",
+          "score": 0.6711
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": null,
+          "score": 0.3347
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q061",
+      "question": "Theo Bộ luật Lao động 2012, thời giờ làm việc bình thường là bao nhiêu?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "105",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": null,
+          "score": 0.3271
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": "1",
+          "score": 0.3271
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art105_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "105",
+          "clause": "1",
+          "score": 0.3271
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3175
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.3087
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q062",
+      "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày lễ được trả bao nhiêu phần trăm?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.3154
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.3154
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.3088
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.3088
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.2804
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q063",
+      "question": "Theo Bộ luật Lao động 2012, người lao động được nghỉ hằng năm bao nhiêu ngày?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "111",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.3547
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "2",
+          "score": 0.3547
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "2",
+          "score": 0.3547
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "1",
+          "score": 0.3277
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "1",
+          "score": 0.3032
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q064",
+      "question": "Theo Bộ luật Lao động 2012, tiền lương thử việc ít nhất bằng bao nhiêu phần trăm?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k4",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "4",
+          "score": 0.3017
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k5",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "5",
+          "score": 0.3017
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.263
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.263
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "1",
+          "score": 0.2545
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q065",
+      "question": "Theo Bộ luật Lao động 2012, số giờ làm thêm tối đa trong năm là bao nhiêu?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3553
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "2",
+          "score": 0.2867
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "1",
+          "score": 0.2593
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "4",
+          "score": 0.219
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.1837
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q066",
+      "question": "Không mang theo giấy phép lái xe khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "1",
+          "score": 0.4818
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.3909
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "3",
+          "score": 0.3909
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.3809
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.3809
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q067",
+      "question": "Đi xe máy chạy quá tốc độ từ 10 đến 20 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "8",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.5562
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "2",
+          "score": 0.4812
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.4745
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "3",
+          "score": 0.407
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "1",
+          "score": 0.3991
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q068",
+      "question": "Đi vào đường cấm khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "1",
+          "score": 0.3561
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art28_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "28",
+          "clause": "1",
+          "score": 0.2426
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "2",
+          "clause": null,
+          "score": 0.2372
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "2",
+          "clause": null,
+          "score": 0.2222
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "2",
+          "score": 0.2046
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q069",
+      "question": "Đi xe máy vào đường ngược chiều bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "1",
+          "score": 0.4038
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art28_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "28",
+          "clause": "1",
+          "score": 0.3124
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.2132
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.2132
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "2",
+          "score": 0.2108
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q070",
+      "question": "Chở người ngồi trên xe máy không đội mũ bảo hiểm bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "18",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.5181
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.4695
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.4544
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.4536
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.2962
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q071",
+      "question": "Đi ô tô chạy quá tốc độ từ 05 đến 10 km/h bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "25",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "1",
+          "score": 0.5448
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art8_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "8",
+          "clause": "1",
+          "score": 0.4923
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "2",
+          "score": 0.4648
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": null,
+          "score": 0.4461
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art25_k4",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "25",
+          "clause": "4",
+          "score": 0.4461
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q072",
+      "question": "Đi ô tô vượt đèn đỏ gây tai nạn bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "28",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": null,
+          "score": 0.4872
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "3",
+          "score": 0.4872
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": null,
+          "score": 0.4838
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "3",
+          "score": 0.4838
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.3382
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q073",
+      "question": "Đi ô tô có nồng độ cồn vượt quá 80 miligam bị tước giấy phép bao lâu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "30",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "2",
+          "score": 0.4035
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "3",
+          "score": 0.3748
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3568
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.3568
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.3516
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q074",
+      "question": "Theo Nghị định 100/2019, không đội mũ bảo hiểm khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "10",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "2",
+          "score": 0.4611
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art2_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "2",
+          "clause": "1",
+          "score": 0.4402
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art10_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "10",
+          "clause": "1",
+          "score": 0.425
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art10_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "10",
+          "clause": "1",
+          "score": 0.4243
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "1",
+          "score": 0.3442
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q075",
+      "question": "Theo Nghị định 100/2019, vượt đèn đỏ khi đi xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.5217
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.3621
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "1",
+          "score": 0.3407
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.3387
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "3",
+          "score": 0.3387
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q076",
+      "question": "Theo Nghị định 100/2019, đi xe máy có nồng độ cồn vượt quá 80 miligam bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.4792
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k3",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4408
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4397
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "3",
+          "score": 0.4375
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.4349
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q077",
+      "question": "Theo Nghị định 100/2019, chở 02 người trên xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "18",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "1",
+          "score": 0.4995
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.3639
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.3578
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "3",
+          "score": 0.3578
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "2",
+          "score": 0.3567
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q078",
+      "question": "Theo Nghị định 100/2019, dùng giấy phép lái xe giả bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.533
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k3",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "3",
+          "score": 0.533
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": null,
+          "score": 0.3694
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k3",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "3",
+          "score": 0.3694
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": null,
+          "score": 0.3302
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q079",
+      "question": "Theo Nghị định 100/2019, giao xe máy cho người không đủ điều kiện bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "6",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "2",
+          "score": 0.5251
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art3_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "3",
+          "clause": "1",
+          "score": 0.364
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "2",
+          "score": 0.3604
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "1",
+          "score": 0.3597
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": null,
+          "score": 0.3571
+        }
+      ],
+      "correct": false
+    },
+    {
+      "question_id": "Q080",
+      "question": "Theo Nghị định 100/2019, nồng độ cồn chưa vượt quá 50 miligam bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.5371
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "1",
+          "score": 0.4379
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "1",
+          "score": 0.4226
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "1",
+          "score": 0.4225
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3821
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q081",
+      "question": "Hợp đồng lao động theo mùa vụ có thời hạn tối đa bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "13",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": null,
+          "score": 0.426
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "2",
+          "score": 0.426
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": "2",
+          "score": 0.426
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": null,
+          "score": 0.3835
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": "3",
+          "score": 0.3835
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q082",
+      "question": "Khi hợp đồng lao động hết hạn mà không giao kết hợp đồng mới thì điều gì xảy ra?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "14",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art14_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": "2",
+          "score": 0.5645
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art14",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": null,
+          "score": 0.482
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art14_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": "3",
+          "score": 0.482
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": null,
+          "score": 0.3989
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "2",
+          "score": 0.3989
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q083",
+      "question": "Người sử dụng lao động phải trả lương vào thời điểm nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "94",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art94_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "94",
+          "clause": "2",
+          "score": 0.405
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art94_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "94",
+          "clause": "3",
+          "score": 0.405
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": null,
+          "score": 0.3967
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": "3",
+          "score": 0.3967
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "1",
+          "score": 0.3773
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q084",
+      "question": "Người lao động làm việc đủ 08 giờ được nghỉ giữa giờ bao lâu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "108",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art108_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "108",
+          "clause": "1",
+          "score": 0.5741
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art108",
+          "document_id": "luat_lao_dong_2019",
+          "article": "108",
+          "clause": null,
+          "score": 0.3875
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art108_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "108",
+          "clause": "2",
+          "score": 0.3875
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": null,
+          "score": 0.3562
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art105_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "105",
+          "clause": "1",
+          "score": 0.3562
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q085",
+      "question": "Số giờ làm thêm tối đa trong một tháng là bao nhiêu?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3896
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "2",
+          "score": 0.3729
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3534
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "4",
+          "score": 0.205
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art105",
+          "document_id": "luat_lao_dong_2019",
+          "article": "105",
+          "clause": null,
+          "score": 0.1796
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q086",
+      "question": "Người lao động làm việc chưa đủ 12 tháng thì số ngày nghỉ hằng năm tính thế nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "111",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "4",
+          "score": 0.6069
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "1",
+          "score": 0.4485
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": "1",
+          "score": 0.4436
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": null,
+          "score": 0.4384
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art111_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "111",
+          "clause": "2",
+          "score": 0.4384
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q087",
+      "question": "Người sử dụng lao động phải trang bị gì cho người lao động về an toàn?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "138",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "3",
+          "score": 0.5023
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "1",
+          "score": 0.4535
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art138_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "138",
+          "clause": "2",
+          "score": 0.4466
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art111",
+          "document_id": "luat_lao_dong_2019",
+          "article": "111",
+          "clause": null,
+          "score": 0.4436
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art139_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "139",
+          "clause": "1",
+          "score": 0.3886
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q088",
+      "question": "Người lao động phải báo cáo kịp thời điều gì cho người sử dụng lao động?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "139",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art139",
+          "document_id": "luat_lao_dong_2019",
+          "article": "139",
+          "clause": null,
+          "score": 0.608
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art139_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "139",
+          "clause": "3",
+          "score": 0.608
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art105_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "105",
+          "clause": "2",
+          "score": 0.3582
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art14_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3365
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "1",
+          "score": 0.3141
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q089",
+      "question": "Mức lương tối thiểu vùng được điều chỉnh theo những yếu tố nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "91",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art91_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": "2",
+          "score": 0.4433
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": null,
+          "score": 0.375
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "2",
+          "score": 0.375
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": null,
+          "score": 0.375
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "3",
+          "score": 0.375
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q090",
+      "question": "Người sử dụng lao động không được trả lương thấp hơn mức nào?",
+      "expected_doc": "luat_lao_dong_2019",
+      "expected_article": "91",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art91",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": null,
+          "score": 0.6253
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art91_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "91",
+          "clause": "3",
+          "score": 0.6253
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": null,
+          "score": 0.365
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "2",
+          "score": 0.365
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": null,
+          "score": 0.365
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q091",
+      "question": "Theo Bộ luật Lao động 2012, hợp đồng lao động có những loại nào?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "16",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art5",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "5",
+          "clause": null,
+          "score": 0.3786
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art4",
+          "document_id": "luat_lao_dong_2019",
+          "article": "4",
+          "clause": null,
+          "score": 0.3786
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": null,
+          "score": 0.3394
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art16_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "16",
+          "clause": "2",
+          "score": 0.3394
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art13_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "13",
+          "clause": "2",
+          "score": 0.3394
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q092",
+      "question": "Theo Bộ luật Lao động 2012, thời gian thử việc cho trình độ cao đẳng trở lên là bao lâu?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "20",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "2",
+          "score": 0.399
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "3",
+          "score": 0.399
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "1",
+          "score": 0.2836
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art20_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "20",
+          "clause": "2",
+          "score": 0.2836
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art20_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "20",
+          "clause": "3",
+          "score": 0.2811
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q093",
+      "question": "Theo Bộ luật Lao động 2012, người sử dụng lao động phải trả lương khi nghỉ việc trong bao lâu?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "94",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art94_k2",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "94",
+          "clause": "2",
+          "score": 0.3666
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art94_k3",
+          "document_id": "luat_lao_dong_2019",
+          "article": "94",
+          "clause": "3",
+          "score": 0.3666
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art90_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "90",
+          "clause": "1",
+          "score": 0.3647
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art90_k1",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "90",
+          "clause": "1",
+          "score": 0.3415
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art94_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "94",
+          "clause": "2",
+          "score": 0.3282
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q094",
+      "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày thường được trả bao nhiêu phần trăm?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.3132
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.3076
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.3076
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.3025
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.3025
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q095",
+      "question": "Theo Bộ luật Lao động 2012, làm thêm giờ vào ngày nghỉ được trả bao nhiêu phần trăm?",
+      "expected_doc": "bo_luat_lao_dong_2012",
+      "expected_article": "107",
+      "retrieved": [
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": null,
+          "score": 0.3064
+        },
+        {
+          "chunk_id": "bo_luat_lao_dong_2012_art107_k3",
+          "document_id": "bo_luat_lao_dong_2012",
+          "article": "107",
+          "clause": "3",
+          "score": 0.3064
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": null,
+          "score": 0.3016
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k2",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "2",
+          "score": 0.3016
+        },
+        {
+          "chunk_id": "luat_lao_dong_2019_art107_k1",
+          "document_id": "luat_lao_dong_2019",
+          "article": "107",
+          "clause": "1",
+          "score": 0.2835
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q096",
+      "question": "Đi xe máy không tuân thủ hiệu lệnh của đèn tín hiệu bị phạt bao nhiêu?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "1",
+          "score": 0.5622
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art28_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "28",
+          "clause": "1",
+          "score": 0.4898
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "1",
+          "score": 0.1815
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "2",
+          "score": 0.1727
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art12_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "12",
+          "clause": "2",
+          "score": 0.169
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q097",
+      "question": "Đi xe máy không tuân thủ biển báo hiệu bị phạt bao nhiêu tiền?",
+      "expected_doc": "luat_xuat_giao_thong_duong_bo_2024",
+      "expected_article": "12",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art12_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "12",
+          "clause": "1",
+          "score": 0.4938
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art28_k1",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "28",
+          "clause": "1",
+          "score": 0.4175
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k1",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "1",
+          "score": 0.179
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "1",
+          "score": 0.179
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "2",
+          "score": 0.1769
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q098",
+      "question": "Theo Nghị định 123/2021, giao xe máy cho người không đủ điều kiện bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "1",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art1_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "1",
+          "clause": "2",
+          "score": 0.3937
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art6_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "6",
+          "clause": "2",
+          "score": 0.3463
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art6_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "6",
+          "clause": "2",
+          "score": 0.3316
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art23",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "23",
+          "clause": null,
+          "score": 0.2928
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art23_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "23",
+          "clause": "2",
+          "score": 0.2928
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q099",
+      "question": "Theo Nghị định 123/2021, chở hàng hóa vượt quá kích thước trên xe máy bị phạt bao nhiêu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "5",
+      "retrieved": [
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art18_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "18",
+          "clause": "2",
+          "score": 0.4573
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": null,
+          "score": 0.4573
+        },
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art18_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "18",
+          "clause": "2",
+          "score": 0.4573
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": null,
+          "score": 0.4505
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art5_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "5",
+          "clause": "2",
+          "score": 0.4505
+        }
+      ],
+      "correct": true
+    },
+    {
+      "question_id": "Q100",
+      "question": "Theo Nghị định 123/2021, nồng độ cồn vượt quá 50 đến 80 miligam bị tước giấy phép bao lâu?",
+      "expected_doc": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "expected_article": "4",
+      "retrieved": [
+        {
+          "chunk_id": "nghi_dinh_100_2019_xu_phat_giao_thong_art14_k2",
+          "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3289
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k2",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "2",
+          "score": 0.3289
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art30_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "30",
+          "clause": "2",
+          "score": 0.3282
+        },
+        {
+          "chunk_id": "luat_xuat_giao_thong_duong_bo_2024_art14_k2",
+          "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+          "article": "14",
+          "clause": "2",
+          "score": 0.3187
+        },
+        {
+          "chunk_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100_art4_k1",
+          "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+          "article": "4",
+          "clause": "1",
+          "score": 0.3094
+        }
+      ],
+      "correct": true
+    }
+  ]
+}

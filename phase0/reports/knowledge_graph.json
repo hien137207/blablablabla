@@ -1,0 +1,2072 @@
+{
+  "nodes": [
+    {
+      "id": "article_1_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "1",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "1",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "law",
+      "name": "luat_xuat_giao_thong_duong_bo_2024",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "id": "article_2_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "2",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "2",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "article_6_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "6",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "6",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_400.000_600.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "400.000",
+        "amount_max": "600.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_100.000_200.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_100.000_200.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "100.000",
+        "amount_max": "200.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_300.000_400.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_300.000_400.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "300.000",
+        "amount_max": "400.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_8_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "8",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "8",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_1.500.000_2.500.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_1.500.000_2.500.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "1.500.000",
+        "amount_max": "2.500.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_200.000_300.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "200.000",
+        "amount_max": "300.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_500.000_1.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_500.000_1.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "500.000",
+        "amount_max": "1.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_10_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "10",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "10",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_02_04_months_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "license_suspension_02_04_months",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "02",
+        "duration_max_months": "04"
+      }
+    },
+    {
+      "id": "article_12_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "12",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "12",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_01_03_months_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "license_suspension_01_03_months",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "01",
+        "duration_max_months": "03"
+      }
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "14",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "14",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_22_24_months_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "license_suspension_22_24_months",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "22",
+        "duration_max_months": "24"
+      }
+    },
+    {
+      "id": "penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_1.000.000_2.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "1.000.000",
+        "amount_max": "2.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_2.500.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_2.500.000_3.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "2.500.000",
+        "amount_max": "3.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_16_18_months_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "license_suspension_16_18_months",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "16",
+        "duration_max_months": "18"
+      }
+    },
+    {
+      "id": "article_18_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "18",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "18",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "article_23_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "23",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "23",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_5.000.000_7.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_5.000.000_7.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "5.000.000",
+        "amount_max": "7.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "25",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "25",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_10.000.000_12.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_10.000.000_12.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "10.000.000",
+        "amount_max": "12.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_4.000.000_6.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_4.000.000_6.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "4.000.000",
+        "amount_max": "6.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_7.000.000_8.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_7.000.000_8.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "7.000.000",
+        "amount_max": "8.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_28_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "28",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "28",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_3.000.000_5.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_3.000.000_5.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "3.000.000",
+        "amount_max": "5.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "article",
+      "name": "30",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "30",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_2.000.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_2.000.000_3.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "2.000.000",
+        "amount_max": "3.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_7.000.000_9.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_7.000.000_9.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "7.000.000",
+        "amount_max": "9.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_18.000.000_25.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "node_type": "penalty",
+      "name": "penalty_18.000.000_25.000.000",
+      "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "18.000.000",
+        "amount_max": "25.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_1_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "1",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "1",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "law",
+      "name": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "id": "article_2_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "2",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "2",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "6",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "6",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_400.000_600.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "400.000",
+        "amount_max": "600.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_100.000_200.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_100.000_200.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "100.000",
+        "amount_max": "200.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_300.000_400.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_300.000_400.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "300.000",
+        "amount_max": "400.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "10",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "10",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_02_04_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "license_suspension_02_04_months",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "02",
+        "duration_max_months": "04"
+      }
+    },
+    {
+      "id": "penalty_penalty_200.000_300.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_200.000_300.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "200.000",
+        "amount_max": "300.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "12",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "12",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_01_03_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "license_suspension_01_03_months",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "01",
+        "duration_max_months": "03"
+      }
+    },
+    {
+      "id": "penalty_penalty_500.000_1.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_500.000_1.000.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "500.000",
+        "amount_max": "1.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "14",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "14",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_16_18_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "license_suspension_16_18_months",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "16",
+        "duration_max_months": "18"
+      }
+    },
+    {
+      "id": "penalty_penalty_1.000.000_2.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_1.000.000_2.000.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "1.000.000",
+        "amount_max": "2.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_2.500.000_3.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "penalty",
+      "name": "penalty_2.500.000_3.000.000",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "2.500.000",
+        "amount_max": "3.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "node_type": "article",
+      "name": "18",
+      "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "18",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "article",
+      "name": "1",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "1",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "law",
+      "name": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "id": "penalty_penalty_800.000_1.200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_800.000_1.200.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "800.000",
+        "amount_max": "1.200.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_100.000_200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_100.000_200.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "100.000",
+        "amount_max": "200.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_400.000_600.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "400.000",
+        "amount_max": "600.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "article",
+      "name": "2",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "2",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_02_04_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "license_suspension_02_04_months",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "02",
+        "duration_max_months": "04"
+      }
+    },
+    {
+      "id": "penalty_penalty_200.000_300.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_200.000_300.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "200.000",
+        "amount_max": "300.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "article",
+      "name": "3",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "3",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_1.000.000_2.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_1.000.000_2.000.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "1.000.000",
+        "amount_max": "2.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "article",
+      "name": "4",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "4",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_22_24_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "license_suspension_22_24_months",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "22",
+        "duration_max_months": "24"
+      }
+    },
+    {
+      "id": "penalty_penalty_2.000.000_3.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_2.000.000_3.000.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "2.000.000",
+        "amount_max": "3.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_4.000.000_6.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_4.000.000_6.000.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "4.000.000",
+        "amount_max": "6.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_8.000.000_10.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_8.000.000_10.000.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "8.000.000",
+        "amount_max": "10.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_license_suspension_16_18_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "license_suspension_16_18_months",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "license_suspension",
+        "duration_min_months": "16",
+        "duration_max_months": "18"
+      }
+    },
+    {
+      "id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "article",
+      "name": "5",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "5",
+        "legal_domain": "traffic"
+      }
+    },
+    {
+      "id": "penalty_penalty_500.000_1.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_500.000_1.000.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "500.000",
+        "amount_max": "1.000.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "penalty_penalty_300.000_500.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "node_type": "penalty",
+      "name": "penalty_300.000_500.000",
+      "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "confidence": 0.9,
+      "metadata": {
+        "penalty_type": "administrative",
+        "amount_min": "300.000",
+        "amount_max": "500.000",
+        "currency": "VND"
+      }
+    },
+    {
+      "id": "article_3_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "3",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "3",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "node_type": "law",
+      "name": "bo_luat_lao_dong_2012",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "id": "article_5_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "5",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "5",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "right_right_art5_bo_luat_lao_dong_2012",
+      "node_type": "right",
+      "name": "right_art5",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "id": "article_16_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "16",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "16",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_20_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "20",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "20",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_90_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "90",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "90",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_94_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "94",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "94",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_105_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "105",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "105",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_107_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "107",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "107",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_111_bo_luat_lao_dong_2012",
+      "node_type": "article",
+      "name": "111",
+      "document_id": "bo_luat_lao_dong_2012",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "111",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_3_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "3",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "3",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "node_type": "law",
+      "name": "luat_lao_dong_2019",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 1.0,
+      "metadata": {}
+    },
+    {
+      "id": "obligation_obligation_art3_luat_lao_dong_2019",
+      "node_type": "obligation",
+      "name": "obligation_art3",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "id": "article_4_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "4",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "4",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "right_right_art4_luat_lao_dong_2019",
+      "node_type": "right",
+      "name": "right_art4",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "id": "article_13_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "13",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "13",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_14_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "14",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "14",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_20_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "20",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "20",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_90_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "90",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "90",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_91_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "91",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "91",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_94_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "94",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "94",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_105_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "105",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "105",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_107_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "107",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "107",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_108_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "108",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "108",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_111_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "111",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "111",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "article_138_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "138",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "138",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "obligation_obligation_art138_luat_lao_dong_2019",
+      "node_type": "obligation",
+      "name": "obligation_art138",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.8,
+      "metadata": {}
+    },
+    {
+      "id": "article_139_luat_lao_dong_2019",
+      "node_type": "article",
+      "name": "139",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.95,
+      "metadata": {
+        "article_number": "139",
+        "legal_domain": "labor"
+      }
+    },
+    {
+      "id": "obligation_obligation_art139_luat_lao_dong_2019",
+      "node_type": "obligation",
+      "name": "obligation_art139",
+      "document_id": "luat_lao_dong_2019",
+      "confidence": 0.8,
+      "metadata": {}
+    }
+  ],
+  "edges": [
+    {
+      "id": "article_1_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_1_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_2_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_2_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_6_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_6_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_6_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_6_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_6_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_100.000_200.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_6_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_100.000_200.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_6_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_300.000_400.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_6_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_300.000_400.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_8_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_8_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_8_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_1.500.000_2.500.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_8_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_1.500.000_2.500.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_8_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_8_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_8_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_500.000_1.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_8_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_500.000_1.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_10_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_10_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_10_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_02_04_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_10_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_02_04_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_10_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_10_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_12_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_12_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_12_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_01_03_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_12_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_01_03_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_12_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_300.000_400.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_12_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_300.000_400.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_12_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_500.000_1.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_12_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_500.000_1.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_22_24_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_22_24_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_2.500.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_2.500.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_14_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_16_18_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_14_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_16_18_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_18_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_18_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_18_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_18_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_200.000_300.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_18_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_18_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_400.000_600.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_23_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_23_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_23_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_5.000.000_7.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_23_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_5.000.000_7.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_23_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_23_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_10.000.000_12.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_10.000.000_12.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_1.000.000_2.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_4.000.000_6.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_4.000.000_6.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_25_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_7.000.000_8.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_25_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_7.000.000_8.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_28_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_28_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_28_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_01_03_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_28_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_01_03_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_28_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_3.000.000_5.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_28_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_3.000.000_5.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_BELONGS_TO_law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "law_luat_xuat_giao_thong_duong_bo_2024_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_22_24_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_22_24_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_2.000.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_2.000.000_3.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_7.000.000_9.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_7.000.000_9.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_penalty_18.000.000_25.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_penalty_18.000.000_25.000.000_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_30_luat_xuat_giao_thong_duong_bo_2024_HAS_PENALTY_penalty_license_suspension_16_18_months_luat_xuat_giao_thong_duong_bo_2024",
+      "source_node_id": "article_30_luat_xuat_giao_thong_duong_bo_2024",
+      "target_node_id": "penalty_license_suspension_16_18_months_luat_xuat_giao_thong_duong_bo_2024",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "luat_xuat_giao_thong_duong_bo_2024"
+    },
+    {
+      "id": "article_1_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_1_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_2_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_2_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_100.000_200.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_100.000_200.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_300.000_400.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_6_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_300.000_400.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_license_suspension_02_04_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_license_suspension_02_04_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_200.000_300.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_10_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_200.000_300.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_license_suspension_01_03_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_license_suspension_01_03_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_300.000_400.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_300.000_400.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_500.000_1.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_12_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_500.000_1.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_license_suspension_16_18_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_license_suspension_16_18_months_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_1.000.000_2.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_1.000.000_2.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_2.500.000_3.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_14_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_2.500.000_3.000.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong_BELONGS_TO_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong_HAS_PENALTY_penalty_penalty_200.000_300.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "article_18_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "target_node_id": "penalty_penalty_200.000_300.000_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_100_2019_xu_phat_giao_thong"
+    },
+    {
+      "id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_BELONGS_TO_law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_800.000_1.200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_800.000_1.200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_100.000_200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_100.000_200.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_1_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_BELONGS_TO_law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_license_suspension_02_04_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_license_suspension_02_04_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_200.000_300.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_200.000_300.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_2_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_BELONGS_TO_law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_license_suspension_02_04_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_license_suspension_02_04_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_400.000_600.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_1.000.000_2.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_3_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_1.000.000_2.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_BELONGS_TO_law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_license_suspension_22_24_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_license_suspension_22_24_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_2.000.000_3.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_2.000.000_3.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_4.000.000_6.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_4.000.000_6.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_8.000.000_10.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_8.000.000_10.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_license_suspension_16_18_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_4_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_license_suspension_16_18_months_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_BELONGS_TO_law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_500.000_1.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_500.000_1.000.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_HAS_PENALTY_penalty_penalty_300.000_500.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "source_node_id": "article_5_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "penalty_penalty_300.000_500.000_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "relation_type": "HAS_PENALTY",
+      "confidence": 0.9,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "article_3_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_3_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_5_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_5_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_5_bo_luat_lao_dong_2012_HAS_RIGHT_right_right_art5_bo_luat_lao_dong_2012",
+      "source_node_id": "article_5_bo_luat_lao_dong_2012",
+      "target_node_id": "right_right_art5_bo_luat_lao_dong_2012",
+      "relation_type": "HAS_RIGHT",
+      "confidence": 0.8,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_16_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_16_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_20_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_20_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_90_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_90_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_94_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_94_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_105_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_105_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_107_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_107_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_111_bo_luat_lao_dong_2012_BELONGS_TO_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "article_111_bo_luat_lao_dong_2012",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "bo_luat_lao_dong_2012"
+    },
+    {
+      "id": "article_3_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_3_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_3_luat_lao_dong_2019_HAS_OBLIGATION_obligation_obligation_art3_luat_lao_dong_2019",
+      "source_node_id": "article_3_luat_lao_dong_2019",
+      "target_node_id": "obligation_obligation_art3_luat_lao_dong_2019",
+      "relation_type": "HAS_OBLIGATION",
+      "confidence": 0.8,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_4_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_4_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_4_luat_lao_dong_2019_HAS_RIGHT_right_right_art4_luat_lao_dong_2019",
+      "source_node_id": "article_4_luat_lao_dong_2019",
+      "target_node_id": "right_right_art4_luat_lao_dong_2019",
+      "relation_type": "HAS_RIGHT",
+      "confidence": 0.8,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_13_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_13_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_14_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_14_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_20_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_20_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_90_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_90_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_91_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_91_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_94_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_94_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_105_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_105_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_107_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_107_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_108_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_108_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_111_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_111_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_138_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_138_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_138_luat_lao_dong_2019_HAS_OBLIGATION_obligation_obligation_art138_luat_lao_dong_2019",
+      "source_node_id": "article_138_luat_lao_dong_2019",
+      "target_node_id": "obligation_obligation_art138_luat_lao_dong_2019",
+      "relation_type": "HAS_OBLIGATION",
+      "confidence": 0.8,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_139_luat_lao_dong_2019_BELONGS_TO_law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "source_node_id": "article_139_luat_lao_dong_2019",
+      "target_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "relation_type": "BELONGS_TO",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "article_139_luat_lao_dong_2019_HAS_OBLIGATION_obligation_obligation_art139_luat_lao_dong_2019",
+      "source_node_id": "article_139_luat_lao_dong_2019",
+      "target_node_id": "obligation_obligation_art139_luat_lao_dong_2019",
+      "relation_type": "HAS_OBLIGATION",
+      "confidence": 0.8,
+      "source_document_id": "luat_lao_dong_2019"
+    },
+    {
+      "id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_AMENDS_law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "source_node_id": "law_nghi_dinh_123_2021_sua_doi_nghi_dinh_100_nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+      "target_node_id": "law_nghi_dinh_100_2019_xu_phat_giao_thong_nghi_dinh_100_2019_xu_phat_giao_thong",
+      "relation_type": "AMENDS",
+      "confidence": 0.95,
+      "source_document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100"
+    },
+    {
+      "id": "law_luat_lao_dong_2019_luat_lao_dong_2019_SUPERSEDES_law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "source_node_id": "law_luat_lao_dong_2019_luat_lao_dong_2019",
+      "target_node_id": "law_bo_luat_lao_dong_2012_bo_luat_lao_dong_2012",
+      "relation_type": "SUPERSEDES",
+      "confidence": 0.95,
+      "source_document_id": "luat_lao_dong_2019"
+    }
+  ]
+}

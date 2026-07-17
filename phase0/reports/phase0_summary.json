@@ -1,0 +1,232 @@
+{
+  "timestamp": "2026-07-17T08:43:46.711079",
+  "phase": "Phase 0: Risk Spike & Dataset Validation",
+  "parsing": {
+    "success": true,
+    "documents_parsed": 5,
+    "traffic_docs": 3,
+    "labor_docs": 2,
+    "total_articles": 47,
+    "total_clauses": 127,
+    "total_chunks": 174,
+    "per_doc": [
+      {
+        "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+        "title": "LUẬT XỬ PHẠT HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+        "domain": "traffic",
+        "articles": 12,
+        "clauses": 33,
+        "chunks": 45
+      },
+      {
+        "document_id": "nghi_dinh_100_2019_xu_phat_giao_thong",
+        "title": "NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+        "domain": "traffic",
+        "articles": 7,
+        "clauses": 14,
+        "chunks": 21
+      },
+      {
+        "document_id": "nghi_dinh_123_2021_sua_doi_nghi_dinh_100",
+        "title": "NGHỊ ĐỊNH SỬA ĐỔI, BỔ SUNNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 100/2019/NĐ-CP",
+        "domain": "traffic",
+        "articles": 5,
+        "clauses": 16,
+        "chunks": 21
+      },
+      {
+        "document_id": "bo_luat_lao_dong_2012",
+        "title": "BỘ LUẬT LAO ĐỘNG 2012",
+        "domain": "labor",
+        "articles": 9,
+        "clauses": 20,
+        "chunks": 29
+      },
+      {
+        "document_id": "luat_lao_dong_2019",
+        "title": "LUẬT LAO ĐỘNG 2019",
+        "domain": "labor",
+        "articles": 14,
+        "clauses": 44,
+        "chunks": 58
+      }
+    ]
+  },
+  "rag": {
+    "success": true,
+    "accuracy": 0.94,
+    "correct": 94,
+    "total": 100,
+    "meets_target": true,
+    "target": 0.85
+  },
+  "citation": {
+    "success": true,
+    "tests_passed": 6,
+    "tests_total": 6,
+    "tests": [
+      {
+        "name": "Valid citation (existing doc + article)",
+        "result": {
+          "test": "valid_citation",
+          "result": {
+            "citation": {
+              "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+              "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+              "article": "10",
+              "clause": "1",
+              "chunk_id": null
+            },
+            "status": "approved",
+            "reason": "Citation validated: document exists, article exists, evidence aligns.",
+            "document_exists": true,
+            "article_exists": true,
+            "evidence_aligned": true
+          }
+        }
+      },
+      {
+        "name": "Invalid article (non-existent)",
+        "result": {
+          "test": "invalid_article",
+          "result": {
+            "citation": {
+              "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+              "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH",
+              "article": "999",
+              "clause": "1",
+              "chunk_id": null
+            },
+            "status": "rejected_invalid_reference",
+            "reason": "Article 999 does not exist in document 'luat_xuat_giao_thong_duong_bo_2024'.",
+            "document_exists": true,
+            "article_exists": false,
+            "evidence_aligned": false
+          }
+        }
+      },
+      {
+        "name": "Invalid document (fabricated)",
+        "result": {
+          "test": "invalid_document",
+          "result": {
+            "citation": {
+              "document_id": "fake_law_2024",
+              "document_title": "Fake Law",
+              "article": "1",
+              "clause": "1",
+              "chunk_id": null
+            },
+            "status": "rejected_invalid_reference",
+            "reason": "Document 'fake_law_2024' does not exist in the corpus.",
+            "document_exists": false,
+            "article_exists": false,
+            "evidence_aligned": false
+          }
+        }
+      },
+      {
+        "name": "No evidence alignment",
+        "result": {
+          "test": "no_evidence_alignment",
+          "result": {
+            "citation": {
+              "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+              "document_title": "LUẬT XỬ PHẠT",
+              "article": "10",
+              "clause": "1",
+              "chunk_id": null
+            },
+            "status": "rejected_misaligned",
+            "reason": "Cited evidence does not align with retrieved evidence.",
+            "document_exists": true,
+            "article_exists": true,
+            "evidence_aligned": false
+          }
+        }
+      },
+      {
+        "name": "Fabricated answer detection",
+        "result": {
+          "test": "fabricated_answer",
+          "result": {
+            "valid": false,
+            "should_display": false,
+            "fallback_response": "Không đủ căn cứ pháp lý để đưa ra kết luận.",
+            "reason": "One or more citations failed validation.",
+            "citations": [
+              {
+                "citation": {
+                  "document_id": "unknown",
+                  "document_title": "Unknown",
+                  "article": "999",
+                  "clause": null,
+                  "chunk_id": null
+                },
+                "status": "rejected_invalid_reference",
+                "reason": "Document 'unknown' does not exist in the corpus.",
+                "document_exists": false,
+                "article_exists": false,
+                "evidence_aligned": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Well-grounded answer",
+        "result": {
+          "test": "well_grounded_answer",
+          "result": {
+            "valid": true,
+            "should_display": true,
+            "fallback_response": null,
+            "reason": "All citations validated.",
+            "citations": [
+              {
+                "citation": {
+                  "document_id": "luat_xuat_giao_thong_duong_bo_2024",
+                  "document_title": "LUẬT XỬ PHẠT HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ",
+                  "article": "10",
+                  "clause": null,
+                  "chunk_id": null
+                },
+                "status": "approved",
+                "reason": "Citation validated: document exists, article exists, evidence aligns.",
+                "document_exists": true,
+                "article_exists": true,
+                "evidence_aligned": true
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "graph": {
+    "success": true,
+    "nodes": 100,
+    "edges": 115,
+    "node_types": {
+      "article": 47,
+      "law": 5,
+      "penalty": 43,
+      "right": 2,
+      "obligation": 3
+    },
+    "edge_types": {
+      "BELONGS_TO": 47,
+      "HAS_PENALTY": 61,
+      "HAS_RIGHT": 2,
+      "HAS_OBLIGATION": 3,
+      "AMENDS": 1,
+      "SUPERSEDES": 1
+    },
+    "confidence_distribution": {
+      "high": 110,
+      "medium": 5,
+      "low": 0
+    }
+  },
+  "overall_pass": true
+}
