@@ -1,189 +1,293 @@
 # LexPulse AI
-# Product Requirements Document (PRD) v2.0
+# Product Requirements Document (PRD)
 
-## 1. Product Overview
+Version: 2.0
 
-### 1.1 Product Name
+
+# 1. Product Overview
+
+
+## 1.1 Product Name
 
 LexPulse AI
 
-### 1.2 Vision
 
-LexPulse AI is an AI-powered Vietnamese legal intelligence assistant designed to help users understand, verify, and explore Vietnamese legal information through Retrieval-Augmented Generation (RAG), Knowledge Graph reasoning, and citation-grounded responses.
+## 1.2 Vision
 
-The system prioritizes:
+LexPulse AI is an AI-powered Vietnamese legal intelligence assistant that helps users understand, verify, and explore legal information through Retrieval-Augmented Generation (RAG), Knowledge Graph reasoning, and evidence-based AI responses.
 
-- Legal accuracy
-- Evidence-based answers
+The core principle of LexPulse AI is:
+
+> Every legal answer must be grounded in verified legal evidence.
+
+
+Unlike general-purpose AI assistants, LexPulse AI prioritizes:
+
+- Citation accuracy
 - Transparent reasoning
-- Accessible legal knowledge
+- Legal source traceability
+- User understanding
+
 
 ---
 
 # 2. Problem Statement
 
-Vietnamese legal documents are often:
 
-- Long and difficult to interpret
-- Distributed across multiple sources
-- Frequently amended
-- Difficult for ordinary users to verify
+Vietnamese legal information is difficult to access and interpret because:
 
-Current AI assistants may generate fluent answers but often suffer from:
+- Legal documents are lengthy and complex
+- Regulations are frequently amended
+- Related legal provisions are distributed across multiple documents
+- Users lack tools to verify legal information quickly
+
+
+Current AI systems face several limitations:
 
 - Hallucinated legal references
-- Incorrect article citations
-- Lack of explanation
-- Lack of connection between related regulations
+- Incorrect article or clause citations
+- Lack of evidence explanation
+- Low transparency in reasoning
 
-LexPulse AI addresses these problems by grounding every legal answer in verified document evidence.
+
+LexPulse AI addresses these issues by combining:
+
+- Legal document retrieval
+- Semantic search
+- Knowledge graph relationships
+- Citation validation
+
 
 ---
 
 # 3. MVP Scope
 
-## 3.1 Included Scope
 
-The MVP focuses on two Vietnamese legal domains:
+## 3.1 Supported Legal Domains
 
-### Primary Domain
 
-Traffic Law
+The MVP intentionally focuses on limited domains to ensure accuracy and evaluation feasibility.
 
-Examples:
 
-- Road traffic regulations
-- Violations
+## Primary Domain:
+
+### Traffic Law
+
+Including:
+
+- Traffic violations
 - Administrative penalties
-- Driver responsibilities
+- Driver obligations
+- Road safety regulations
 
 
-### Secondary Domain
+## Secondary Domain:
 
-Labor Law
+### Labor Law
 
-Examples:
+Including:
 
 - Employment contracts
 - Employee rights
 - Employer obligations
 
 
-## 3.2 Out of Scope
+The system does NOT attempt to cover all Vietnamese legal domains during MVP.
 
-The MVP does NOT include:
 
-- Full Vietnamese legal coverage
-- Enterprise authentication
-- Multi-agent AI workflow
-- Legal advice replacing lawyers
-- Automated legal decisions
+Future expansion may include:
+
+- Tax law
+- Business law
+- Civil law
+
 
 ---
 
-# 4. Target Users
+# 4. Out of Scope
 
-## 4.1 Guest Users
 
-Guest users can:
+The MVP does not include:
+
+
+## Enterprise Authentication
+
+The system does not support:
+
+- Single Sign-On (SSO)
+- Enterprise Identity Provider integration
+- Organization-level access management
+
+
+## Multi-Agent Workflow
+
+The MVP uses a single AI orchestration pipeline.
+
+
+## Legal Decision Automation
+
+The system does not:
+
+- Replace lawyers
+- Provide official legal judgments
+- Make legally binding decisions
+
+
+---
+
+# 5. User Roles
+
+
+The MVP uses a simplified role model.
+
+
+## Guest User
+
+
+Can:
 
 - Ask legal questions
 - Verify legal claims
-- Explore Knowledge Graph
-- View evidence-based answers
+- Explore public Knowledge Graph
 
 
-## 4.2 Registered Users
+No authentication is required for demonstration features.
 
-Registered users can additionally:
 
-- Upload legal documents
+---
+
+## Registered User
+
+
+Can:
+
 - Save conversation history
+- Upload personal documents
 - Manage personal workspace
 
 
-## 4.3 Administrators
+---
 
-Administrators can:
+## Administrator
+
+
+Can:
 
 - Manage datasets
-- Trigger document re-indexing
+- Trigger document indexing
 - Monitor system status
+
+
+The MVP does not implement enterprise RBAC.
+
 
 ---
 
-# 5. Core Features
+# 6. Core Product Features
 
-## FR-01: AI Legal Chat
+
+# FR-01: AI Legal Chat
+
 
 Users can ask questions related to supported legal domains.
 
-The system must:
 
-- Retrieve relevant legal evidence
-- Generate grounded responses
-- Display citations
-- Provide confidence indicators
+The system provides:
+
+
+## Answer
+
+A natural language explanation.
+
+
+## Legal Evidence
+
+Including:
+
+- Document name
+- Article
+- Clause
+- Point
+- Retrieved text
+
+
+## Confidence Score
+
+The confidence score must be calculated from:
+
+- Retrieval relevance
+- Evidence coverage
+- Citation validation
+
+
+The system must NOT rely only on LLM self-confidence.
 
 
 ---
 
-## FR-02: Citation-Based Answering
-
-Every legal answer must include:
-
-- Source document
-- Article number
-- Clause/Point reference
-- Retrieved text evidence
+# FR-02: Legal Claim Verification
 
 
-The system must never generate unsupported legal citations.
-
-
----
-
-## FR-03: Legal Claim Verification
-
-Users can submit a legal statement.
+Users can submit legal statements.
 
 Example:
 
-"Driving without helmet is fined 500,000 VND."
-
-System outputs:
-
-- Correct
-- Incorrect
-- Misleading
-- Need Context
-- Unknown
-- Outdated / Partially Applicable
+"Driving without a helmet results in a fine."
 
 
----
+The system returns:
 
-## FR-04: Knowledge Graph Exploration
 
-Users can explore relationships between:
+## Verdict Categories
 
-- Laws
-- Articles
-- Clauses
-- Penalties
-- Organizations
+
+| Verdict | Description |
+|-|-|
+| Correct | Supported by current legal evidence |
+| Incorrect | Contradicted by evidence |
+| Misleading | Partially correct but incomplete |
+| Need Context | Depends on conditions |
+| Unknown | No sufficient evidence |
+| Outdated | Regulation changed or partially replaced |
 
 
 ---
 
-## FR-05: Document Intelligence
+# FR-03: Explainable AI Response
 
-Administrators can upload legal documents.
 
-System performs:
+Explainability requires:
 
+
+## Evidence Traceability
+
+The system shows:
+
+- Which document was used
+- Which text chunk supported the answer
+- Which legal entities were involved
+
+
+## Knowledge Graph Reasoning Explanation
+
+When graph expansion is used, the system explains:
+
+Example:
+
+"The system retrieved Article 12 because it is connected through the AMENDS relationship with the queried regulation."
+
+
+---
+
+# FR-04: Legal Document Processing
+
+
+The system supports:
+
+
+- Document upload
 - Text extraction
-- Structure parsing
+- Legal structure parsing
 - Chunk creation
 - Embedding generation
 - Knowledge graph extraction
@@ -191,170 +295,180 @@ System performs:
 
 ---
 
-# 6. Explainable AI Requirements
+# 7. Data Governance
 
-Explainability requires:
 
-Every answer must provide:
+## Data Sources
 
-1. Retrieved evidence chunks
-2. Legal source references
-3. Reason for related graph expansion
 
-Example:
+Legal documents are collected from:
 
-"The answer references Article 12 because the user question matches vehicle safety obligations."
+- Public government legal databases
+- Officially published legal documents
+
+
+The system stores provenance information:
+
+
+Each document contains:
+
+- Source URL
+- Publisher
+- Publication date
+- Effective date
+- Version information
+
 
 ---
 
-# 7. Success Metrics
+# 8. Success Metrics
 
-## Accuracy
 
-### Retrieval Accuracy
+## Retrieval Accuracy
+
 
 Target:
 
 ≥85%
 
-Measured through:
+
+Measurement:
+
+
+Using:
 
 - Human-labeled evaluation dataset
 - Retrieval relevance scoring
 
 
-### Citation Grounding Accuracy
+---
+
+## Citation Grounding Accuracy
+
 
 Target:
 
 ≥95%
 
-Measured through:
 
-- Citation existence validation
-- Chunk matching
-- Evidence-answer alignment
+Measurement:
+
+
+A citation is considered valid when:
+
+
+1. Referenced document exists
+
+2. Article/Clause exists
+
+3. Retrieved evidence supports the generated answer
+
+
+The system does NOT claim perfect citation accuracy.
+
+
+---
+
+# 9. Non-Functional Requirements
+
+
+## Accessibility
+
+
+The system supports:
+
+
+### Vietnamese Text Compatibility
+
+Requirements:
+
+- UTF-8 encoding
+- Vietnamese diacritics
+- Common Vietnamese input methods
 
 
 ---
 
 ## Performance
 
-| Operation | Target |
+
+Target:
+
+
+| Operation | Requirement |
 |-|-|
-| Simple legal question | <8 seconds |
-| Complex reasoning question | <20 seconds |
-| Dashboard loading | <2 seconds |
-| Document processing | Async progress tracking |
+| Simple question | <8 seconds |
+| Complex reasoning | <20 seconds |
+| UI initial loading | <2 seconds |
 
 
 ---
 
-# 8. Data Governance
-
-## Legal Dataset
-
-MVP uses publicly available Vietnamese legal documents.
-
-Data sources:
-
-- Government legal databases
-- Public regulatory documents
+# 10. Security Principles
 
 
-Every indexed document must store:
-
-- Source URL
-- Publisher
-- Publication date
-- Effective date
+## Prompt Injection Protection
 
 
----
+The system applies:
 
-# 9. Security Requirements
-
-The system must protect against:
-
-## Prompt Injection
-
-Protection includes:
 
 - Input sanitization
-- System prompt isolation
-- Retrieved context labeling
-- Output citation validation
-
-
-## File Upload Security
-
-The system validates:
-
-- File type
-- File size
-- Content format
+- Retrieved context separation
+- System prompt protection
+- Output citation verification
 
 
 ---
 
-# 10. MVP Constraints
-
-Technical constraints:
-
-- Team size: 3 members
-- Development time: 35 hours
-- Single-instance deployment
+# 11. Product Principles
 
 
-Architecture priority:
+## Evidence Before Confidence
 
-1. Working demo
-2. Reliable AI answers
-3. Clean UI
-4. Knowledge Graph visualization
-5. Dashboard
-6. Code quality
-7. Scalability
+The system should prefer:
+
+Verified evidence over fluent generation.
 
 
----
+## Never Fabricate Legal References
 
-# 11. Non Goals
-
-LexPulse AI is not:
-
-- A replacement for lawyers
-- A legal judgment system
-- A government legal authority
-
-
----
-
-# 12. Product Principles
-
-## Never fabricate legal references
 
 If evidence is insufficient:
 
-Return:
 
-"Không đủ căn cứ pháp lý để đưa ra kết luận."
-
-
-## Evidence before confidence
-
-Confidence score must be derived from:
-
-- Retrieval quality
-- Citation validation
-- Evidence coverage
+"The system cannot find sufficient legal evidence to provide a conclusion."
 
 
 ---
 
-# Document Version
+# 12. MVP Success Criteria
 
-Version: 2.0
 
-Last Updated:
-2026-07-17
+The MVP is considered successful when:
+
+
+✓ Users can ask legal questions
+
+✓ AI answers contain verifiable citations
+
+✓ Legal claims can be verified
+
+✓ Knowledge Graph relationships can be explored
+
+✓ Responses provide transparent reasoning
+
+
+---
+
+# Document Information
+
+
+Version:
+
+2.0
+
+
+Updated:
+
+2026
