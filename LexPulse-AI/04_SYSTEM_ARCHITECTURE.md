@@ -1,292 +1,350 @@
-# PART 4 — SYSTEM ARCHITECTURE SPECIFICATION
+4. System Architecture — Revised
+4.1 Architecture Overview
 
-Version: 2.0
+LexPulse AI MVP follows a modular AI application architecture combining:
 
-Project: LexPulse AI
+Retrieval-Augmented Generation (RAG)
+Hybrid Search
+Knowledge Graph reasoning
+Citation validation
+Explainable response generation
 
-Purpose:
-This document defines the overall technical architecture, system components, data flow, AI pipeline, deployment strategy, and design principles of LexPulse AI.
+The architecture is designed around the MVP principle:
 
-The architecture must prioritize simplicity, scalability, maintainability, and rapid implementation within a 35-hour hackathon.
+Reliability and correctness are prioritized over unnecessary scalability.
 
----
-
-# 1. SYSTEM OVERVIEW
-
-LexPulse AI is an AI-powered Legal Intelligence Platform.
-
-The system combines:
-
-• Advanced Retrieval-Augmented Generation (RAG)
-
-• Knowledge Graph
-
-• Semantic Search
-
-• Legal Citation Engine
-
-• Legal Amendment Tracking
-
-• AI Question Answering
-
-• Social Claim Verification
-
-The Knowledge Graph is the center of the system.
-
-The LLM is used only for reasoning and explanation.
-
----
-
-# 2. HIGH LEVEL ARCHITECTURE
-
+4.2 High-Level Architecture
                     User
-                      │
-                      ▼
-          Next.js Frontend (React)
-                      │
-                      ▼
-             FastAPI Backend
-                      │
-      ┌───────────────┴───────────────┐
-      ▼                               ▼
-AI Orchestrator                Authentication
-      │
-      ▼
-Retriever Engine
-      │
- ┌────┴────┐
- ▼         ▼
-Vector DB  Knowledge Graph
-(Qdrant)   (NetworkX)
-      │         │
-      └────┬────┘
-           ▼
-     Context Builder
-           ▼
-      Prompt Builder
-           ▼
-        LLM API
-(OpenAI / Claude / Gemini)
-           ▼
- Answer + Citations
-           ▼
-      Frontend
 
----
+                     |
+                     |
 
-# 3. ARCHITECTURE PRINCIPLES
+              React Frontend
 
-The architecture must follow:
+                     |
 
-Clean Architecture
+                     |
 
-Service-Oriented Design
+              FastAPI Backend
 
-Component-Based Frontend
+                     |
 
-REST API
+      --------------------------------
 
-Loose Coupling
+      |              |              |
 
-High Cohesion
+  Document      AI Orchestrator   Auth
 
-Stateless Backend
+  Service            |              |
 
-Reusable Components
+                     |
 
-Modular AI Pipeline
+        ----------------------------
 
----
+        |            |             |
 
-# 4. FRONTEND ARCHITECTURE
+   Retrieval    Knowledge      Citation
 
-Technology
+   Pipeline       Graph        Validator
 
-Next.js
 
-React
+        |
 
-TypeScript
+ -------------------------------
 
-TailwindCSS
+ |              |              |
 
-shadcn/ui
+SQLite        Qdrant       NetworkX
 
-React Flow
+Metadata     Vector DB    Graph Memory
 
-Recharts
 
-Responsibilities
+        |
 
-• User Interface
+        |
 
-• Dashboard
+       LLM Provider
 
-• AI Chat
+4.3 Core Architectural Principles
+Principle 1: Evidence Before Generation
 
-• Knowledge Graph
+The LLM must not independently generate legal answers.
 
-• Timeline
+The generation pipeline must always follow:
 
-• Claim Verification
+Question
 
-• Authentication
+↓
 
-• File Upload
+Retrieve Evidence
 
-The frontend never communicates directly with the database.
+↓
 
-Every request goes through the backend API.
+Analyze Context
 
----
+↓
 
-# 5. BACKEND ARCHITECTURE
+Generate Answer
 
-Technology
+↓
 
-FastAPI
+Validate Citation
 
-Python
+↓
 
-Pydantic
+Return Response
+Principle 2: Single Source of Truth
 
-SQLAlchemy
-
-Responsibilities
-
-• Authentication
-
-• API Gateway
-
-• AI Orchestration
-
-• Document Processing
-
-• Embedding Generation
-
-• Retrieval
-
-• Knowledge Graph
-
-• Logging
-
-• Error Handling
-
-The backend is responsible for every business rule.
-
----
-
-# 6. DATABASE ARCHITECTURE
+Different components have clear responsibilities.
 
 SQLite
 
-Stores
+Stores:
 
-Users
+User data
+Documents metadata
+Chunks metadata
+Messages
+Citations
+Processing status
+Qdrant
 
-Documents
+Stores:
 
-Chunks
+Vector embeddings
+NetworkX
 
-Metadata
+Stores:
 
-Claims
+Runtime Knowledge Graph representation
 
-Chat History
+The database remains the persistent source of truth.
 
-Logs
+Principle 3: MVP Deployment Simplicity
+
+The MVP uses:
+
+Single Backend Instance
+
+Reason:
+
+Hackathon timeline
+Reduced synchronization complexity
+Easier debugging
+
+The architecture does NOT assume horizontal scaling during MVP.
+
+4.4 Backend Architecture
+FastAPI Layer
+
+Responsibilities:
+
+API routing
+Authentication
+Request validation
+Response formatting
+AI Orchestrator
+
+The AI Orchestrator manages:
+
+Intent routing
+Retrieval strategy
+Context preparation
+LLM generation
+Citation validation
+4.5 Request Processing Flow
+Legal Question Flow
+User Question
+
+↓
+
+Intent Detection
+
+↓
+
+Is Legal Query?
+
+      |
+
+      Yes
+
+      |
+
+Hybrid Retrieval
+
+↓
+
+Knowledge Graph Expansion
+
+↓
+
+Context Ranking
+
+↓
+
+Prompt Construction
+
+↓
+
+LLM Generation
+
+↓
+
+Citation Validation
+
+↓
+
+Final Response
+
+General Conversation Flow
+
+For intents such as:
+
+Greeting
+Product explanation
+Navigation help
+
+Flow:
+
+User Input
+
+↓
+
+Intent Detection
+
+↓
+
+Direct Response
+
+
+No legal retrieval is required.
+
+4.6 RAG Pipeline Architecture
+Step 1: Intent Routing
+
+The system first determines:
+
+Legal query
+General conversation
+
+This prevents unnecessary retrieval.
+
+Step 2: Hybrid Retrieval
+
+The retrieval pipeline combines:
+
+Vector Search
+
+Purpose:
+
+Find semantically similar legal content.
+
+Technology:
 
 Qdrant
 
-Stores
+Keyword Search
 
-Embeddings
+Purpose:
 
-NetworkX
+Handle exact legal terms.
 
-Stores
+Examples:
 
-Knowledge Graph
+Article numbers
+Regulation names
+Legal terminology
+Step 3: Knowledge Graph Expansion
 
-Filesystem
+The system expands retrieved information through related legal entities.
 
-Stores
+Example:
 
-Uploaded PDF
+Question:
 
----
+"Phạt lỗi vượt đèn đỏ?"
 
-# 7. DOCUMENT PROCESSING PIPELINE
+Retrieved:
 
-User Upload
-
-↓
-
-Validate File
-
-↓
-
-Extract Text
+Traffic Law Article X
 
 ↓
 
-Clean Text
+HAS_PENALTY
 
 ↓
 
-Split into:
+Administrative Penalty
 
-Document
+Only high-confidence graph relationships are used.
 
-↓
+4.7 Context Building Strategy
 
-Article
+The Context Builder prepares information before sending to the LLM.
 
-↓
+Priority order:
 
-Clause
+Direct legal evidence
+Relevant article/clause
+Related graph information
+Additional explanation
 
-↓
+If context exceeds token limits:
 
-Point
+The system applies:
 
-↓
+Remove low relevance chunks
+Keep highest confidence evidence
+Preserve citation source
 
-Generate Metadata
+The system must never remove the main supporting evidence silently.
 
-↓
+4.8 Reranking Strategy
 
-Chunk Text
+The MVP uses lightweight reranking.
 
-↓
+Pipeline:
 
-Embedding
-
-↓
-
-Store Metadata
-
-↓
-
-Store Embedding
+Retrieved Candidates
 
 ↓
 
-Create Graph Nodes
+Similarity Score
 
 ↓
 
-Create Relationships
+Keyword Match Score
 
 ↓
 
-Ready for Search
+Legal Structure Match
 
----
+↓
 
-# 8. KNOWLEDGE GRAPH PIPELINE
+Final Ranking
+
+
+A heavy cross-encoder reranker is not required in MVP because of latency constraints.
+
+Future versions may introduce advanced reranking models.
+
+4.9 Knowledge Graph Architecture
+Purpose
+
+The Knowledge Graph improves:
+
+Legal relationship discovery
+Regulation comparison
+Explainable reasoning
+4.10 Graph Extraction Pipeline
+
+Graph construction follows:
 
 Legal Document
+
+↓
+
+Legal Structure Parser
 
 ↓
 
@@ -298,95 +356,123 @@ Relationship Extraction
 
 ↓
 
-Node Creation
+Confidence Evaluation
 
 ↓
 
-Edge Creation
+Graph Update
+
+4.11 Graph Confidence Gate
+
+LLM-extracted relationships must pass confidence validation.
+
+Each relationship stores:
+
+Source document
+Extraction method
+Confidence score
+
+Rules:
+
+High Confidence
+
+Automatically added.
+
+Medium Confidence
+
+Added but marked uncertain.
+
+Low Confidence
+
+Stored only for review.
+
+Low-confidence relationships must not influence final legal answers.
+
+4.12 Citation Validation Architecture
+
+Citation validation is a mandatory safety layer.
+
+Flow:
+
+Generated Answer
 
 ↓
 
-Graph Storage
+Extract Citations
 
 ↓
 
-Interactive Visualization
-
-Node Examples
-
-Law
-
-Article
-
-Clause
-
-Point
-
-Penalty
-
-Deadline
-
-Organization
-
-Topic
-
-Relations
-
-AMENDS
-
-SUPERSEDES
-
-REFERENCES
-
-HAS_RIGHT
-
-HAS_OBLIGATION
-
-CONFLICTS_WITH
-
-BELONGS_TO
-
----
-
-# 9. ADVANCED RAG PIPELINE
-
-User Question
+Check Document Exists
 
 ↓
 
-Intent Detection
+Check Article Exists
 
 ↓
 
-Hybrid Search
+Compare Evidence
 
 ↓
 
-Vector Search
+Approve / Reject
+
+Validation Failure Handling
+
+If validation fails:
+
+Step 1:
+
+Attempt regeneration once.
+
+Step 2:
+
+If still invalid:
+
+Return:
+
+"Không thể xác minh đầy đủ căn cứ pháp lý."
+
+The system must never display fabricated references.
+
+4.13 Confidence Score Design
+
+Confidence score is calculated from:
+
+Confidence =
+
+Retrieval Quality
 
 +
 
-BM25
+Evidence Coverage
+
++
+
+Citation Validation
+
++
+
+Source Reliability
+
+
+The score is NOT generated directly by the LLM.
+
+4.14 Performance Design
+Target
+Query Type	Target
+Simple Query	<8 seconds
+Complex Query	<20 seconds
+Fast Path
+
+For simple legal questions:
+
+Pipeline:
+
+Question
 
 ↓
 
-Knowledge Graph Expansion
-
-↓
-
-Reranking
-
-↓
-
-Context Builder
-
-↓
-
-Prompt Builder
-
-↓
-
-LLM
+Vector Retrieval
 
 ↓
 
@@ -394,35 +480,27 @@ Citation Validation
 
 ↓
 
-Response
+Answer
 
-The LLM must never answer before retrieval.
+Graph expansion and advanced reasoning may be skipped.
 
----
+Complex Path
 
-# 10. CLAIM VERIFICATION PIPELINE
+For complex questions:
 
-Input Statement
-
-↓
-
-Claim Extraction
+Question
 
 ↓
 
-Keyword Detection
+Hybrid Search
 
 ↓
 
-Semantic Retrieval
+Graph Expansion
 
 ↓
 
-Knowledge Graph Matching
-
-↓
-
-Legal Evidence Retrieval
+Context Ranking
 
 ↓
 
@@ -430,322 +508,90 @@ LLM Reasoning
 
 ↓
 
-Verdict
+Validation
 
-↓
-
-Citation
-
-Possible Verdicts
-
-Correct
-
-Incorrect
-
-Misleading
-
-Need Context
-
-Unknown
-
----
-
-# 11. SEARCH ARCHITECTURE
-
-The search engine combines three techniques.
-
-BM25
-
-Fast keyword matching.
-
-Vector Search
-
-Semantic understanding.
-
-Knowledge Graph Traversal
-
-Relationship discovery.
-
-The three results are merged and reranked before sending to the LLM.
-
----
-
-# 12. AI ORCHESTRATOR
-
-Responsibilities
-
-Receive request
-
-↓
-
-Select workflow
-
-↓
-
-Retrieve evidence
-
-↓
-
-Expand context
-
-↓
-
-Call LLM
-
-↓
-
-Validate citations
-
-↓
-
-Return response
-
-The Orchestrator controls every AI workflow.
-
----
-
-# 13. API ARCHITECTURE
-
-Frontend
-
-↓
-
-REST API
-
-↓
-
-FastAPI
-
-↓
-
-Service Layer
-
-↓
-
-Repository Layer
-
-↓
-
-Database
-
-Business logic must never exist inside API routes.
-
----
-
-# 14. SECURITY ARCHITECTURE
-
-JWT Authentication
-
-Role-Based Access
-
-Environment Variables
-
-Input Validation
-
-Prompt Injection Protection
-
-SQL Injection Protection
-
-Rate Limiting
-
-HTTPS Ready
-
-Secure File Upload
-
----
-
-# 15. PERFORMANCE TARGETS
-
-Simple Question
-
-≤ 5 seconds
-
-Complex Question
-
-≤ 30 seconds
-
-Upload
-
-≤ 10 seconds
-
-Graph Rendering
-
-≤ 2 seconds
-
-Dashboard
-
-≤ 2 seconds
-
-Search
-
-≤ 3 seconds
-
----
-
-# 16. DEPLOYMENT ARCHITECTURE
-
-Frontend
-
-↓
-
-Vercel
-
-Backend
-
-↓
-
-Railway
-
-Database
-
-↓
-
+4.15 Database and State Management
 SQLite
 
-Vector Database
+Used for MVP persistent metadata.
 
-↓
+Limitations:
 
-Qdrant Cloud
+Single-instance deployment
+Limited concurrent writes
+NetworkX
 
-Repository
+Used as runtime graph memory.
 
-↓
+Important constraint:
 
-GitHub
+The MVP does not support multiple backend instances because NetworkX graph state is stored in memory.
 
-The MVP must be deployable with minimal configuration.
-
----
-
-# 17. SCALABILITY ROADMAP
-
-Hackathon
-
-SQLite
-
-↓
-
-Pilot
-
-PostgreSQL
-
-↓
-
-Enterprise
-
-Neo4j
-
-↓
-
-Government Scale
-
-Distributed Microservices
-
-The architecture should allow migration without changing business logic.
-
----
-
-# 18. TECHNOLOGY DECISIONS
-
-Frontend
-
-Next.js
-
-Reason
-
-Fast development and excellent React ecosystem.
-
-Backend
-
-FastAPI
-
-Reason
-
-High performance, automatic API documentation, and strong AI ecosystem.
-
-Vector Database
-
-Qdrant
-
-Reason
-
-Lightweight, free tier available, and optimized for semantic search.
-
-Knowledge Graph
+Future migration:
 
 NetworkX
 
-Reason
+↓
 
-Simple for MVP and easy to migrate to Neo4j.
+Neo4j
+4.16 Security Architecture
+Input Security
 
-LLM
+Includes:
 
-Claude / GPT / Gemini
+File validation
+Prompt injection detection
+User input sanitization
+Retrieval Security
 
-Reason
+Retrieved documents are treated as information only.
 
-Excellent reasoning capability with API support.
+They cannot modify system behavior.
 
-Embeddings
+Output Security
 
-bge-m3 or multilingual-e5
+Before returning:
 
-Reason
+The system validates:
 
-Strong multilingual retrieval performance, including Vietnamese.
+Citation correctness
+Unsupported claims
+Sensitive information exposure
+4.17 Future Scalability Roadmap
 
----
+The MVP intentionally avoids premature scaling.
 
-# 19. NON-FUNCTIONAL REQUIREMENTS
+Future improvements:
 
-Availability
+Storage
 
->99%
+SQLite → PostgreSQL
 
-Maintainability
+Vector Database
 
-High
+Qdrant scaling cluster
 
-Scalability
+Knowledge Graph
 
-High
+NetworkX → Neo4j
 
-Reliability
+File Storage
 
-High
+Local storage → Object Storage
 
-Security
+Deployment
 
-Medium (Hackathon MVP)
+Single instance → Distributed services
 
-Performance
+4.18 Architecture Constraints
 
-Optimized for demo environment.
+The MVP intentionally avoids:
 
----
+Microservices
+Multi-agent systems
+Enterprise authentication
+Complex distributed infrastructure
 
-# 20. ARCHITECTURE SUCCESS CRITERIA
+The goal is:
 
-The architecture is considered successful if:
-
-✓ Frontend and backend communicate correctly.
-
-✓ Documents are uploaded and indexed.
-
-✓ Knowledge Graph is generated.
-
-✓ Hybrid RAG retrieves relevant evidence.
-
-✓ AI responses include legal citations.
-
-✓ Claim verification produces explainable results.
-
-✓ The dashboard reflects live project data.
-
-✓ Every module can be demonstrated independently.
-
----
-
-END OF SYSTEM ARCHITECTURE SPECIFICATION
+A reliable and explainable legal AI prototype within limited development time.
