@@ -1,204 +1,201 @@
-# API SPECIFICATION
+9. API Specification — Revised
+9.1 Purpose
 
-Version: 1.0
+This document defines the API contract for LexPulse AI MVP.
 
-Project: LexPulse AI
+The API provides communication between:
 
-Purpose:
-Define all backend REST APIs for the LexPulse AI MVP.
+React Frontend
+FastAPI Backend
+AI Pipeline
+Database Services
 
-Base URL
+The design prioritizes:
 
-/api/v1
+Clear contracts
+Security
+Error handling
+Explainability
+9.2 API Design Principles
+Principle 1: Consistent Response Format
 
-Content-Type
-
-application/json
-
-Authentication
-
-JWT Bearer Token
-
----
-
-# RESPONSE FORMAT
-
-Every API must return the same structure.
-
-Success
+All APIs return:
 
 {
   "success": true,
-  "message": "Success",
-  "data": {}
+  "data": {},
+  "message": null,
+  "error": null
 }
+Principle 2: Evidence Transparency
 
-Error
+Legal AI responses must include:
+
+Evidence source
+Citation reference
+Confidence score
+Principle 3: Safe Failure
+
+When evidence is insufficient:
+
+The API must return uncertainty instead of unsupported answers.
+
+9.3 Authentication
+Authentication Method
+
+MVP uses:
+
+JWT authentication
+
+Token contains:
 
 {
-  "success": false,
-  "message": "Error message",
-  "error_code": "ERROR_CODE"
+ "user_id": "uuid",
+ "role": "user",
+ "expires_at": "timestamp"
 }
+Token Expiration
 
----
+Access tokens expire after:
 
-# AUTHENTICATION
+Configurable duration
 
-## POST /auth/register
+Refresh tokens may be introduced in future versions.
 
-Create new account.
+9.4 Common HTTP Status Codes
+Code	Meaning
+200	Successful request
+201	Created
+400	Invalid input
+401	Unauthorized
+403	Forbidden
+404	Not found
+409	Conflict
+429	Rate limit exceeded
+500	Server error
+9.5 Rate Limiting
 
-Request
+The MVP applies basic protection.
+
+Limits:
+
+Public Endpoints
+
+Examples:
+
+Chat
+Verify
+
+Limit:
+
+60 requests/minute/IP
+
+Authenticated Users
+
+Limit:
+
+120 requests/minute/user
+
+Admin Operations
+
+Limit:
+
+10 requests/minute/admin
+
+9.6 File Upload Restrictions
+
+Supported:
+
+PDF
+DOCX
+TXT
+
+Maximum file size:
+
+50MB
+
+Validation:
+
+MIME type checking
+File extension checking
+Content validation
+9.7 Authentication APIs
+POST /auth/register
+
+Create account.
+
+Request:
 
 {
-  "name":"Nguyen Van A",
-  "email":"abc@gmail.com",
-  "password":"123456"
+ "email":"user@example.com",
+ "password":"password"
 }
 
-Response
+Response:
 
 {
-  "user":{
-      "id":"uuid",
-      "email":"abc@gmail.com"
-  }
+ "success":true,
+ "data":{
+   "user_id":"uuid"
+ }
 }
+POST /auth/login
 
----
+Login user.
 
-## POST /auth/login
-
-Request
+Response:
 
 {
-  "email":"",
-  "password":""
+ "success":true,
+ "data":{
+   "access_token":"jwt",
+   "expires_in":3600
+ }
 }
+9.8 Chat APIs
+POST /chat
 
-Response
+Purpose:
+
+Ask legal questions.
+
+Request:
 
 {
-  "access_token":"",
-  "refresh_token":"",
-  "expires_in":3600
+ "session_id":"uuid",
+ "question":"Không đội mũ bảo hiểm bị phạt bao nhiêu?"
 }
 
----
-
-## POST /auth/logout
-
-Invalidate current token.
-
----
-
-## GET /auth/me
-
-Return current user profile.
-
----
-
-# DOCUMENT MODULE
-
-## POST /documents/upload
-
-Upload PDF or DOCX.
-
-Multipart Form Data
-
-file
-
-document_type
-
-language
-
-Response
+Response:
 
 {
- "document_id":"uuid",
- "status":"uploaded"
+ "success":true,
+ "data":{
+   "answer":"...",
+   "confidence":0.91,
+   "citations":[
+     {
+      "document":"...",
+      "article":"12",
+      "chunk_id":"uuid"
+     }
+   ]
+ }
 }
+Chat Processing Flow
+Question
 
----
-
-## GET /documents
-
-List all documents.
-
-Query
-
-page
-
-limit
-
-search
-
-type
-
-issuer
-
----
-
-## GET /documents/{id}
-
-Return document metadata.
-
----
-
-## DELETE /documents/{id}
-
-Delete document.
-
----
-
-## POST /documents/{id}/index
-
-Generate chunks
-
-Generate embeddings
-
-Update graph
-
-Response
-
-{
- "status":"indexed"
-}
-
----
-
-# AI CHAT
-
-## POST /chat
-
-Main AI endpoint.
-
-Request
-
-{
- "question":"Theo luật mới doanh nghiệp FDI được hỗ trợ gì?"
-}
-
-Pipeline
+↓
 
 Intent Detection
 
 ↓
 
-Hybrid Search
+Retrieval
 
 ↓
 
-Knowledge Graph Expansion
-
-↓
-
-Reranking
-
-↓
-
-LLM
+Generation
 
 ↓
 
@@ -206,436 +203,297 @@ Citation Validation
 
 ↓
 
-Answer
-
----
-
 Response
+GET /chat/history
+
+Get user conversation history.
+
+Query:
+
+?page=1
+&limit=20
+
+Response:
 
 {
- "answer":"...",
- "confidence":0.95,
- "citations":[...],
- "related_documents":[...],
- "processing_time":"2.3s"
+ "success":true,
+ "data":{
+   "items":[],
+   "pagination":{
+     "page":1,
+     "limit":20,
+     "total":100
+   }
+ }
 }
+9.9 Document APIs
+POST /documents/upload
 
----
+Upload legal document.
 
-## GET /chat/history
+Authorization:
 
-Conversation history.
+Registered User/Admin
 
----
+Request:
 
-## DELETE /chat/history/{id}
+Multipart form:
 
-Delete session.
+file=document.pdf
 
----
-
-# KNOWLEDGE GRAPH
-
-## GET /graph
-
-Return graph.
-
-Query
-
-keyword
-
-node_type
-
-document
-
----
-
-Response
+Response:
 
 {
- "nodes":[...],
- "edges":[...]
+ "success":true,
+ "data":{
+   "document_id":"uuid",
+   "status":"uploaded"
+ }
 }
+POST /documents/{id}/index
 
----
+Start indexing.
 
-## GET /graph/node/{id}
-
-Return node detail.
-
-Includes
-
-Metadata
-
-Relations
-
-Source
-
-Connected Nodes
-
----
-
-## GET /graph/search
-
-Semantic node search.
-
----
-
-# TIMELINE
-
-## GET /timeline
-
-Return legal amendment timeline.
-
-Query
-
-document_id
-
----
-
-Response
+Response:
 
 {
- "timeline":[]
+ "success":true,
+ "data":{
+   "job_id":"uuid",
+   "status":"processing"
+ }
 }
+GET /documents/{id}/status
 
----
+Check processing progress.
 
-## GET /timeline/compare
-
-Compare two versions.
-
-Query
-
-old_document
-
-new_document
-
-Response
+Response:
 
 {
- "removed":[...],
- "added":[...],
- "modified":[...]
+ "success":true,
+ "data":{
+  "status":"embedding",
+  "progress":60
+ }
 }
+9.10 Document Listing
+GET /documents
 
----
+Query:
 
-# CLAIM VERIFICATION
+?page=1
+&limit=20
 
-## POST /verify
-
-Verify public statement.
-
-Request
+Response:
 
 {
- "text":"Người dưới 18 tuổi không được mở tài khoản ngân hàng."
+ "success":true,
+ "data":{
+  "items":[],
+  "pagination":{
+    "page":1,
+    "limit":20,
+    "total":500
+  }
+ }
 }
+9.11 Verification APIs
+POST /verify
 
----
+Purpose:
 
-Pipeline
+Verify legal claims.
 
-Claim Extraction
-
-↓
-
-Retriever
-
-↓
-
-Knowledge Graph
-
-↓
-
-LLM
-
-↓
-
-Citation
-
-↓
-
-Verdict
-
----
-
-Response
+Request:
 
 {
- "status":"Misleading",
- "explanation":"...",
- "citations":[...],
- "confidence":0.93
+ "text":"Vượt đèn đỏ bị phạt 5 triệu đồng",
+ "platform":"Facebook",
+ "author":"Example User",
+ "url":"https://example.com"
 }
 
----
+Response:
 
-# DASHBOARD
+{
+ "success":true,
+ "data":{
+   "verdict":"Misleading",
+   "explanation":"...",
+   "confidence":0.84,
+   "citations":[]
+ }
+}
+Verdict Types
 
-## GET /dashboard
+Supported:
 
-Return overview.
+Correct
+Incorrect
+Misleading
+Need Context
+Unknown
+Outdated
+9.12 Knowledge Graph APIs
+GET /graph/nodes
 
-Includes
+Get graph nodes.
 
-Total Documents
+Query:
 
-Total Nodes
+?page=1
+&limit=50
 
-Total Claims
+Response:
 
-Trending Topics
+{
+ "success":true,
+ "data":{
+  "items":[]
+ }
+}
+GET /graph/{node_id}
 
-Latest Regulations
+Get graph relationship details.
 
-Top Discussions
+Response:
 
-Communication Risk
+{
+ "success":true,
+ "data":{
+  "node":{},
+  "connections":[]
+ }
+}
+9.13 Admin APIs
 
----
+Admin authorization required.
 
-## GET /dashboard/analytics
+POST /admin/reindex
 
-Return charts.
+Purpose:
 
-Query
+Rebuild document indexes.
 
-date_from
+Required role:
 
-date_to
+Admin
 
-topic
+Response:
 
----
+{
+ "success":true,
+ "data":{
+  "job_id":"uuid"
+ }
+}
+POST /admin/rebuild-graph
 
-# SEARCH
-
-## GET /search
-
-Hybrid Search.
-
-Query
-
-keyword
-
-semantic
-
-document_type
-
-topic
-
----
-
-Response
-
-Documents
-
-Graph Nodes
-
-Relevant Clauses
-
-Citations
-
----
-
-# ADMIN
-
-## GET /admin/statistics
-
-System statistics.
-
----
-
-## POST /admin/reindex
-
-Re-index all embeddings.
-
----
-
-## POST /admin/rebuild-graph
+Purpose:
 
 Rebuild Knowledge Graph.
 
----
+Required role:
 
-## GET /admin/logs
+Admin
 
-Return logs.
-
----
-
-# HEALTH
-
-## GET /health
-
-Response
+Response:
 
 {
- "status":"healthy"
+ "success":true,
+ "data":{
+  "job_id":"uuid"
+ }
 }
+9.14 Error Response Format
 
----
+All errors follow:
 
-# ERROR CODES
-
-AUTH_001
-
-Unauthorized
-
-AUTH_002
-
-Invalid Token
-
-DOC_001
-
-Document Not Found
-
-DOC_002
-
-Upload Failed
-
-DOC_003
-
-Index Failed
-
-CHAT_001
-
-Question Empty
-
-CHAT_002
-
-No Legal Evidence Found
-
-GRAPH_001
-
-Node Not Found
-
-VERIFY_001
-
-Cannot Verify Claim
-
-SYSTEM_001
-
-Unexpected Error
-
----
-
-# STATUS CODES
-
-200
-
-OK
-
-201
-
-Created
-
-400
-
-Bad Request
-
-401
-
-Unauthorized
-
-403
-
-Forbidden
-
-404
-
-Not Found
-
-422
-
-Validation Error
-
-500
-
-Internal Server Error
-
----
-
-# SECURITY
-
-JWT Authentication
-
-Role-Based Access Control
-
-Rate Limiting
-
-Request Validation
-
-File Type Validation
-
-Prompt Injection Protection
-
-SQL Injection Protection
-
+{
+ "success":false,
+ "data":null,
+ "message":"Invalid request",
+ "error":{
+   "code":"INVALID_FILE"
+ }
+}
+9.15 API Security Requirements
 CORS
 
-HTTPS Only
+Allow only configured frontend origins.
 
----
+Example:
 
-# PERFORMANCE TARGETS
+Development:
 
-Chat
+localhost
 
-<5 seconds
+Production:
 
-Claim Verification
+official frontend domain
+Authentication Expiry
 
-<15 seconds
+Expired tokens must return:
 
-Knowledge Graph
+HTTP 401
 
-<2 seconds
+Authorization
 
-Search
+Protected endpoints must check:
 
-<3 seconds
+User identity
+Role permission
 
-Upload
+Examples:
 
-<10 seconds
+Upload:
 
-Dashboard
+User/Admin
 
-<2 seconds
+Admin operations:
 
----
+Admin only
 
-# API VERSIONING
+9.16 Async Processing Design
 
-Current
+Long-running operations use asynchronous jobs.
 
-/api/v1
+Examples:
 
-Future
+Document indexing
+Graph rebuilding
 
-/api/v2
+Flow:
 
----
+Request
 
-# OPENAPI
+↓
 
-Backend must automatically generate
+Create Job
 
-Swagger UI
+↓
 
-/docs
+Return job_id
 
-and
+↓
 
-ReDoc
+Frontend Polls Status
 
-/redoc
+↓
 
-using FastAPI.
+Complete
 
----
+Future versions may support:
 
-# END OF API SPECIFICATION
+WebSocket
+Server-Sent Events
+9.17 API Limitations
+
+The MVP does not include:
+
+Public API access
+Third-party integrations
+Enterprise authentication
+Webhooks
+
+End of Revised Section 9
