@@ -1,858 +1,363 @@
-# DATABASE SCHEMA SPECIFICATION
+8. Database Schema Specification — Revised
+8.1 Purpose
 
-Version: 1.0
+This document defines the database design for LexPulse AI MVP.
 
-Project: LexPulse AI
+The database is responsible for storing:
+
+User information
+Legal documents
+Document versions
+Processing metadata
+Conversation history
+Citation relationships
+Knowledge Graph metadata
+
+The design prioritizes:
+
+Data consistency
+Traceability
+Explainability
+Future migration capability
+8.2 Storage Architecture
+
+LexPulse AI uses three storage layers:
+
+SQLite
 
 Purpose:
-This document defines the database schema for the LexPulse AI MVP.
 
----
+Persistent application metadata.
 
-# DATABASE OVERVIEW
-
-Database Engine (MVP)
-
-SQLite
-
-Future
-
-PostgreSQL
-
----
-
-# ENTITY RELATIONSHIP OVERVIEW
+Stores:
 
 Users
-    │
-    ├──────────────┐
-    │              │
-    ▼              ▼
-Chat Sessions   Uploaded Documents
-                      │
-                      ▼
-                 Document Chunks
-                      │
-        ┌─────────────┴───────────────┐
-        ▼                             ▼
- Embeddings                     Graph Nodes
-                                        │
-                                        ▼
-                                   Graph Edges
-                                        │
-                                        ▼
-                               Knowledge Graph
-
-Social Posts
-      │
-      ▼
-Claims
-      │
-      ▼
-Legal Citations
-
----
-
-# TABLE 1
-
-Users
-
-Purpose
-
-Store user accounts.
-
-Fields
-
-id (UUID)
-
-name
-
-email
-
-password_hash
-
-role
-
-avatar_url
-
-created_at
-
-updated_at
-
----
-
-Roles
-
-Citizen
-
-Business
-
-Government
-
-Lawyer
-
-Admin
-
----
-
-# TABLE 2
-
 Documents
-
-Purpose
-
-Store uploaded legal documents.
-
-Fields
-
-id
-
-title
-
-document_type
-
-issuer
-
-effective_date
-
-expiration_date
-
-status
-
-file_name
-
-file_path
-
-language
-
-uploaded_by
-
-created_at
-
-updated_at
-
----
-
-Document Types
-
-Law
-
-Decree
-
-Circular
-
-Decision
-
-Directive
-
-Resolution
-
-Other
-
----
-
-Status
-
-Draft
-
-Indexed
-
-Archived
-
-Deleted
-
----
-
-# TABLE 3
-
-Document Chunks
-
-Purpose
-
-Store chunked document sections.
-
-Fields
-
-id
-
-document_id
-
-article_number
-
-clause_number
-
-point_number
-
-text
-
-page
-
-chunk_index
-
-embedding_id
-
-created_at
-
----
-
-Example
-
-Law
-
-↓
-
-Article 12
-
-↓
-
-Clause 3
-
-↓
-
-Point b
-
-↓
-
-Chunk
-
----
-
-# TABLE 4
-
-Embeddings
-
-Purpose
-
-Store vector metadata.
-
-Fields
-
-id
-
-chunk_id
-
-embedding_model
-
-vector_id
-
-dimension
-
-created_at
-
----
-
-Vector Database
-
+Chunks
+Messages
+Citations
+Processing jobs
 Qdrant
 
----
+Purpose:
 
-# TABLE 5
+Vector storage.
 
-Knowledge Graph Nodes
+Stores:
 
-Purpose
+Document embeddings
 
-Represent every legal entity.
+SQLite stores only:
 
-Fields
+Vector ID
+Embedding model
+Dimension information
 
-id
+The system does NOT store raw vectors in SQLite.
 
-node_type
+NetworkX
 
-label
+Purpose:
 
-description
+Runtime Knowledge Graph representation.
 
-document_id
+Stores:
 
-metadata_json
+Nodes
+Relationships
 
-created_at
+The MVP uses single-instance deployment.
 
----
+8.3 Database Design Principles
+Principle 1: Persistent Truth
 
-Node Types
+SQLite is the source of truth for stored metadata.
 
-Law
+NetworkX is only a runtime graph representation.
 
-Article
+Principle 2: Version Awareness
 
-Clause
+Legal documents change over time.
 
-Point
+The database must support:
 
-Organization
+Current version
+Previous version
+Amendment relationship
+Principle 3: Avoid Uncontrolled JSON Storage
 
-Topic
+JSON fields are allowed only when the schema is documented.
 
-Penalty
+8.4 Users Table
+Users
+Field	Type	Constraint	Description
+id	UUID	Primary Key	User identifier
+email	VARCHAR	Unique, Nullable	User email
+password_hash	VARCHAR	Nullable	Authentication data
+role	ENUM	Required	guest/user/admin
+created_at	TIMESTAMP	Required	Creation time
+updated_at	TIMESTAMP	Required	Last update
+8.5 Documents Table
+Documents
+Field	Type	Constraint	Description
+id	UUID	Primary Key	Document ID
+title	VARCHAR	Required	Document name
+source_url	TEXT	Nullable	Original source
+publisher	VARCHAR	Nullable	Issuing organization
+domain	ENUM	Required	Traffic/Labor
+version	VARCHAR	Required	Document version
+effective_date	DATE	Nullable	Effective date
+status	ENUM	Required	Processing status
+uploaded_by	UUID	Foreign Key	User
+previous_version_id	UUID	Foreign Key	Previous document version
+created_at	TIMESTAMP	Required	Creation time
+8.6 Document Version Relationship
 
-Deadline
+A legal document can have multiple versions.
 
-Obligation
+Example:
 
-Right
+Labor Law Version 1
 
-Prohibited Act
+        |
 
-Citizen
+     AMENDED_BY
 
-Business
+        ↓
 
----
+Labor Law Version 2
 
-# TABLE 6
+The database supports:
 
-Knowledge Graph Edges
+Previous version lookup
+Current version comparison
+Amendment timeline
+8.7 Document Processing Table
+Document Processing Jobs
 
-Purpose
+Stores indexing execution history.
 
-Represent relationships.
+Field	Type	Constraint
+id	UUID	Primary Key
+document_id	UUID	Foreign Key
+status	ENUM	Required
+progress	INTEGER	0-100
+error_message	TEXT	Nullable
+started_at	TIMESTAMP	Nullable
+completed_at	TIMESTAMP	Nullable
+8.8 Document Chunks Table
+Chunks
 
-Fields
+Stores searchable legal text segments.
 
-id
+Field	Type	Constraint
+id	UUID	Primary Key
+document_id	UUID	Foreign Key
+article	VARCHAR	Nullable
+clause	VARCHAR	Nullable
+point	VARCHAR	Nullable
+content	TEXT	Required
+chunk_index	INTEGER	Required
+created_at	TIMESTAMP	Required
+8.9 Embeddings Table
+Embeddings
 
-source_node
+Stores embedding metadata.
 
-target_node
+Field	Type	Constraint
+id	UUID	Primary Key
+chunk_id	UUID	Foreign Key
+vector_id	VARCHAR	Unique
+embedding_model	VARCHAR	Required
+dimension	INTEGER	Required
+created_at	TIMESTAMP	Required
 
-relation
+Actual vectors are stored in Qdrant.
 
-confidence
+8.10 Knowledge Graph Nodes
+Graph Nodes
+Field	Type	Constraint
+id	UUID	Primary Key
+node_type	ENUM	Required
+name	VARCHAR	Required
+document_id	UUID	Foreign Key
+metadata_json	JSON	Optional
+confidence	FLOAT	Required
+created_at	TIMESTAMP	Required
+8.11 Metadata JSON Schema
 
-created_at
+The metadata_json field must follow controlled structures.
 
----
+Example:
 
-Relations
+Article Node
+{
+ "article_number": "12",
+ "legal_domain": "traffic",
+ "effective_date": "2026-01-01"
+}
+Penalty Node
+{
+ "penalty_type": "administrative",
+ "amount": "500000",
+ "currency": "VND"
+}
+
+Unknown keys should not be added without schema update.
+
+8.12 Knowledge Graph Relationships
+Graph Edges
+Field	Type
+id	UUID
+source_node_id	UUID
+target_node_id	UUID
+relation_type	ENUM
+confidence	FLOAT
+source_document_id	UUID
+created_at	TIMESTAMP
+Supported Relation Types
+
+MVP supports:
 
 BELONGS_TO
-
 AMENDS
-
 SUPERSEDES
-
 REFERENCES
-
 RELATED_TO
-
 HAS_PENALTY
-
-HAS_DEADLINE
-
 HAS_RIGHT
-
 HAS_OBLIGATION
+8.13 Messages Table
+Messages
 
-CONFLICTS_WITH
+Stores user conversations.
 
----
+Field	Type	Constraint
+id	UUID	Primary Key
+user_id	UUID	Foreign Key
+session_id	UUID	Required
+role	ENUM	user/assistant
+content	TEXT	Required
+confidence	FLOAT	Nullable
+created_at	TIMESTAMP	Required
+8.14 Message Citations Relationship
 
-# TABLE 7
+Citations are stored through a join table.
 
-Topics
+Message Citations
+Field	Type
+id	UUID
+message_id	UUID
+citation_id	UUID
 
-Purpose
+This avoids storing citation arrays inside messages.
 
-Store extracted legal topics.
-
-Fields
-
-id
-
-name
-
-description
-
-category
-
-created_at
-
----
-
-Example
-
-Traffic
-
-Tax
-
-Banking
-
-Labor
-
-Investment
-
-Education
-
-Health
-
-Land
-
----
-
-# TABLE 8
-
-Social Posts
-
-Purpose
-
-Store public discussions.
-
-Fields
-
-id
-
-platform
-
-author
-
-content
-
-url
-
-posted_at
-
-created_at
-
----
-
-Platforms
-
-Facebook
-
-Threads
-
-TikTok
-
-YouTube
-
-Forum
-
-News
-
----
-
-# TABLE 9
-
+8.15 Citations Table
+Citations
+Field	Type
+id	UUID
+document_id	UUID
+chunk_id	UUID
+article	VARCHAR
+clause	VARCHAR
+validation_status	ENUM
+created_at	TIMESTAMP
+8.16 Legal Claims Table
 Claims
 
-Purpose
+Stores verification requests.
 
-Store extracted legal claims.
+Field	Type
+id	UUID
+user_id	UUID
+claim_text	TEXT
+platform	VARCHAR
+author	VARCHAR
+url	TEXT
+verdict	ENUM
+explanation	TEXT
+created_at	TIMESTAMP
+8.17 Analytics Design
 
-Fields
+The MVP avoids complex analytics modeling.
 
-id
+Instead of unrestricted EAV:
 
-post_id
+The system stores predefined events.
 
-claim_text
+Example:
 
-status
+Analytics Events
+Field	Type
+id	UUID
+event_type	VARCHAR
+user_id	UUID
+document_id	UUID
+timestamp	TIMESTAMP
 
-confidence
+Examples:
 
-created_at
+question_submitted
+document_uploaded
+citation_failed
+verification_completed
 
----
+This allows structured querying.
 
-Status
+8.18 Database Constraints
 
-Correct
+Required constraints:
 
-Incorrect
+Unique Constraints
 
-Misleading
+Examples:
 
-Need Context
+Users:
 
-Unknown
+email UNIQUE
 
----
+Documents:
 
-# TABLE 10
+(source_url, version) UNIQUE
 
-Citations
+Embeddings:
 
-Purpose
+vector_id UNIQUE
+Foreign Key Rules
 
-Store legal evidence.
+All relationships must define:
 
-Fields
+Cascade behavior
+Delete behavior
+Nullability
+8.19 Data Retention
+User Data
 
-id
+Stored while account exists.
 
-claim_id
+Users may request deletion.
 
-document_id
+Uploaded Documents
 
-article
+Stored according to ownership rules.
 
-clause
+Chat History
 
-point
+Stored only for authenticated users.
 
-citation_text
+8.20 MVP Database Limitations
 
-source_url
+The MVP supports approximately:
 
-created_at
+≤500 documents
+≤30,000 chunks
+≤50,000 graph nodes
+≤100,000 graph edges
 
----
+For larger deployments:
 
-# TABLE 11
+Migration path:
 
-Chat Sessions
+SQLite → PostgreSQL
 
-Purpose
-
-Conversation history.
-
-Fields
-
-id
-
-user_id
-
-title
-
-created_at
-
-updated_at
-
----
-
-# TABLE 12
-
-Messages
-
-Purpose
-
-Store AI conversations.
-
-Fields
-
-id
-
-session_id
-
-role
-
-message
-
-citation_ids
-
-created_at
-
----
-
-Roles
-
-User
-
-Assistant
-
-System
-
----
-
-# TABLE 13
-
-Analytics
-
-Purpose
-
-Dashboard metrics.
-
-Fields
-
-id
-
-metric_name
-
-metric_value
-
-date
-
-created_at
-
----
-
-Example
-
-Most Asked Law
-
-Trending Topic
-
-Most Verified Claim
-
-Most Viewed Regulation
-
----
-
-# TABLE 14
-
-System Logs
-
-Purpose
-
-System monitoring.
-
-Fields
-
-id
-
-level
-
-module
-
-message
-
-created_at
-
----
-
-Levels
-
-INFO
-
-WARNING
-
-ERROR
-
-CRITICAL
-
----
-
-# DATABASE RELATIONSHIPS
-
-Users
-
-1
-
-↓
-
-N
-
-Chat Sessions
-
-↓
-
-Messages
-
-----------------------------
-
-Documents
-
-1
-
-↓
-
-N
-
-Chunks
-
-↓
-
-Embeddings
-
-----------------------------
-
-Documents
-
-1
-
-↓
-
-N
-
-Knowledge Nodes
-
-↓
-
-Knowledge Edges
-
-----------------------------
-
-Social Posts
-
-1
-
-↓
-
-N
-
-Claims
-
-↓
-
-Citations
-
-↓
-
-Documents
-
----
-
-# INDEXES
-
-Documents.title
-
-Documents.document_type
-
-Chunks.document_id
-
-Chunks.article_number
-
-Nodes.node_type
-
-Nodes.label
-
-Claims.status
-
-Messages.session_id
-
-Analytics.metric_name
-
----
-
-# CASCADE RULES
-
-Delete Document
-
-↓
-
-Delete Chunks
-
-↓
-
-Delete Embeddings
-
-↓
-
-Delete Graph Nodes
-
-↓
-
-Delete Graph Edges
-
----
-
-Delete User
-
-↓
-
-Delete Sessions
-
-↓
-
-Delete Messages
-
----
-
-# STORAGE STRATEGY
-
-SQLite
-
-↓
-
-Metadata
-
-Qdrant
-
-↓
-
-Vectors
-
-NetworkX
-
-↓
-
-Knowledge Graph
-
-Filesystem
-
-↓
-
-Original PDF
-
----
-
-# FUTURE MIGRATION
-
-SQLite
-
-↓
-
-PostgreSQL
-
-NetworkX
-
-↓
-
-Neo4j
-
-Filesystem
-
-↓
-
-AWS S3
-
-Single Server
-
-↓
-
-Microservices
-
----
-
-# DESIGN PRINCIPLES
-
-Normalize data where practical.
-
-Avoid duplicate storage.
-
-Keep graph relationships lightweight.
-
-Separate metadata from embeddings.
-
-Never store vectors directly inside SQLite.
-
-Use UUIDs for all primary keys.
-
-Support future migration without changing the schema.
-
----
-
-# MVP DATABASE LIMITS
-
-Documents
-
-≤ 500
-
-Chunks
-
-≤ 30,000
-
-Graph Nodes
-
-≤ 50,000
-
-Graph Edges
-
-≤ 100,000
-
-Chat Sessions
-
-Unlimited
-
-Messages
-
-Unlimited
-
----
-
-# END OF DATABASE SPECIFICATION
+NetworkX → Neo4j
