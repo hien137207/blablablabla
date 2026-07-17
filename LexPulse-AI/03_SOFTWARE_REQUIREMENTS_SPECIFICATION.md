@@ -1,623 +1,462 @@
-# PART 3 — SOFTWARE REQUIREMENTS SPECIFICATION
+3. Software Requirements Specification (SRS) — Revised
+3.1 Purpose
 
-Version: 2.0
+This Software Requirements Specification defines the functional and non-functional requirements of LexPulse AI MVP.
 
-Project: LexPulse AI
+The purpose of this document is to establish:
 
-Purpose:
-This document defines the functional and non-functional software requirements for LexPulse AI.
+System capabilities
+User interactions
+AI pipeline requirements
+Security requirements
+Data handling requirements
+Performance expectations
 
-It specifies WHAT the system must do, without defining HOW it should be implemented.
+The MVP focuses on providing evidence-grounded legal information through Retrieval-Augmented Generation (RAG) and Knowledge Graph reasoning.
 
----
+3.2 System Scope
 
-# 1. SYSTEM OVERVIEW
+LexPulse AI MVP supports:
 
-LexPulse AI is an AI-powered Legal Intelligence Platform designed to help users understand legal documents, discover relationships between regulations, verify legal claims, and explore legal knowledge using artificial intelligence.
+Legal Question Answering
 
-The system combines:
+Users can ask questions related to supported legal domains:
 
-- Knowledge Graph
-- Advanced Retrieval-Augmented Generation (RAG)
-- Semantic Search
-- AI Reasoning
-- Legal Citation Engine
-- Amendment Tracking
-- Analytics Dashboard
+Traffic Law
+Labor Law
 
-The system must always prioritize factual legal evidence over generated responses.
+The system retrieves relevant legal evidence and generates explainable responses.
 
----
+Legal Claim Verification
 
-# 2. TARGET USERS
+Users can submit legal statements.
 
-Primary Users
-
-• Government officers
-
-• Legal consultants
-
-• Compliance officers
-
-• Enterprises
-
-• Startups
-
-• Students
-
-• Citizens
-
----
-
-# 3. USER ROLES
-
-### Guest
-
-Can
-
-- Open landing page
-- Ask demo questions
-- View public information
-
-Cannot
-
-- Upload documents
-- Save history
-
----
-
-### Registered User
-
-Can
-
-- Upload legal documents
-- Ask unlimited questions
-- View Knowledge Graph
-- Verify legal claims
-- Access dashboard
-
----
-
-### Administrator
-
-Can
-
-- Manage documents
-- Rebuild indexes
-- Update datasets
-- Monitor system logs
-- Manage users
-
----
-
-# 4. FUNCTIONAL REQUIREMENTS
-
-## FR-01 User Authentication
-
-The system shall:
-
-- Register users
-- Login
-- Logout
-- Store JWT tokens
-- Maintain user sessions
-
----
-
-## FR-02 Document Upload
-
-The system shall allow users to upload:
-
-PDF
-
-DOCX
-
-TXT
-
-Each uploaded file must be validated before processing.
-
----
-
-## FR-03 Document Processing
-
-After upload, the system shall automatically:
-
-Extract text
-
-↓
-
-Clean text
-
-↓
-
-Identify legal hierarchy
-
-↓
-
-Generate metadata
-
-↓
-
-Split into chunks
-
-↓
-
-Generate embeddings
-
-↓
-
-Store in database
-
-↓
-
-Build Knowledge Graph
-
-↓
-
-Index for retrieval
-
----
-
-## FR-04 Document Management
-
-Users shall be able to
-
-View
-
-Delete
-
-Search
-
-Filter
-
-Preview
-
-Re-index
-
-uploaded documents.
-
----
-
-## FR-05 Legal Search
-
-The search engine shall support:
-
-Keyword Search
-
-Semantic Search
-
-Hybrid Search
-
-Document Search
-
-Article Search
-
-Clause Search
-
-Topic Search
-
----
-
-## FR-06 AI Question Answering
-
-Users shall ask legal questions using natural language.
-
-The system shall:
-
-Retrieve evidence
-
-↓
-
-Expand graph relationships
-
-↓
-
-Call LLM
-
-↓
-
-Generate answer
-
-↓
-
-Attach citations
-
-↓
-
-Return confidence score
-
-The system shall never answer without retrieved evidence.
-
----
-
-## FR-07 Knowledge Graph
-
-The system shall automatically build a Knowledge Graph.
-
-Each node may represent
-
-Law
-
-Article
-
-Clause
-
-Point
-
-Penalty
-
-Deadline
-
-Organization
-
-Topic
-
-Rights
-
-Obligations
-
-The graph shall support:
-
-Zoom
-
-Search
-
-Expand
-
-Collapse
-
-Highlight
-
-Filtering
-
----
-
-## FR-08 Timeline
-
-The system shall visualize legal amendments.
-
-Users shall compare:
-
-Old Version
-
-↓
-
-New Version
-
-The system shall identify:
-
-Added clauses
-
-Modified clauses
-
-Removed clauses
-
----
-
-## FR-09 Claim Verification
-
-Users shall submit:
-
-Social media posts
-
-News
-
-Comments
-
-Legal claims
-
-The system shall
-
-Extract claim
-
-↓
-
-Retrieve evidence
-
-↓
-
-Reason
-
-↓
-
-Return verdict
-
-Possible verdicts
+The system evaluates whether claims are:
 
 Correct
-
 Incorrect
-
 Misleading
-
 Need Context
-
 Unknown
+Outdated
+Legal Document Intelligence
 
----
+The system processes legal documents through:
 
-## FR-10 Citation Engine
+Text extraction
+Legal structure parsing
+Chunk generation
+Embedding creation
+Knowledge Graph extraction
+Knowledge Graph Exploration
 
-Every AI answer shall include:
+Users can explore relationships between legal entities.
 
-Document Name
+3.3 User Roles
 
-Article
+The MVP uses three roles:
 
-Clause
+Guest
 
-Point
+Permissions:
 
-Source
+Ask legal questions
+Verify claims
+Explore public Knowledge Graph
 
-Confidence
+Restrictions:
 
-Clickable reference
+Cannot upload documents
+Cannot access saved history
+Registered User
 
-No citation may be fabricated.
+Permissions:
 
----
+All Guest capabilities
+Upload documents
+Save conversation history
+Manage personal workspace
+Administrator
 
-## FR-11 Dashboard
+Permissions:
 
-The dashboard shall display:
+Manage datasets
+Manage documents
+Trigger indexing
+Rebuild Knowledge Graph
+Monitor system status
+3.4 Functional Requirements
+FR-01: User Question Processing
 
-Total documents
+The system shall allow users to submit legal questions.
 
-Knowledge Graph size
+Input:
 
-Latest regulations
+Natural language question
 
-Trending legal topics
+Output:
 
-Claim verification statistics
+AI-generated explanation
+Legal evidence
+Citation references
+Confidence score
+FR-02: Intent Detection and Routing
 
-Recent uploads
+The system shall classify user input before retrieval.
 
-Communication risks
+Supported intents:
 
----
+Legal Query
 
-## FR-12 Analytics
+Requires:
 
-The system shall visualize:
+Retrieval
+Evidence grounding
+Citation validation
 
-Top legal topics
+Example:
 
-Most searched regulations
+"Không đội mũ bảo hiểm bị phạt bao nhiêu?"
 
-Verification results
+General Conversation Intent
 
-Document growth
+Does not require legal retrieval.
 
-Question history
+Examples:
 
----
+Hello
+What can you do?
+Explain your features
 
-## FR-13 Administration
+For these intents, the system may respond without legal evidence.
 
-Administrators shall:
+This exception prevents unnecessary retrieval while maintaining the requirement:
 
-Upload datasets
+Legal answers must always be supported by evidence.
 
-Delete documents
+FR-03: Legal Document Upload
 
-Rebuild graph
+The system shall allow authorized users to upload legal documents.
 
-Re-index embeddings
+Supported formats:
 
-Monitor logs
+PDF
+DOCX
+TXT
 
-Manage users
+The system must validate:
 
-View system health
+File type
+File size
+File safety
+FR-04: Document Processing Pipeline
 
----
-
-# 5. NON-FUNCTIONAL REQUIREMENTS
-
-## Performance
-
-Simple Questions
-
-≤ 5 seconds
-
-Complex Questions
-
-≤ 30 seconds
+Uploaded documents shall be processed through:
 
 Upload
 
-≤ 10 seconds
+↓
 
-Search
-
-≤ 3 seconds
-
-Graph Rendering
-
-≤ 2 seconds
-
-Dashboard
-
-≤ 2 seconds
-
----
-
-## Reliability
-
-The system shall:
-
-Recover gracefully from failures.
-
-Prevent crashes.
-
-Handle invalid inputs.
-
-Log unexpected errors.
-
----
-
-## Availability
-
-The MVP shall remain operational throughout the demo.
-
----
-
-## Maintainability
-
-The codebase shall:
-
-Be modular.
-
-Use reusable components.
-
-Separate frontend and backend responsibilities.
-
-Avoid duplicated logic.
-
----
-
-## Scalability
-
-The architecture shall support migration from:
-
-SQLite
+Validation
 
 ↓
 
-PostgreSQL
-
-NetworkX
+Text Extraction
 
 ↓
 
-Neo4j
+Legal Structure Parsing
 
-without major redesign.
+↓
 
----
+Chunk Creation
 
-## Security
+↓
 
-The system shall:
+Embedding Generation
 
-Validate uploads.
+↓
 
-Protect API keys.
+Vector Indexing
 
-Prevent SQL Injection.
+↓
 
-Prevent Prompt Injection.
+Knowledge Graph Extraction
 
-Use JWT Authentication.
+↓
 
-Support Role-Based Access Control.
+Validation
+FR-05: Document Indexing Idempotency
 
----
+The system shall prevent duplicate indexing.
 
-## Usability
+When the same document is processed multiple times:
 
-A new user shall understand the interface within 10 seconds.
+The system must:
 
-Navigation must remain consistent across all pages.
+Detect existing document version
+Reuse existing embeddings where possible
+Avoid duplicate chunks
+Avoid duplicate graph nodes
 
-The interface shall be responsive.
+Each indexing operation must have a unique processing identifier.
 
----
+FR-06: Evidence-Grounded Response Generation
 
-# 6. BUSINESS RULES
+The system shall never generate unsupported legal conclusions.
 
-Only supported document formats may be uploaded.
+For legal queries:
 
-Deleted documents shall also remove related chunks, embeddings, and graph nodes.
+The response pipeline must:
 
-Every AI answer must include at least one legal citation.
+Retrieve evidence
+Generate answer using retrieved context
+Validate citations
+Return answer only if evidence requirements are satisfied
 
-If no evidence is found, the system shall respond:
+If evidence is insufficient:
 
-"I cannot find sufficient legal evidence to answer this question."
+The system must respond:
 
-The system shall never invent legal references.
+"Không đủ căn cứ pháp lý để đưa ra kết luận."
 
----
+FR-07: Citation Validation
 
-# 7. SYSTEM CONSTRAINTS
+The system shall validate generated citations.
 
-Hackathon Duration
+Validation checks:
 
-35 Hours
+Document Existence
 
-Development Team
+Referenced document exists.
 
-3 Members
+Legal Reference Existence
 
-Budget
+Article, Clause, Point exists.
 
-Free or open-source tools whenever possible.
+Evidence Alignment
 
-Deployment
+Retrieved evidence supports generated statement.
 
-Cloud-hosted.
+Citation Validation Failure Handling
 
-No proprietary enterprise infrastructure.
+If validation fails:
 
----
+The system must:
 
-# 8. ACCEPTANCE CRITERIA
+Remove unsupported citation
+Retry generation once if possible
+Otherwise return uncertainty response
 
-The system is accepted when:
+The system must never silently display invalid citations.
 
-✓ Users can upload legal documents.
+FR-08: Legal Version Tracking
 
-✓ Documents are processed successfully.
+The system shall support regulation version comparison.
 
-✓ Knowledge Graph is generated automatically.
+Each document must contain:
 
-✓ Hybrid RAG retrieves relevant legal evidence.
+Version identifier
+Effective date
+Previous version reference
+Superseded document reference
 
-✓ AI answers always include citations.
+The system should support:
 
-✓ Timeline displays legal amendments.
+Previous regulation view
+Current regulation view
+Amendment relationship
+FR-09: Knowledge Graph Management
 
-✓ Claim verification produces explainable results.
+The system shall maintain legal relationships.
 
-✓ Dashboard displays meaningful statistics.
+Supported entities:
 
-✓ All core features work through the web interface.
+Law
+Article
+Clause
+Point
+Organization
+Penalty
+Obligation
+Right
 
----
+Supported relationships:
 
-# 9. MVP LIMITATIONS
+BELONGS_TO
+AMENDS
+SUPERSEDES
+REFERENCES
+HAS_PENALTY
+HAS_RIGHT
+HAS_OBLIGATION
+RELATED_TO
+FR-10: Graph Extraction Confidence Control
 
-The MVP intentionally excludes:
+Knowledge Graph extraction must include confidence evaluation.
 
-- Real-time crawling of government websites.
-- Automatic synchronization with official legal databases.
-- Multi-agent orchestration.
-- Voice interaction.
-- Mobile application.
-- Offline mode.
-- Enterprise workflow automation.
-- Fine-tuned language models.
+For each extracted relationship:
 
-These capabilities are reserved for future versions.
+Store:
 
----
+Extraction source
+Extraction method
+Confidence score
 
-# 10. FUTURE EXTENSIONS
+Low-confidence relationships must not automatically appear as trusted legal facts.
 
-Future versions may include:
+FR-11: Conversation History
 
-- Integration with official government legal APIs.
-- Automatic legal update monitoring.
-- Multi-agent legal assistants.
-- Personalized compliance recommendations.
-- Notification system for regulatory changes.
-- Multi-language support.
-- Enterprise document workflow management.
-- Predictive compliance risk analysis.
+Authenticated users may access previous conversations.
 
----
+Stored information:
 
-# END OF SOFTWARE REQUIREMENTS SPECIFICATION
+User message
+AI response
+Citations
+Timestamp
+FR-12: Verification System
+
+The system shall allow users to verify legal claims.
+
+Input:
+
+Claim text
+
+Optional metadata:
+
+Source platform
+Author
+URL
+
+Output:
+
+Verdict
+Explanation
+Supporting evidence
+FR-13: Administration
+
+Administrators can:
+
+Upload official datasets
+Trigger document re-indexing
+Rebuild Knowledge Graph
+Monitor processing status
+
+Admin operations require role verification.
+
+3.5 Non-Functional Requirements
+NFR-01: Performance
+
+The system targets:
+
+Operation	Target
+Simple legal query	<8 seconds
+Complex reasoning query	<20 seconds
+Dashboard loading	<2 seconds
+
+Measurement includes:
+
+Backend processing time
+User-perceived response time
+NFR-02: Availability
+
+The MVP does not provide production SLA guarantees.
+
+Requirement:
+
+The system must remain stable throughout demonstrations and testing sessions.
+
+Future production versions may introduce formal availability targets.
+
+NFR-03: Security
+Prompt Injection Protection
+
+The system shall apply:
+
+Input Layer
+User input filtering
+Malicious instruction detection
+Retrieval Layer
+Retrieved documents treated as data, not instructions
+Generation Layer
+Protected system instructions
+Output validation
+NFR-04: Data Privacy and Retention
+
+The system must define storage policies.
+
+Uploaded Documents
+
+Stored with:
+
+Owner information
+Source information
+Processing status
+Chat History
+
+Stored only for authenticated users.
+
+Users may delete stored conversations.
+
+Personal Data
+
+If documents contain personal information:
+
+Data usage must be documented
+Storage should follow privacy principles
+NFR-05: Database Reliability
+
+The MVP uses a single-instance deployment model.
+
+Constraints:
+
+SQLite is used only for MVP scale
+Concurrent heavy writes should be limited
+Future migration path exists toward PostgreSQL
+NFR-06: Encoding and Localization
+
+The system must support:
+
+UTF-8 encoding
+Vietnamese Unicode characters
+Vietnamese input methods
+3.6 Business Rules
+Rule 1
+
+Legal answers require verified evidence.
+
+Rule 2
+
+The system must not invent:
+
+Laws
+Articles
+Clauses
+Penalties
+Rule 3
+
+Low-confidence Knowledge Graph relationships must not be treated as authoritative.
+
+Rule 4
+
+Document re-indexing must not create duplicate data.
+
+Rule 5
+
+Administrative operations require administrator authorization.
+
+3.7 MVP Constraints
+
+The MVP prioritizes:
+
+Working demonstration
+Reliable legal answers
+Evidence transparency
+Knowledge Graph visualization
+
+The MVP does not prioritize:
+
+Enterprise scalability
+Complex authentication
+Multi-agent architecture
