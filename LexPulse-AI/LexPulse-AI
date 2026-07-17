@@ -1,0 +1,22 @@
+LexPulse-AI/
+│
+├── docs/
+│   ├── 01_PRD.md                 (~20 trang)
+│   ├── 02_AI_CONTEXT.md          (~10 trang)
+│   ├── 03_SYSTEM_ARCHITECTURE.md
+│   ├── 04_DATABASE.md
+│   ├── 05_API_SPEC.md
+│   ├── 06_UIUX.md
+│   ├── 07_HACKATHON_PLAN.md
+│
+├── prompts/
+│   ├── 01_ARCHITECT.md
+│   ├── 02_BACKEND.md
+│   ├── 03_FRONTEND.md
+│   ├── 04_RAG.md
+│   ├── 05_GRAPH.md
+│   ├── 06_DASHBOARD.md
+│   ├── 07_TESTING.md
+│   └── 08_DEPLOY.md
+│
+└── README.md
