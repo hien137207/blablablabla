@@ -1,432 +1,488 @@
-# Product Requirement Document (PRD)
+# PART 1 — PRODUCT REQUIREMENTS DOCUMENT (PRD)
 
----
+Version: 2.0
 
-# Project Information
-
-## Project Name
+Project Name
 
 LexPulse AI
 
-## Tagline
+Subtitle
 
-Transform Legal Documents & Public Discourse into Actionable Intelligence
-
-## Version
-
-1.0 (Hackathon MVP)
-
-## Development Type
-
-AI-powered Legal Intelligence Platform
-
-## Team
-
-Hackathon Team
-
-## Target Competition
-
-Legal Knowledge Graph — Tracking New Regulations & Public Discourse
+AI-powered Legal Intelligence Platform using Advanced RAG and Knowledge Graph
 
 ---
 
-# 1. Executive Summary
+# 1. EXECUTIVE SUMMARY
 
-## 1.1 Overview
+LexPulse AI is an AI-powered legal intelligence platform designed to help organizations, businesses, government agencies, and citizens understand Vietnamese legal regulations through explainable artificial intelligence.
 
-LexPulse AI là nền tảng AI Legal Intelligence được thiết kế để giúp người dân, doanh nghiệp và cơ quan quản lý nhanh chóng hiểu các quy định pháp luật mới, đánh giá tác động của chúng, theo dõi phản ứng của cộng đồng và phát hiện các thông tin sai lệch liên quan đến chính sách.
+Instead of functioning as a traditional chatbot, LexPulse AI transforms fragmented legal documents into a structured knowledge network that users can search, explore, verify, and understand through natural language.
 
-Khác với chatbot pháp lý truyền thống chỉ trả lời câu hỏi dựa trên Retrieval-Augmented Generation (RAG), LexPulse AI kết hợp ba thành phần cốt lõi:
+The platform combines Retrieval-Augmented Generation (RAG), Knowledge Graph technology, semantic search, and large language models to deliver trustworthy answers supported by verifiable legal evidence.
 
-- Knowledge Graph
-- Advanced RAG
-- Public Discourse Intelligence
-
-Hệ thống không chỉ trả lời "Luật quy định gì?" mà còn trả lời:
-
-- Điều luật nào đang được thảo luận nhiều nhất?
-- Người dân đang hiểu sai điều gì?
-- Điều luật nào đã được sửa đổi?
-- Điều khoản nào còn hiệu lực?
-- Nội dung trên mạng xã hội có đúng với quy định pháp luật hay không?
-
-Mục tiêu cuối cùng là xây dựng một AI Legal Intelligence Platform thay vì chỉ là một AI Chatbot.
+The MVP is designed for a 35-hour hackathon and focuses on demonstrating an end-to-end workflow rather than implementing a full production system.
 
 ---
 
-# 2. Background
+# 2. PROBLEM STATEMENT
 
-Ngày 01/07/2026 đánh dấu thời điểm nhiều luật, nghị định và thông tư mới bắt đầu có hiệu lực tại Việt Nam.
+Vietnam's legal ecosystem is highly dynamic.
 
-Khối lượng văn bản rất lớn.
+Every year, thousands of new laws, decrees, circulars, and administrative documents are issued, amended, replaced, or partially superseded.
 
-Một quy định thường:
+This creates several challenges:
 
-- tham chiếu nhiều điều luật khác
-- sửa đổi từng phần
-- có nhiều phiên bản
-- nằm ở nhiều văn bản khác nhau
+• Regulations are distributed across many sources.
 
-Điều này khiến:
+• Amendments are difficult to trace.
 
-- Người dân khó hiểu luật.
-- Doanh nghiệp khó đảm bảo tuân thủ.
-- Cơ quan quản lý khó theo dõi phản ứng xã hội.
+• Cross-references between legal documents are often overlooked.
 
-Song song với đó, Facebook, TikTok, Threads và các diễn đàn trực tuyến tạo ra hàng nghìn bài viết thảo luận về luật mới.
+• Citizens and businesses struggle to determine which regulation is currently effective.
 
-Nhiều bài đăng:
+• Public discussions on social media frequently contain misunderstandings or misinformation regarding new regulations.
 
-- thiếu ngữ cảnh
-- trích dẫn sai
-- diễn giải sai
-- lan truyền thông tin chưa được kiểm chứng
+Traditional search systems return documents.
 
-Hiện nay chưa có một nền tảng nào có khả năng kết nối giữa văn bản pháp luật và các cuộc thảo luận này để tạo thành một hệ thống phân tích thống nhất.
+Traditional chatbots generate answers.
+
+Neither can explain legal relationships or guarantee that the latest applicable regulation is being used.
+
+This creates unnecessary legal uncertainty and increases compliance risk.
 
 ---
 
-# 3. Problem Statement
+# 3. PRODUCT VISION
 
-Các hệ thống hiện nay tồn tại nhiều hạn chế.
+To become an AI-powered legal intelligence platform that helps users understand, navigate, and verify legal knowledge through transparent, explainable, and evidence-based artificial intelligence.
 
-## 3.1 Legal Search
-
-Các công cụ tìm kiếm văn bản pháp luật chủ yếu trả về danh sách tài liệu.
-
-Người dùng vẫn phải tự đọc.
+The platform should make legal knowledge easier to discover, easier to understand, and easier to trust.
 
 ---
 
-## 3.2 Traditional RAG
+# 4. PRODUCT MISSION
 
-Traditional RAG chỉ tìm kiếm các đoạn văn giống với câu hỏi.
+Build a practical AI assistant capable of:
 
-Không hiểu:
+• Understanding legal documents.
 
-- điều luật
-- khoản
-- điểm
-- quan hệ giữa các văn bản
-- sửa đổi
-- thay thế
-- hiệu lực
+• Connecting legal relationships.
 
-Điều này có thể dẫn đến việc AI trả lời dựa trên văn bản đã hết hiệu lực.
+• Retrieving relevant evidence.
 
----
+• Explaining regulations in natural language.
 
-## 3.3 Lack of Knowledge Graph
+• Visualizing legal structures.
 
-Hiện nay gần như không có hệ thống nào mô hình hóa:
+• Verifying legal claims.
 
-Luật
-
-↓
-
-Điều
-
-↓
-
-Khoản
-
-↓
-
-Điểm
-
-↓
-
-Quan hệ
-
-↓
-
-Tham chiếu
-
-↓
-
-Sửa đổi
-
-↓
-
-Thay thế
-
-↓
-
-Hiệu lực
-
-thành một Knowledge Graph.
-
-Điều này khiến AI không thể suy luận chính xác.
+• Supporting legal research and decision making.
 
 ---
 
-## 3.4 Public Discourse
+# 5. TARGET USERS
 
-Người dân chủ yếu tiếp cận luật thông qua:
+Primary Users
 
-- Facebook
-- TikTok
-- Threads
-- Báo chí
+Government agencies
 
-Trong khi đó:
+Legal consultants
 
-không có hệ thống nào liên kết
+Compliance officers
 
-"Một bài đăng"
+Businesses
 
-↓
+Startups
 
-"Điều luật tương ứng"
+Researchers
 
-↓
+University students
 
-"Mức độ chính xác"
+Citizens
 
-↓
+Secondary Users
 
-"Giải thích"
+Media organizations
 
----
+Policy analysts
 
-## 3.5 Communication Risk
+Educational institutions
 
-Cơ quan quản lý hiện nay rất khó biết:
-
-- điều luật nào đang bị hiểu sai nhiều nhất
-- chủ đề nào đang trở thành xu hướng
-- thông tin nào đang lan truyền sai
-- cần truyền thông nội dung gì trước
+Public service organizations
 
 ---
 
-# 4. Vision
+# 6. USER PAIN POINTS
 
-LexPulse AI hướng tới trở thành nền tảng AI Legal Intelligence đầu tiên tại Việt Nam có khả năng:
+Government
 
-- Hiểu cấu trúc văn bản pháp luật.
-- Hiểu mối quan hệ giữa các văn bản.
-- Hiểu lịch sử sửa đổi.
-- Hiểu các cuộc thảo luận xã hội.
-- Giải thích quy định bằng ngôn ngữ tự nhiên.
-- Hỗ trợ ra quyết định dựa trên dữ liệu.
+- Thousands of legal documents.
+- Manual legal research is slow.
+- Difficult amendment tracking.
 
-Thay vì chỉ "Search",
+Businesses
 
-LexPulse AI sẽ "Understand".
+- Frequent regulatory changes.
+- Limited legal expertise.
+- Compliance uncertainty.
 
----
+Citizens
 
-# 5. Product Objectives
+- Difficult legal terminology.
+- Unclear online information.
+- Lack of trustworthy explanations.
 
-## Objective 1
+Researchers
 
-Cho phép người dùng hỏi pháp luật bằng ngôn ngữ tự nhiên.
-
-Ví dụ:
-
-"Từ ngày 1/7/2026 người dưới 18 tuổi có được mở tài khoản ngân hàng không?"
-
-AI phải trả lời:
-
-- ngắn gọn
-- dễ hiểu
-- có citation
-- có điều luật
-- có mức độ tin cậy
+- Fragmented legal sources.
+- Time-consuming relationship analysis.
 
 ---
 
-## Objective 2
+# 7. PRODUCT OBJECTIVES
 
-Tự động phân tích văn bản pháp luật.
+Primary Objective
 
-Trích xuất:
+Build a working AI Legal Intelligence Platform capable of answering legal questions with reliable evidence.
 
-- Subject
-- Obligation
-- Right
-- Penalty
-- Deadline
-- Related Document
-- Effective Date
-- Expiration Date
+Secondary Objectives
 
----
+Create an interactive Knowledge Graph.
 
-## Objective 3
+Visualize legal amendments.
 
-Tự động xây dựng Legal Knowledge Graph.
+Verify legal claims.
 
-Knowledge Graph phải thể hiện được:
+Reduce legal research time.
 
-- điều luật
-- khoản
-- điểm
-- quan hệ
-- tham chiếu
-- sửa đổi
-- thay thế
-- hiệu lực
+Improve transparency of AI-generated responses.
 
 ---
 
-## Objective 4
+# 8. SUCCESS METRICS
 
-Theo dõi Public Discourse.
+Technical KPIs
 
-Thu thập dữ liệu mạng xã hội mẫu.
+Simple questions
 
-Xác định:
+≤5 seconds
 
-- Topic
-- Trend
-- Sentiment
-- Claim
-- Engagement
+Complex questions
 
-Sau đó liên kết tới điều luật tương ứng.
+≤30 seconds
 
----
+Search accuracy
 
-## Objective 5
+≥85%
 
-Phát hiện thông tin sai lệch.
+Citation accuracy
 
-Ví dụ:
+100%
 
-Facebook Post
+Knowledge Graph generation
 
-↓
+Automatic
 
-Claim Extraction
+Document upload success
 
-↓
+≥95%
 
-Knowledge Graph
+Business KPIs
 
-↓
+Reduce legal search time.
 
-Legal Verification
+Improve legal understanding.
 
-↓
+Increase trust through explainable AI.
 
-Result
-
-- Correct
-- Incorrect
-- Misleading
-- Missing Context
+Provide visual legal exploration.
 
 ---
 
-## Objective 6
+# 9. PRODUCT SCOPE
 
-Cung cấp Dashboard giúp:
+Included
 
-- theo dõi luật mới
-- theo dõi xu hướng
-- theo dõi hiểu sai
-- theo dõi rủi ro truyền thông
+✓ Document upload
 
----
+✓ Legal document processing
 
-# 6. Hackathon Goal
+✓ Metadata extraction
 
-Đây là MVP được xây dựng trong thời gian 35 giờ.
+✓ Chunking
 
-Mục tiêu không phải là xây dựng một hệ thống pháp luật quốc gia hoàn chỉnh.
+✓ Embedding generation
 
-Mục tiêu là chứng minh:
+✓ Knowledge Graph
 
-- AI có thể hiểu cấu trúc pháp luật.
-- AI có thể xây Knowledge Graph.
-- AI có thể kiểm chứng thông tin mạng xã hội.
-- AI có thể giải thích luật có nguồn trích dẫn.
+✓ AI Question Answering
 
-Nếu MVP thành công, hệ thống có thể mở rộng cho hàng triệu văn bản pháp luật sau hackathon.
+✓ Hybrid Search
 
----
+✓ Timeline comparison
 
-# 7. Success Metrics
+✓ Legal citation engine
 
-## Functional
+✓ Claim verification
 
-✓ Upload tài liệu
+✓ Dashboard
 
-✓ Parse thành công
+Excluded
 
-✓ Sinh Knowledge Graph
+✗ Real-time legal crawling
 
-✓ Chat thành công
+✗ Government system integration
 
-✓ Citation chính xác
+✗ Enterprise authentication
 
-✓ Dashboard hoạt động
+✗ Multi-agent workflow
 
----
+✗ Voice interaction
 
-## Performance
+✗ Mobile application
 
-Simple Question
-
-<5 seconds
-
-Complex Question
-
-<30 seconds
-
-Graph Visualization
-
-<2 seconds
-
-Upload
-
-<10 seconds
+✗ Fine-tuned models
 
 ---
 
-## AI Quality
+# 10. CORE FEATURES
 
-Citation Accuracy
+Feature 1
 
->90%
+Advanced Legal Search
 
-Retrieval Accuracy
+Feature 2
 
->90%
+Knowledge Graph Visualization
 
-Hallucination
+Feature 3
 
-<5%
+AI Legal Assistant
 
-Knowledge Graph Accuracy
+Feature 4
 
->90%
+Legal Amendment Timeline
 
----
+Feature 5
 
-# 8. Project Limitations
+Claim Verification
 
-Để đảm bảo hoàn thành trong 35 giờ, MVP sẽ có các giới hạn sau:
+Feature 6
 
-- Chỉ xử lý tập dữ liệu pháp luật mẫu (10–20 văn bản).
-- Chỉ sử dụng dữ liệu mạng xã hội mẫu (100–500 bài viết hoặc bình luận).
-- Không crawl mạng xã hội theo thời gian thực.
-- Không thay thế tư vấn pháp lý chuyên nghiệp.
-- Chỉ tập trung vào một số lĩnh vực pháp luật phục vụ demo.
-- Việc cập nhật văn bản mới được thực hiện thủ công hoặc theo lô (batch), không yêu cầu đồng bộ thời gian thực.
-- Hệ thống ưu tiên tính chính xác và khả năng trình diễn hơn phạm vi dữ liệu.
+Analytics Dashboard
+
+Feature 7
+
+Document Management
 
 ---
 
-# 9. Definition of Success
+# 11. VALUE PROPOSITION
 
-Sau khi hoàn thành Hackathon, sản phẩm phải đạt được các tiêu chí sau:
+For Government
 
-- Một website hoàn chỉnh với giao diện trực quan.
-- Người dùng có thể tải lên hoặc chọn văn bản pháp luật mẫu.
-- AI trả lời bằng ngôn ngữ tự nhiên kèm nguồn trích dẫn rõ ràng.
-- Knowledge Graph hiển thị quan hệ giữa các điều luật.
-- Dashboard thể hiện xu hướng thảo luận, các hiểu lầm phổ biến và mức độ rủi ro truyền thông.
-- Toàn bộ hệ thống có thể demo ổn định trong vòng 5–7 phút mà không cần thao tác kỹ thuật phức tạp.
+Faster legal research.
+
+Improved policy communication.
+
+Reduced compliance risks.
+
+For Businesses
+
+Understand obligations.
+
+Monitor legal changes.
+
+Reduce legal consulting costs.
+
+For Citizens
+
+Receive simple legal explanations.
+
+Verify legal information.
+
+Increase confidence in public regulations.
+
+---
+
+# 12. COMPETITIVE DIFFERENTIATORS
+
+Unlike a traditional chatbot,
+
+LexPulse AI:
+
+✓ Retrieves evidence before generating answers.
+
+✓ Visualizes legal relationships.
+
+✓ Tracks legal amendments.
+
+✓ Explains legal reasoning.
+
+✓ Verifies public legal claims.
+
+✓ Always provides citations.
+
+The system emphasizes explainability rather than text generation alone.
+
+---
+
+# 13. PRODUCT PRINCIPLES
+
+Evidence First
+
+Every answer must be supported by legal evidence.
+
+Explainability
+
+Users must understand why an answer is generated.
+
+Transparency
+
+Every citation should be visible.
+
+Trustworthiness
+
+Never fabricate legal references.
+
+Usability
+
+Legal knowledge should be accessible to non-experts.
+
+Scalability
+
+The MVP should support future expansion without major redesign.
+
+---
+
+# 14. CONSTRAINTS
+
+Hackathon Duration
+
+35 Hours
+
+Team Size
+
+3 Members
+
+Budget
+
+Free and open-source tools whenever possible.
+
+Deployment
+
+Cloud-hosted MVP.
+
+No access to proprietary government databases.
+
+---
+
+# 15. RISKS
+
+Risk
+
+Incomplete legal datasets.
+
+Mitigation
+
+Use representative legal documents for demonstration.
+
+Risk
+
+LLM hallucination.
+
+Mitigation
+
+Strict Retrieval-Augmented Generation.
+
+Mandatory citations.
+
+Risk
+
+Performance bottlenecks.
+
+Mitigation
+
+Hybrid retrieval.
+
+Caching.
+
+Optimized chunking.
+
+---
+
+# 16. ASSUMPTIONS
+
+Users have internet access.
+
+Uploaded documents follow Vietnamese legal formatting.
+
+Legal documents can be processed into Article–Clause–Point hierarchy.
+
+Representative datasets are sufficient for demonstrating the concept.
+
+---
+
+# 17. MVP SUCCESS CRITERIA
+
+The MVP is considered successful if:
+
+✓ Users upload legal documents successfully.
+
+✓ The system extracts legal structure automatically.
+
+✓ Knowledge Graph is generated.
+
+✓ Users ask legal questions using natural language.
+
+✓ AI answers include legal citations.
+
+✓ Legal amendments can be compared.
+
+✓ Public claims can be verified.
+
+✓ Dashboard presents meaningful insights.
+
+✓ The complete demo can be finished within 7 minutes.
+
+---
+
+# 18. FUTURE ROADMAP
+
+Phase 2
+
+Government legal API integration.
+
+Phase 3
+
+Automatic regulation monitoring.
+
+Phase 4
+
+Enterprise compliance assistant.
+
+Phase 5
+
+Multi-agent legal experts.
+
+Phase 6
+
+Predictive compliance analytics.
+
+Phase 7
+
+National-scale Legal Intelligence Platform.
+
+---
+
+# 19. DEFINITION OF SUCCESS
+
+LexPulse AI succeeds not because it generates the longest answer.
+
+It succeeds because users can trust every answer, understand where it comes from, and navigate complex legal knowledge with confidence.
+
+The ultimate goal is to transform legal documents into connected, explainable, and actionable knowledge.
+
+---
+
+END OF PRODUCT REQUIREMENTS DOCUMENT
