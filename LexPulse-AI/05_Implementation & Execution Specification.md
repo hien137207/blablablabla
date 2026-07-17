@@ -1,462 +1,516 @@
-# PART 5 — IMPLEMENTATION & DELIVERY SPECIFICATION
+5. Implementation & Execution Specification — Revised
+5.1 Purpose
 
-Version: 2.0
+This document defines the implementation strategy and development execution plan for LexPulse AI MVP.
 
-Project: LexPulse AI
+The objective is to ensure that development focuses on:
 
----
+A working demonstration
+Reliable AI responses
+Evidence-grounded legal reasoning
+Clear user experience
 
-# 1. PURPOSE
+The implementation plan avoids unnecessary complexity and prioritizes high-risk components early.
 
-This document defines exactly how the project must be implemented during the 35-hour hackathon.
+5.2 Development Principles
+Principle 1: Validate Risk Before Building
 
-The goal is NOT to build a production-ready legal platform.
+The team must identify technically uncertain components before implementing the complete system.
 
-The goal is to deliver a stable, convincing, end-to-end MVP that demonstrates the technical innovation of combining:
+The highest-risk areas are:
 
-- Knowledge Graph
-- Advanced RAG
-- Legal Intelligence
-- AI-assisted reasoning
+Vietnamese legal document parsing
+Legal entity extraction
+Knowledge Graph quality
+Citation validation
 
-Every implementation decision must maximize demo value while minimizing unnecessary complexity.
+Therefore, the MVP begins with a risk validation phase.
 
----
+Principle 2: Demo First, Architecture Second
 
-# 2. DEVELOPMENT OBJECTIVES
+The MVP prioritizes:
 
-Primary Objective
+End-to-end working flow
+Reliable legal answers
+Citation transparency
+Graph visualization
+UI improvements
+Code optimization
+Principle 3: Avoid Premature Engineering
 
-Build a complete AI Legal Intelligence Platform capable of:
+The team should not implement:
 
-✓ Understanding Vietnamese legal documents
+Microservices
+Complex authentication
+Enterprise infrastructure
+Advanced AI orchestration
 
-✓ Building a Legal Knowledge Graph
+unless required by MVP functionality.
 
-✓ Retrieving relevant legal evidence
+5.3 Development Phases
+Phase 0: Risk Spike & Dataset Validation
 
-✓ Answering legal questions with citations
+Duration:
 
-✓ Tracking legal amendments
+Initial development stage
 
-✓ Verifying public claims
+Purpose:
 
-✓ Presenting analytics visually
+Validate the hardest technical assumptions before full implementation.
 
-Secondary Objective
+Tasks
+Legal Dataset Preparation
 
-Create a clean architecture that can later evolve into an enterprise platform.
+Collect:
 
----
+Traffic Law documents
+Labor Law documents
 
-# 3. MVP SCOPE
+Minimum dataset:
 
-The MVP MUST include:
+10-20 legal documents
+100+ evaluation questions
+Document Parsing Experiment
 
-### Document Processing
+Test:
 
-- Upload PDF
-- Extract text
-- Chunk by Article–Clause–Point
-- Store metadata
-- Generate embeddings
+PDF extraction
+Article detection
+Clause detection
+Legal hierarchy parsing
+Knowledge Graph Experiment
 
----
+Validate:
 
-### Knowledge Graph
+Entity extraction
+Relationship extraction
+Confidence scoring
 
-- Build graph automatically
-- Display interactive graph
-- Show node relationships
+Example:
 
----
+Article 12
 
-### AI Chat
+       |
 
-- Natural language questions
-- Hybrid Retrieval
-- Citation engine
-- Confidence score
+    HAS_PENALTY
 
----
+       |
 
-### Timeline
+Traffic Violation
+RAG Baseline Test
 
-- Show legal amendments
-- Compare document versions
+Build a minimal pipeline:
 
----
+Question
 
-### Claim Verification
+↓
 
-- Verify statements against regulations
-- Display evidence
-- Explain verdict
+Embedding Search
 
----
+↓
 
-### Dashboard
+Retrieve Chunk
 
-- Number of documents
-- Number of graph nodes
-- Trending legal topics
-- Latest uploaded regulations
-- Communication risks
+↓
 
----
+LLM Answer
 
-# 4. OUT OF SCOPE
+↓
 
-The following features must NOT be implemented during the hackathon.
+Citation Check
+Phase 0 Success Criteria
 
-✗ Real-time crawling
+Continue development only if:
 
-✗ Enterprise authentication
+✓ Legal documents can be extracted successfully
 
-✗ Neo4j cluster
+✓ Retrieval returns relevant evidence
 
-✗ Multi-agent workflow
+✓ Article references can be detected
 
-✗ Kubernetes
+✓ Basic citation validation works
 
-✗ Kafka
+Phase 1: Project Foundation
+Objective
 
-✗ Distributed architecture
+Create stable development environment.
 
-✗ Fine-tuning LLM
+Tasks:
 
-✗ Mobile application
+Backend:
 
-✗ Voice assistant
+FastAPI setup
+Database connection
+API structure
 
-✗ Multi-language translation
+Frontend:
 
-The objective is simplicity.
+React setup
+Routing
+UI framework
 
----
+Infrastructure:
 
-# 5. IMPLEMENTATION PRIORITY
+Environment configuration
+Deployment setup
+Phase 2: Database Implementation
+Objective
 
-Priority 0 (Critical)
+Implement core data storage.
 
-Project structure
+Tasks:
 
-Backend
+Create models for:
 
-Frontend
+Users
+Documents
+Document Versions
+Chunks
+Messages
+Citations
+Processing Jobs
 
-Database
+Implement:
 
-Deployment
+Database migrations
+Validation rules
+Unique constraints
+Phase 3: Authentication & User System
+Objective
 
----
+Implement basic access control.
 
-Priority 1
+Tasks:
 
-Document Upload
+Guest:
+
+Public exploration
+
+User:
+
+Account management
+History storage
+
+Admin:
+
+Dataset management
+
+Enterprise authentication is not included.
+
+Phase 4: Document Processing Pipeline
+Objective
+
+Build legal document intelligence pipeline.
+
+Pipeline:
+
+Upload
+
+↓
+
+Validation
+
+↓
+
+Extraction
+
+↓
+
+Legal Parsing
+
+↓
 
 Chunking
 
+↓
+
 Embedding
+
+↓
+
+Storage
+
+Tasks:
+
+PDF/DOCX processing
+Legal hierarchy extraction
+Chunk generation
+Metadata storage
+Phase 5: Knowledge Graph Construction
+Objective
+
+Create explainable legal relationships.
+
+Tasks:
+
+Entity extraction:
+
+Law
+Article
+Clause
+Penalty
+Obligation
+Right
+
+Relationship extraction:
+
+BELONGS_TO
+AMENDS
+SUPERSEDES
+REFERENCES
+HAS_PENALTY
+
+Apply:
+
+Confidence scoring
+Validation gate
+Phase 6: Retrieval System
+Objective
+
+Build reliable legal retrieval.
+
+Tasks:
+
+Implement:
 
 Vector Search
 
-Knowledge Graph
+Using:
 
----
+Qdrant
+
+Keyword Search
+
+Using:
+
+BM25-based retrieval
+
+Hybrid Ranking
+
+Combine:
+
+Semantic similarity
+Keyword relevance
+Legal structure relevance
+Phase 7: AI Chat System
+Objective
+
+Provide evidence-grounded answers.
+
+Tasks:
+
+Implement:
+
+Intent detection
+Fast path routing
+Complex reasoning path
+Context builder
+Prompt builder
+Citation validation
+Phase 8: Claim Verification System
+Objective
+
+Verify legal statements.
+
+Tasks:
+
+Implement:
+
+Input:
+
+Legal claim
+
+Output:
+
+Verdict
+Explanation
+Evidence
+Confidence
+Phase 9: Frontend Experience
+Objective
+
+Build user-facing features.
+
+Pages:
+
+Chat
+Verify
+Knowledge Graph
+Document Upload
+Dashboard
+
+Implement:
+
+Evidence cards
+Citation display
+Graph visualization
+Processing status
+Phase 10: Integration & Demo Preparation
+Objective
+
+Create complete demonstration flow.
+
+Demo scenario:
+
+Open Website
+
+↓
+
+Ask Legal Question
+
+↓
+
+Show Evidence
+
+↓
+
+Verify Claim
+
+↓
+
+Explore Graph
+
+↓
+
+Upload Document
+
+↓
+
+Show Processing
+Phase 11: Testing & Evaluation
+Objective
+
+Validate system reliability.
+
+Testing includes:
+
+API Testing
+
+Check:
+
+Endpoint behavior
+Authentication
+Error handling
+AI Evaluation
+
+Using evaluation dataset:
+
+Measure:
+
+Retrieval accuracy
+Citation grounding accuracy
+Response correctness
+UI Testing
+
+Check:
+
+User flows
+Error states
+Responsive behavior
+5.4 Evaluation Dataset Requirement
+
+The MVP must create an evaluation dataset before final testing.
+
+Dataset includes:
+
+Questions
+
+Examples:
+
+"Đi xe máy không đội mũ bảo hiểm bị phạt bao nhiêu?"
+
+Expected Evidence
+
+Contains:
+
+Document
+Article
+Clause
+Expected Answer Criteria
+
+Used for:
+
+Retrieval evaluation
+Citation evaluation
+5.5 Priority Rules When Time Is Limited
+
+If development time becomes limited:
+
+The team follows this priority:
+
+Priority 1
+
+Working end-to-end demo
 
 Priority 2
 
-AI Chat
-
-Citation Engine
-
-Timeline
-
----
+Reliable legal retrieval
 
 Priority 3
 
-Claim Verification
-
-Dashboard
-
-Analytics
-
----
+Citation validation
 
 Priority 4
 
-Polish UI
+Knowledge Graph visualization
 
-Animations
+Priority 5
 
-Dark Mode
+UI improvement
 
-Export
+Priority 6
 
----
+Code quality
 
-If time runs out,
+Priority 7
 
-Priority 4 must be dropped first.
+Future scalability
 
----
+5.6 Definition of Done
 
-# 6. DEVELOPMENT PHASES
+A feature is considered completed when:
 
-## Phase 1
+✓ Works in real demo scenario
 
-Initialize project
+✓ Has basic error handling
 
-Deliverables
+✓ Produces reliable output
 
-- Git repository
-- Docker
-- Frontend
-- Backend
-- Database
-- README
+✓ Does not violate evidence-grounding requirements
 
----
+5.7 Deployment Strategy
 
-## Phase 2
+MVP deployment:
 
-Backend foundation
+Backend:
 
-Deliverables
+FastAPI server
 
-- Authentication
-- API
-- Database
-- Upload
+Frontend:
 
----
+React application
 
-## Phase 3
+Database:
 
-Frontend foundation
+SQLite
 
-Deliverables
+Vector storage:
 
-- Dashboard
-- Sidebar
-- Layout
-- Navigation
+Qdrant
 
----
+Graph:
 
-## Phase 4
+NetworkX
 
-Document Intelligence
+The architecture is designed for future migration but optimized for MVP delivery.
 
-Deliverables
+5.8 Known MVP Limitations
 
-- Upload
-- OCR
-- Chunking
-- Metadata
-- Embedding
+The MVP accepts:
 
----
+Limited legal domains
+Single-instance deployment
+Limited dataset size
+Basic graph extraction
 
-## Phase 5
-
-Knowledge Graph
-
-Deliverables
-
-- Graph generation
-- Relationship extraction
-- Visualization
-
----
-
-## Phase 6
-
-Advanced RAG
-
-Deliverables
-
-- Hybrid Search
-- Re-ranking
-- Citation
-- Context Builder
-
----
-
-## Phase 7
-
-Legal Chat
-
-Deliverables
-
-- Chat Interface
-- Streaming
-- Suggested Questions
-- Confidence Score
-
----
-
-## Phase 8
-
-Timeline
-
-Deliverables
-
-- Amendment history
-- Version comparison
-
----
-
-## Phase 9
-
-Claim Verification
-
-Deliverables
-
-- Input statement
-- Extract claim
-- Match legal evidence
-- Verdict
-
----
-
-## Phase 10
-
-Dashboard
-
-Deliverables
-
-- Charts
-- KPIs
-- Statistics
-- Trend analysis
-
----
-
-# 7. HACKATHON EXECUTION RULES
-
-Always finish one module before starting another.
-
-Every feature must be demonstrable.
-
-Every feature must connect to real backend APIs.
-
-No mock screens.
-
-No fake buttons.
-
-No unfinished pages.
-
-Every page must have loading, success and error states.
-
----
-
-# 8. DEMO SCRIPT
-
-The demo should take approximately 7 minutes.
-
-Step 1
-
-Introduce LexPulse AI.
-
-Step 2
-
-Upload a legal document.
-
-Step 3
-
-Show document processing.
-
-Step 4
-
-Display the generated Knowledge Graph.
-
-Step 5
-
-Ask a legal question.
-
-Step 6
-
-Show AI answer with citations.
-
-Step 7
-
-Open the amendment timeline.
-
-Step 8
-
-Verify a social-media statement.
-
-Step 9
-
-Show dashboard analytics.
-
-Step 10
-
-Present future roadmap.
-
----
-
-# 9. DEFINITION OF DONE
-
-The MVP is considered complete only if:
-
-✓ Frontend runs successfully.
-
-✓ Backend runs successfully.
-
-✓ Database connected.
-
-✓ Vector database connected.
-
-✓ Documents can be uploaded.
-
-✓ Knowledge Graph generated.
-
-✓ AI answers include citations.
-
-✓ Timeline works.
-
-✓ Claim verification works.
-
-✓ Dashboard works.
-
-✓ GitHub repository is complete.
-
-✓ Docker deployment succeeds.
-
-✓ README documentation is complete.
-
----
-
-# 10. FUTURE ROADMAP
-
-Version 2
-
-Government legal API integration.
-
-Version 3
-
-Automatic legal update monitoring.
-
-Version 4
-
-Multi-agent legal assistants.
-
-Version 5
-
-Enterprise SaaS deployment.
-
-Version 6
-
-Real-time public discourse monitoring.
-
-Version 7
-
-Compliance recommendation engine.
-
----
-
-END OF IMPLEMENTATION SPECIFICATION
+These limitations are intentional to maximize reliability.
