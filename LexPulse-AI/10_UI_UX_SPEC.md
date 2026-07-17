@@ -1,454 +1,353 @@
-# UI / UX SPECIFICATION
+10. Frontend Component Architecture — Revised
+10.1 Purpose
 
-Version: 1.0
+This document defines the frontend architecture for LexPulse AI MVP.
 
-Project: LexPulse AI
+The objective is to create a frontend that is:
 
-Purpose:
-Define the complete user interface, user experience, navigation, and design system for the LexPulse AI Hackathon MVP.
+Easy to develop
+Easy to maintain
+Consistent with backend APIs
+Suitable for a small development team
 
----
+The architecture prioritizes delivery speed over excessive abstraction.
 
-# 1. DESIGN PHILOSOPHY
+10.2 Frontend Technology Stack
+Framework
 
-The interface should look like a modern enterprise AI platform.
+React + TypeScript
 
-Keywords
+Styling
 
-- Clean
-- Professional
-- Minimal
-- Trustworthy
-- Data-first
-- AI-native
+Tailwind CSS
 
-Avoid
+State Management
 
-- Gaming UI
-- Neon colors
-- Heavy animations
-- Cluttered layouts
+Lightweight state management.
 
----
+Recommended:
 
-# 2. DESIGN SYSTEM
+React Context for simple global states
+Zustand only when shared state complexity requires it
 
-Primary Color
+The MVP does not require multiple isolated stores by default.
 
-#2563EB (Blue)
+10.3 Frontend Architecture Principles
+Principle 1: Feature-Based Organization
 
-Success
+The project is organized around user features rather than technical layers.
 
-#16A34A
+Structure:
 
-Warning
+src/
 
-#F59E0B
+├── app/
 
-Danger
+├── features/
 
-#DC2626
+│   ├── chat/
 
-Background
+│   ├── verify/
 
-#F8FAFC
+│   ├── documents/
 
-Card
+│   ├── graph/
 
-#FFFFFF
+│   └── dashboard/
 
-Text
+│
 
-#0F172A
+├── components/
 
-Border
+├── services/
 
-#E2E8F0
+├── hooks/
 
----
+├── types/
 
-# Typography
+└── utils/
 
-Font
+10.4 Feature Responsibility
+Chat Feature
 
-Inter
+Responsible for:
 
-Heading
+Sending questions
+Streaming responses
+Displaying answers
+Showing citations
 
-Bold
+Components:
 
-Body
+ChatPage
 
-Regular
+├── ChatInput
 
-Code
+├── MessageList
 
-JetBrains Mono
+├── MessageBubble
 
----
+├── CitationCard
 
-# Border Radius
+└── EvidencePanel
+Verification Feature
 
-12px
+Responsible for:
 
----
+Claim submission
+Verdict display
+Evidence explanation
 
-# Shadow
+Components:
 
-Soft
+VerifyPage
 
-Modern
+├── ClaimInput
 
----
+├── VerdictCard
 
-# Icons
+├── EvidenceList
 
-Lucide Icons
+└── ConfidenceIndicator
+Document Feature
 
----
+Responsible for:
 
-# 3. GLOBAL LAYOUT
+Upload
+Processing status
+Document listing
 
- --------------------------------------------------------
-| Header                                                 |
-----------------------------------------------------------
-| Sidebar | Main Content                                |
-|         |                                             |
-|         |                                             |
-|         |                                             |
-----------------------------------------------------------
+Components:
 
-Header
+DocumentPage
 
-- Logo
-- Search
-- Notification
-- User Avatar
+├── UploadForm
 
-Sidebar
+├── ProcessingStatus
 
-- Dashboard
-- AI Chat
-- Knowledge Graph
-- Timeline
-- Verify Claim
-- Documents
-- Analytics
-- Admin
-- Settings
+├── DocumentTable
 
----
+└── Pagination
+Knowledge Graph Feature
 
-# 4. LANDING PAGE
+Responsible for:
 
-Purpose
+Graph visualization
+Relationship exploration
 
-Introduce LexPulse AI.
+Components:
 
-Sections
+GraphPage
 
-Hero
+├── GraphCanvas
+
+├── NodeDetail
+
+└── RelationshipList
+10.5 Shared Components
+
+Reusable components:
+
+components/
+
+├── Button
+
+├── Modal
+
+├── LoadingState
+
+├── ErrorState
+
+├── EmptyState
+
+├── Pagination
+
+└── Layout
+10.6 Error Handling Strategy
+
+The frontend uses multiple error layers.
+
+Global Error Boundary
+
+A root-level React ErrorBoundary handles:
+
+Unexpected rendering errors
+Component crashes
+Invalid API response rendering
+
+Example:
+
+Application
 
 ↓
 
-Features
+ErrorBoundary
 
 ↓
 
-Demo Preview
+Pages
 
 ↓
 
-Technology
+Components
+Feature-Level Error Handling
+
+Each feature must handle:
+
+Loading state
+Empty state
+API failure
+
+Example:
+
+Chat:
+
+Loading response
+Failed retrieval
+No evidence found
+10.7 API Integration Layer
+
+The frontend communicates with backend through services.
+
+Structure:
+
+services/
+
+├── authService.ts
+
+├── chatService.ts
+
+├── documentService.ts
+
+├── verifyService.ts
+
+└── graphService.ts
+
+Components should not directly call APIs.
+
+Example:
+
+Bad:
+
+ChatPage → fetch()
+
+Good:
+
+ChatPage
 
 ↓
 
-Footer
-
-Hero
-
-Headline
-
-"AI Legal Intelligence Platform"
-
-Subtitle
-
-Understand regulations, verify claims, and explore legal knowledge with AI.
-
-Buttons
-
-- Try Demo
-- Upload Document
-
-Illustration
-
-Knowledge Graph animation
-
----
-
-# 5. DASHBOARD
-
-Purpose
-
-Executive overview.
-
-Widgets
-
-Top Statistics
-
-Recent Regulations
-
-Trending Topics
-
-Communication Risk
-
-Latest Uploads
-
-Knowledge Graph Summary
-
-Recent Questions
-
-Quick Actions
-
-Charts
-
-Trend Line
-
-Pie Chart
-
-Bar Chart
-
-Cards
-
-Total Documents
-
-Total Graph Nodes
-
-Claims Verified
-
-Active Users
-
----
-
-# 6. AI CHAT PAGE
-
-Layout
-
- -------------------------------------------------
-| Chat History | Conversation                    |
-|              |                                |
-|              |                                |
-|              |                                |
---------------------------------------------------
-
-Features
-
-- Streaming response
-- Citation cards
-- Suggested questions
-- Copy answer
-- Export answer
-
-Bottom Input
-
-Question box
-
-Upload button
-
-Send button
-
-Typing indicator
-
----
-
-# AI Response Card
-
-Answer
+chatService
 
 ↓
 
-Confidence Score
+API
+10.8 Type Management Strategy
+
+The frontend must maintain consistency with backend schemas.
+
+Preferred approach:
+
+Generate TypeScript types from FastAPI OpenAPI schema.
+
+Flow:
+
+FastAPI Pydantic Models
 
 ↓
 
-Citations
+OpenAPI Schema
 
 ↓
 
-Related Documents
+TypeScript Types
 
 ↓
 
-Related Graph Nodes
+Frontend
 
----
+This prevents:
 
-# 7. KNOWLEDGE GRAPH PAGE
+API mismatch
+Incorrect fields
+Runtime errors
+10.9 State Management
+Local State
 
-Center
+Used for:
 
-Interactive Graph
+Input fields
+Temporary UI states
+Modal visibility
+Global State
 
-Left Panel
+Used only for:
 
-Filters
+Authentication
+Current user
+Application settings
+Server State
 
-Right Panel
+Handled through:
 
-Node Details
+React Query / TanStack Query
 
-Controls
+Used for:
 
-Zoom
+API caching
+Loading states
+Refetching
+10.10 Chat UI Architecture
 
-Search
+The Chat interface supports:
 
-Expand
+Response Streaming
 
-Collapse
+The UI should display:
 
-Highlight Path
+Processing state
+Retrieval progress
+Final response
 
-Node Detail
+Example:
 
-Title
+Searching legal documents...
 
-Description
+↓
 
-Relations
+Finding evidence...
 
-Source Document
+↓
 
+Generating explanation...
+Citation Display
+
+Each legal answer should show:
+
+Document name
 Article
-
 Clause
+Evidence snippet
+10.11 Graph UI Architecture
 
-Point
+The graph visualization should prioritize:
 
----
+Understanding relationships
+Evidence exploration
 
-# 8. TIMELINE PAGE
+The UI should avoid:
 
-Purpose
+Showing excessive nodes
+Unfiltered graph complexity
+10.12 Document Processing UI
 
-Visualize amendments.
+Upload flow:
 
-Layout
-
---------------------------------------------------------
- Timeline
---------------------------------------------------------
-2024 ---- Law A
-
-2025 ---- Decree B
-
-2026 ---- Circular C
-
-2026 ---- Circular D
-
---------------------------------------------------------
-
-Click event
+Upload File
 
 ↓
 
-Show modified clauses
-
-↓
-
-Highlight differences
-
----
-
-# 9. CLAIM VERIFICATION PAGE
-
-Layout
-
-Input
-
-↓
-
-Paste Text
-
-↓
-
-Verify Button
-
-↓
-
-AI Analysis
-
-↓
-
-Verdict
-
-↓
-
-Evidence
-
-↓
-
-Citation
-
-Verdict Badge
-
-Green
-
-Correct
-
-Yellow
-
-Need Context
-
-Red
-
-Incorrect
-
-Blue
-
-Misleading
-
----
-
-# 10. DOCUMENT PAGE
-
-Features
-
-Upload
-
-Search
-
-Filter
-
-Delete
-
-Index
-
-Preview
-
-Columns
-
-Title
-
-Type
-
-Issuer
-
-Effective Date
-
-Status
-
-Actions
-
----
-
-# Upload Flow
-
-Select File
-
-↓
-
-Upload
+Validation
 
 ↓
 
@@ -456,354 +355,93 @@ Processing
 
 ↓
 
-Chunking
-
-↓
-
 Embedding
 
 ↓
 
-Graph Generation
+Graph Building
 
 ↓
 
-Done
+Completed
 
----
+The frontend displays:
 
-# 11. ANALYTICS PAGE
+Current status
+Progress percentage
+Errors
+10.13 Responsive Design
 
-Charts
-
-Trending Topics
-
-Sentiment
-
-Most Discussed Laws
-
-Risk Heatmap
-
-Top Claims
-
-Latest Regulations
-
-Filters
-
-Date
-
-Topic
-
-Document
-
-Source
-
----
-
-# 12. ADMIN PAGE
-
-Cards
-
-Documents
-
-Users
-
-Embeddings
-
-Knowledge Graph
-
-Logs
-
-Buttons
-
-Upload
-
-Re-index
-
-Rebuild Graph
-
-Delete Cache
-
-System Health
-
----
-
-# 13. SETTINGS
-
-Theme
-
-Language
-
-LLM Provider
-
-Embedding Model
-
-API Key Status
-
-Version
-
----
-
-# 14. RESPONSIVE DESIGN
+The MVP supports:
 
 Desktop
-
-Full Sidebar
-
 Tablet
 
-Collapsible Sidebar
+Mobile optimization is considered secondary.
 
-Mobile
+10.14 Performance Guidelines
 
-Bottom Navigation
+The frontend should:
 
-Responsive Tables
+Lazy load large components
+Avoid unnecessary rerenders
+Paginate large datasets
+Limit graph rendering size
+10.15 Security Guidelines
 
-Responsive Charts
+Frontend must:
 
-Responsive Graph
+Never store sensitive secrets
+Validate user inputs
+Handle expired tokens
+Prevent unsafe HTML rendering
+10.16 Development Rules
 
----
+The team should follow:
 
-# 15. COMPONENT LIBRARY
+Required
 
-Buttons
+✓ Clear component responsibility
 
-Primary
+✓ Reusable common components
 
-Secondary
+✓ API abstraction
 
-Danger
+✓ Error handling
 
-Outline
+Flexible
 
-Cards
+The team may simplify:
 
-Statistic Card
+Folder structure
+State management
+Component abstraction
 
-Document Card
+when under time pressure.
 
-Citation Card
+10.17 MVP Frontend Completion Criteria
 
-Graph Node Card
+Frontend is complete when:
 
-Inputs
+✓ Users can ask legal questions
 
-Search
+✓ Citations are visible
 
-Textarea
+✓ Claims can be verified
 
-Dropdown
+✓ Documents can be uploaded
 
-Date Picker
+✓ Processing progress is displayed
 
-Upload
+✓ Knowledge Graph can be explored
 
-Badges
+✓ Errors are handled gracefully
 
-Success
+10.18 Future Improvements
 
-Warning
+Possible improvements:
 
-Error
-
-Info
-
-Tables
-
-Documents
-
-Analytics
-
-Claims
-
-Dialogs
-
-Delete
-
-Upload
-
-Error
-
-Success
-
-Loading
-
-Progress
-
-Toast
-
-Notifications
-
-Pagination
-
----
-
-# 16. LOADING STATES
-
-Skeleton Loader
-
-Spinner
-
-Progress Bar
-
-Graph Loading
-
-Document Processing Progress
-
----
-
-# 17. EMPTY STATES
-
-No Documents
-
-No Search Results
-
-No Graph Nodes
-
-No Timeline
-
-No Analytics
-
-Each state should include:
-
-Illustration
-
-Description
-
-Action Button
-
----
-
-# 18. ERROR STATES
-
-Upload Failed
-
-Search Failed
-
-Graph Failed
-
-Chat Failed
-
-Timeline Failed
-
-Verification Failed
-
-Display
-
-Error Icon
-
-Message
-
-Retry Button
-
----
-
-# 19. ACCESSIBILITY
-
-Keyboard Navigation
-
-High Contrast
-
-ARIA Labels
-
-Screen Reader Support
-
-Color Blind Friendly
-
----
-
-# 20. ANIMATIONS
-
-Fade In
-
-Slide Up
-
-Graph Expansion
-
-Card Hover
-
-Loading Transition
-
-Duration
-
-200ms–300ms
-
----
-
-# 21. USER FLOW
-
-User Login
-
-↓
-
-Dashboard
-
-↓
-
-Choose Feature
-
-↓
-
-Perform Action
-
-↓
-
-Receive AI Result
-
-↓
-
-View Citation
-
-↓
-
-Explore Knowledge Graph
-
-↓
-
-Export / Continue
-
----
-
-# 22. DEMO FLOW (5–7 Minutes)
-
-1. Open Dashboard
-2. Upload a legal document
-3. Show document processing
-4. Open Knowledge Graph
-5. Ask a legal question
-6. Display AI answer with citations
-7. Compare regulation timeline
-8. Verify a social media claim
-9. Show analytics dashboard
-10. End with roadmap
-
----
-
-# 23. DESIGN PRINCIPLES
-
-Every page must answer three questions immediately:
-
-1. Where am I?
-2. What can I do?
-3. What should I do next?
-
-No page should require explanation during the demo.
-
----
-
-# 24. SUCCESS CRITERIA
-
-The UI is considered successful if:
-
-- Users understand navigation within 10 seconds.
-- Every AI answer includes visible citations.
-- The Knowledge Graph is interactive.
-- Dashboard metrics are understandable at a glance.
-- The platform feels like an enterprise product.
-- The entire demo can be completed smoothly in under 7 minutes.
-
----
-
-# END OF UI / UX SPECIFICATION
+Advanced design system
+Mobile application
+Real-time collaboration
+Advanced dashboard analytics
