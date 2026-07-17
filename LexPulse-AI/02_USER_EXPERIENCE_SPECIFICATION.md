@@ -1,282 +1,78 @@
-# PART 2 — USER EXPERIENCE SPECIFICATION
+2. User Experience (UX) Specification — Revised
+2.1 UX Goals
 
-Version: 2.0
+The UX design of LexPulse AI focuses on creating a trustworthy, transparent, and efficient legal AI experience.
 
-Project: LexPulse AI
+The main UX objectives are:
 
-Purpose:
-This document defines the target users, user journeys, interaction flows, usability principles, and overall experience of the LexPulse AI platform.
+Allow users to access legal information quickly
+Make AI reasoning understandable
+Clearly show legal evidence behind every answer
+Reduce user uncertainty when interacting with AI-generated legal information
 
-The objective is to ensure that every feature is intuitive, efficient, explainable, and easy to demonstrate within a 5–7 minute hackathon presentation.
+The system must help users answer three questions:
 
----
+What is the legal answer?
+Which legal evidence supports this answer?
+Why did the AI reach this conclusion?
+2.2 User Access Model
 
-# 1. USER EXPERIENCE GOALS
+The MVP uses a simplified access model to prioritize usability and demo effectiveness.
 
-LexPulse AI should feel like an intelligent legal assistant rather than a traditional chatbot.
+Guest User
 
-Users should:
+Guest users can access:
 
-• Find legal information quickly.
+AI Legal Chat
+Legal Claim Verification
+Knowledge Graph Exploration
 
-• Understand legal relationships visually.
+Authentication is NOT required for these features.
 
-• Verify legal claims confidently.
+Reason:
 
-• Trust every AI answer because it includes evidence.
+The MVP demonstration requires users to immediately experience the core value of LexPulse AI without login barriers.
 
-• Never feel overwhelmed by legal terminology.
+Authenticated User
 
-The experience should emphasize:
+Authenticated users receive additional capabilities:
 
-Accuracy
+Upload legal documents
+Save conversation history
+Access personal workspace
+Manage previous interactions
+Administrator
 
-Transparency
+Administrators can:
 
-Speed
+Manage legal datasets
+Upload official legal documents
+Trigger document indexing
+Monitor processing status
+Rebuild Knowledge Graph
 
-Simplicity
+The MVP does not implement enterprise-level authentication or organization-based RBAC.
 
-Explainability
+2.3 Main User Journeys
+Journey 1: Legal Question Answering
+Goal
 
----
+Users ask legal questions and receive evidence-supported answers.
 
-# 2. TARGET USERS
-
-## Government Officers
-
-Goals
-
-- Search regulations quickly.
-- Compare amended laws.
-- Monitor policy changes.
-
-Pain Points
-
-- Thousands of legal documents.
-- Difficult to trace amendments.
-- Time-consuming manual searches.
-
----
-
-## Enterprises
-
-Goals
-
-- Understand applicable regulations.
-- Check legal obligations.
-- Monitor compliance.
-
-Pain Points
-
-- Regulations change frequently.
-- Difficult to identify relevant documents.
-- Limited legal expertise.
-
----
-
-## Legal Professionals
-
-Goals
-
-- Retrieve legal evidence.
-- Compare regulations.
-- Research legal relationships.
-
-Pain Points
-
-- Searching across multiple sources.
-- Cross-reference complexity.
-- Time pressure.
-
----
-
-## Citizens
-
-Goals
-
-- Understand laws in simple language.
-- Verify information seen online.
-- Learn their legal rights.
-
-Pain Points
-
-- Legal language is difficult.
-- Social media misinformation.
-- Unclear legal sources.
-
----
-
-## Students & Researchers
-
-Goals
-
-- Learn legal structures.
-- Explore relationships between regulations.
-- Analyze legal topics.
-
-Pain Points
-
-- Complex document hierarchy.
-- Hard to visualize legal connections.
-
----
-
-# 3. USER PERSONAS
-
-## Persona A
-
-Government Officer
-
-Experience
-
-Advanced legal knowledge.
-
-Primary Tasks
-
-Search
-
-Compare
-
-Monitor
-
-Success Criteria
-
-Find relevant regulation within 30 seconds.
-
----
-
-## Persona B
-
-Business Owner
-
-Experience
-
-Limited legal knowledge.
-
-Primary Tasks
-
-Ask questions.
-
-Understand obligations.
-
-Find incentives.
-
-Success Criteria
-
-Receive simple explanations with legal citations.
-
----
-
-## Persona C
-
-Citizen
-
-Experience
-
-No legal background.
-
-Primary Tasks
-
-Verify online claims.
-
-Understand legal rights.
-
-Success Criteria
-
-Clear answer with trustworthy evidence.
-
----
-
-# 4. USER JOURNEYS
-
-## Journey 1 — Ask a Legal Question
-
+User Flow
 Open Website
 
 ↓
 
-Go to AI Chat
+AI Chat
 
 ↓
 
-Type Question
+Enter Legal Question
 
 ↓
 
-AI Retrieves Evidence
-
-↓
-
-Generate Answer
-
-↓
-
-Display Citations
-
-↓
-
-Explore Knowledge Graph
-
-↓
-
-Follow Related Documents
-
-Outcome
-
-The user understands both the answer and its legal basis.
-
----
-
-## Journey 2 — Upload a Legal Document
-
-Dashboard
-
-↓
-
-Upload PDF
-
-↓
-
-Processing
-
-↓
-
-Chunking
-
-↓
-
-Embedding
-
-↓
-
-Knowledge Graph Generation
-
-↓
-
-Indexing
-
-↓
-
-Ready
-
-Outcome
-
-The uploaded document becomes searchable and linked within the knowledge graph.
-
----
-
-## Journey 3 — Verify a Social Media Claim
-
-Open Verify Page
-
-↓
-
-Paste Statement
-
-↓
-
-Extract Claim
+Intent Detection
 
 ↓
 
@@ -284,390 +80,397 @@ Retrieve Legal Evidence
 
 ↓
 
-Analyze
+Generate Response
 
 ↓
 
-Return Verdict
+Citation Validation
 
 ↓
 
-Display Supporting Citations
+Display Answer
+User Interface Output
 
-Outcome
+Each answer contains:
 
-The user can judge whether the claim is legally accurate.
+1. Direct Answer
 
----
+A concise explanation understandable to normal users.
 
-## Journey 4 — Explore the Knowledge Graph
+2. Legal Basis
 
-Open Graph
+Example:
 
-↓
+Law: Road Traffic Law
+Article: 12
+Clause: 3
+3. Evidence
 
-Search Node
+The system displays:
 
-↓
+Source document
+Retrieved text chunk
+Relevant legal section
+4. Confidence Score
 
-Expand Relationships
+The confidence score must be accompanied by explanation.
 
-↓
+Example:
 
-View Connected Regulations
+Confidence: 91%
 
-↓
+Reason:
+- Strong document relevance
+- Valid citation
+- Supporting evidence found
 
-Inspect Article / Clause / Point
+The confidence score must not appear as an unexplained AI-generated number.
 
-↓
+2.4 Legal Claim Verification Journey
+Goal
 
-Continue Exploration
+Allow users to verify whether a legal statement is accurate.
 
-Outcome
-
-The user discovers relationships that would be difficult to identify through traditional search.
-
----
-
-## Journey 5 — Compare Legal Amendments
-
-Open Timeline
-
-↓
-
-Select Regulation
-
-↓
-
-Choose Two Versions
+User Flow
+Open Verification Page
 
 ↓
 
-Highlight Changes
+Input Legal Claim
 
 ↓
 
-Review Added / Removed Clauses
-
-Outcome
-
-The user immediately understands how the regulation has evolved.
-
----
-
-# 5. INFORMATION ARCHITECTURE
-
-Navigation
-
-Home
+Retrieve Relevant Regulations
 
 ↓
 
-Dashboard
+Analyze Claim
 
 ↓
 
-AI Chat
+Generate Verdict
 
 ↓
 
-Knowledge Graph
+Display Evidence
+Verdict Categories
+
+The system supports six verdict types:
+
+Verdict	Description
+Correct	Statement is supported by current legal evidence
+Incorrect	Statement conflicts with legal evidence
+Misleading	Statement contains partial truth but lacks important context
+Need Context	Correctness depends on specific conditions
+Unknown	No sufficient evidence found
+Outdated	Regulation existed previously but has been amended or replaced partially
+2.5 Knowledge Graph Exploration Journey
+Goal
+
+Help users understand relationships between legal concepts and regulations.
+
+User Flow
+Open Knowledge Graph
 
 ↓
 
-Timeline
+Select Legal Entity
 
 ↓
 
-Claim Verification
+Display Connected Nodes
 
 ↓
 
-Documents
+Explore Relationships
 
 ↓
 
-Analytics
+View Source Documents
+
+Each graph node must display:
+
+Entity name
+Entity type
+Source document
+Related legal references
+
+Example:
+
+Traffic Regulation
+
+        |
+        |
+    AMENDS
+
+        ↓
+
+Previous Regulation
+
+        |
+        |
+ HAS_PENALTY
+
+        ↓
+
+Administrative Penalty
+2.6 Document Upload Journey
+Goal
+
+Allow authenticated users/admins to add new legal documents.
+
+User Flow
+Upload Document
 
 ↓
 
-Settings
-
-Every page must be accessible within two clicks from the dashboard.
-
----
-
-# 6. PAGE OBJECTIVES
-
-Landing
-
-Introduce LexPulse AI and encourage users to explore.
-
-Dashboard
-
-Provide an overview of the platform.
-
-AI Chat
-
-Answer legal questions with citations.
-
-Knowledge Graph
-
-Visualize legal relationships.
-
-Timeline
-
-Explain legal amendments.
-
-Verify Claim
-
-Fact-check legal statements.
-
-Documents
-
-Manage uploaded files.
-
-Analytics
-
-Provide trends and insights.
-
-Settings
-
-Configure the platform.
-
----
-
-# 7. USER INTERACTION PRINCIPLES
-
-Every action must produce immediate feedback.
-
-Examples
-
-Upload
+File Validation
 
 ↓
 
-Progress Bar
-
-Search
+Processing Dashboard
 
 ↓
 
-Loading Indicator
-
-Verification
+Text Extraction
 
 ↓
 
-Processing Status
-
-Errors
+Legal Structure Parsing
 
 ↓
 
-Clear Explanation
-
-The system must never appear frozen.
-
----
-
-# 8. EXPLAINABLE AI
-
-Every AI response shall include:
-
-Answer
+Chunk Generation
 
 ↓
 
-Confidence Score
+Embedding Creation
 
 ↓
 
-Legal Citations
+Knowledge Graph Extraction
 
 ↓
 
-Related Regulations
+Validation
 
 ↓
 
-Knowledge Graph Links
+Completed
+2.7 Document Processing Experience
 
-Users should always understand why the AI reached its conclusion.
+The UI must expose processing progress instead of showing only final status.
 
----
+Processing States
+Status	Description
+Uploaded	Document received successfully
+Validating	Checking file format and safety
+Extracting	Extracting text content
+Parsing	Detecting legal structure
+Chunking	Creating searchable chunks
+Embedding	Generating vector representations
+Graph Extraction	Building legal relationships
+Validation	Checking extraction quality
+Completed	Available for retrieval
+Failed	Processing error occurred
+2.8 Demo Dataset Experience
 
-# 9. SEARCH EXPERIENCE
+To support both reliability and demonstration of document processing, LexPulse AI uses two datasets.
 
-Users may search using:
+Base Dataset
 
-Natural language
+Purpose:
 
-Keywords
+Provide stable demo functionality.
 
-Article numbers
+Contains:
 
-Clause numbers
+Pre-indexed legal documents
+Existing Knowledge Graph
+Evaluation examples
 
-Legal topics
+Used for:
 
-Organization names
+Chat demonstration
+Verification demonstration
+Graph exploration
+Live Upload Dataset
 
-Search results should prioritize:
+Purpose:
 
-Relevant evidence
+Demonstrate the document intelligence pipeline.
 
-Recent regulations
+Flow:
 
-Direct legal citations
-
----
-
-# 10. KNOWLEDGE GRAPH EXPERIENCE
-
-Users shall be able to:
-
-Search nodes.
-
-Expand relationships.
-
-Collapse branches.
-
-Highlight connected regulations.
-
-View metadata.
-
-Navigate between related legal concepts.
-
-The graph should encourage exploration without overwhelming the user.
-
----
-
-# 11. ERROR EXPERIENCE
-
-The platform should explain errors clearly.
-
-Examples
-
-No legal evidence found.
+Upload New Document
 
 ↓
 
-Suggest related queries.
-
-Upload failed.
+Show Processing Progress
 
 ↓
 
-Explain accepted file types.
-
-Connection lost.
+Index Document
 
 ↓
 
-Offer retry.
+Available For Future Queries
 
-Avoid technical error messages.
+This avoids conflict between:
 
----
+Immediate demo usability
+Real-time document processing demonstration
+2.9 Chat Interface Design
 
-# 12. ACCESSIBILITY
+The Chat interface includes:
 
-The platform should support:
+Conversation Panel
 
-Keyboard navigation.
+Displays:
 
-High-contrast interface.
+User questions
+AI responses
+Citations
+Evidence Panel
 
-Readable typography.
+Displays:
 
-Responsive layouts.
+Legal source
+Article
+Clause
+Supporting text
+Reasoning Panel
 
-Screen reader compatibility where practical.
+Displays:
 
----
+Why specific evidence was selected.
 
-# 13. PERFORMANCE EXPERIENCE
+Example:
 
-Target Response Times
+"The system selected Article 12 because it contains the same legal obligation mentioned in the user's question."
 
-Landing
+2.10 Long Response Experience
 
-<2 seconds
+Complex legal questions may require longer processing time.
 
-Dashboard
+The UI must provide progressive feedback:
 
-<2 seconds
+Example:
 
-Search
+Understanding question...
 
-<3 seconds
+Searching legal documents...
 
-Simple AI Question
+Analyzing related regulations...
 
-<5 seconds
+Checking citations...
 
-Complex AI Question
+Preparing answer...
 
-<30 seconds
+The system should use:
 
-Document Upload
+Streaming responses
+Progressive loading
+Processing indicators
 
-<10 seconds
+to improve perceived performance.
 
-Knowledge Graph
+2.11 Error and Edge Case Experience
+Case 1: No Evidence Found
 
-<2 seconds
+Display:
 
-The user should always perceive the system as responsive.
+"Không tìm thấy căn cứ pháp lý phù hợp."
 
----
+Provide suggestions:
 
-# 14. DEMO EXPERIENCE
+Rewrite question
+Specify legal context
+Case 2: Citation Validation Failure
 
-The complete demonstration should follow this flow:
+If the generated response cannot pass citation verification:
 
-1. Introduce the platform.
+Display:
 
-2. Upload a legal document.
+"Không thể xác minh đầy đủ căn cứ pháp lý cho câu trả lời này."
 
-3. Show automatic processing.
+The system must not present unsupported legal conclusions.
 
-4. Explore the generated Knowledge Graph.
+Case 3: Outdated or Partially Applicable Regulation
 
-5. Ask a legal question.
+When regulations have changed:
 
-6. Display AI answer with citations.
+Display:
 
-7. Compare two versions of a regulation.
+"This regulation has been amended. Some provisions may no longer apply."
 
-8. Verify a social media claim.
+The UI should show:
 
-9. Present analytics dashboard.
+Previous regulation
+New regulation
+Effective date
+Relationship between versions
+Case 4: Empty Knowledge Graph
 
-10. Conclude with future roadmap.
+When no graph data exists:
 
-The demo should finish within 5–7 minutes.
+Display:
 
----
+"No legal relationships are available yet."
 
-# 15. USER SATISFACTION CRITERIA
+Available actions:
 
-The experience is considered successful if:
+Load demo dataset
+Upload legal documents
+2.12 Performance Experience
 
-✓ Users understand the navigation within 10 seconds.
+Performance must distinguish between:
 
-✓ Every important action provides immediate feedback.
+Backend Processing Time
 
-✓ AI answers always include supporting evidence.
+Measured by:
 
-✓ Users can explore legal knowledge visually.
+Retrieval duration
+Graph traversal duration
+LLM generation duration
+Citation validation duration
+User Perceived Response Time
 
-✓ The interface feels professional and trustworthy.
+Measured by:
 
-✓ Users complete their primary task without external guidance.
+Time until first UI feedback
+Streaming response start
+Completion time
 
----
+The UX should optimize perceived waiting time through progressive disclosure.
 
-# END OF USER EXPERIENCE SPECIFICATION
+2.13 Accessibility Requirements
+
+The system must support:
+
+Vietnamese Language Compatibility
+
+Requirements:
+
+UTF-8 encoding
+Vietnamese diacritics
+Vietnamese input methods
+Responsive Design
+
+Supported platforms:
+
+Desktop
+Tablet
+2.14 UX Success Criteria
+
+A first-time user should be able to:
+
+Open LexPulse AI
+Ask a legal question
+Understand the answer
+Verify supporting evidence
+Explore related regulations
+
+within:
+
+Less than 3 minutes.
